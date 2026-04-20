@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNetCore.Multitenancy.Core</name>
+    </assembly>
+    <members>
+        <member name="T:AspNetCore.Multitenancy.InMemoryTenantStore">
+            <summary>
+            Simple in-memory implementation of <see cref="T:AspNetCore.Multitenancy.ITenantStore"/>.
+            Use for unit tests, demos, and local development.
+            Not suitable for production multi-instance deployments.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.InMemoryTenantStore.#ctor(System.Collections.Generic.IEnumerable{AspNetCore.Multitenancy.TenantInfo})">
+            <summary>
+            Initializes the store with an optional seed of tenants.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.InMemoryTenantStore.GetTenantAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.InMemoryTenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.InMemoryTenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.InMemoryTenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.InMemoryTenantStore.RemoveTenantAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.ITenantContext">
+            <summary>
+            Provides access to the current tenant context for the active request or execution scope.
+            Inject this interface anywhere you need to know which tenant is in context.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.ITenantContext.CurrentTenant">
+            <summary>
+            Gets the current tenant's information.
+            </summary>
+            <exception cref="T:AspNetCore.Multitenancy.TenantNotFoundException">Thrown if accessed when <see cref="P:AspNetCore.Multitenancy.ITenantContext.HasTenant"/> is <c>false</c>.</exception>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.ITenantContext.HasTenant">
+            <summary>
+            Gets a value indicating whether a tenant has been resolved for the current context.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.ITenantContext.CreateTenantScope(System.String)">
+            <summary>
+            Creates an isolated DI scope for the specified tenant, setting ITenantContext
+            to that tenant within the scope. Useful for background jobs.
+            </summary>
+            <param name="tenantId">The tenant identifier to scope to.</param>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.ITenantResolver">
+            <summary>
+            Resolves the current tenant from an incoming HTTP request.
+            Implement this interface to create a custom resolution strategy.
+            Multiple resolvers can be registered; they are tried in order until one succeeds.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.ITenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Attempts to resolve a <see cref="T:AspNetCore.Multitenancy.TenantInfo"/> from the given HTTP context.
+            Returns <c>null</c> if this resolver cannot determine the tenant.
+            </summary>
+            <param name="context">The current HTTP context.</param>
+            <returns>The resolved tenant, or <c>null</c> if not resolvable by this strategy.</returns>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.ITenantStore">
+            <summary>
+            Provides persistent storage and retrieval of <see cref="T:AspNetCore.Multitenancy.TenantInfo"/> records.
+            Implement this to back tenants with a database, configuration file, or any other source.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.ITenantStore.GetTenantAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a tenant by its unique identifier.
+            Returns <c>null</c> if not found.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)">
+            <summary>
+            Returns all tenants known to the store.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.ITenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)">
+            <summary>
+            Adds a new tenant to the store.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)">
+            <summary>
+            Updates an existing tenant in the store.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Removes a tenant from the store.
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.MultitenancyBuilder">
+            <summary>
+            Fluent builder returned by <see cref="M:AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{AspNetCore.Multitenancy.MultitenancyOptions})"/>.
+            Use the <c>With*</c> extension methods from each package to register features.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.MultitenancyBuilder.Services">
+            <summary>Gets the underlying service collection.</summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.MultitenancyBuilder.Options">
+            <summary>Gets the configured options.</summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.TenantStore">
+            <summary>
+            Specifies where tenants are persisted.
+            </summary>
+        </member>
+        <member name="F:AspNetCore.Multitenancy.TenantStore.InMemory">
+            <summary>In-memory store — for development and testing only.</summary>
+        </member>
+        <member name="F:AspNetCore.Multitenancy.TenantStore.EntityFramework">
+            <summary>Tenants are stored in a database via Entity Framework Core.</summary>
+        </member>
+        <member name="F:AspNetCore.Multitenancy.TenantStore.Configuration">
+            <summary>Tenants are loaded from appsettings.json configuration.</summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.IsolationStrategy">
+            <summary>
+            Specifies the database isolation strategy for tenant data.
+            </summary>
+        </member>
+        <member name="F:AspNetCore.Multitenancy.IsolationStrategy.DbPerTenant">
+            <summary>Each tenant gets a completely separate database.</summary>
+        </member>
+        <member name="F:AspNetCore.Multitenancy.IsolationStrategy.SchemaPerTenant">
+            <summary>All tenants share a database but use separate schemas.</summary>
+        </member>
+        <member name="F:AspNetCore.Multitenancy.IsolationStrategy.RowLevel">
+            <summary>All tenants share tables; data is filtered by a TenantId column.</summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.MultitenancyOptions">
+            <summary>
+            Top-level configuration options for the multi-tenancy library.
+            Configure via the <c>AddMultitenancy(options => ...)</c> builder.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.MultitenancyOptions.TenantStore">
+            <summary>
+            Gets or sets where tenant records are persisted.
+            Default: <see cref="F:AspNetCore.Multitenancy.TenantStore.InMemory"/>.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.MultitenancyOptions.IsolationStrategy">
+            <summary>
+            Gets or sets the database isolation strategy.
+            Default: <see cref="F:AspNetCore.Multitenancy.IsolationStrategy.RowLevel"/>.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.MultitenancyOptions.RequireTenant">
+            <summary>
+            When <c>true</c>, a request with no resolvable tenant returns HTTP 404.
+            When <c>false</c>, the request proceeds with <see cref="P:AspNetCore.Multitenancy.ITenantContext.HasTenant"/> == false.
+            Default: <c>false</c>.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.MultitenancyOptions.TenantNotFoundStatusCode">
+            <summary>
+            HTTP status code returned when tenant resolution fails and <see cref="P:AspNetCore.Multitenancy.MultitenancyOptions.RequireTenant"/> is <c>true</c>.
+            Default: 404.
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.ServiceCollectionExtensions">
+            <summary>
+            Extension methods for registering multi-tenancy services with the DI container
+            and adding the tenant middleware to the pipeline.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{AspNetCore.Multitenancy.MultitenancyOptions})">
+            <summary>
+            Registers the core multi-tenancy services and returns a <see cref="T:AspNetCore.Multitenancy.MultitenancyBuilder"/>
+            for further configuration via <c>With*</c> extension methods.
+            </summary>
+            <example>
+            <code>
+            builder.Services
+                .AddMultitenancy(options =>
+                {
+                    options.TenantStore = TenantStore.InMemory;
+                    options.IsolationStrategy = IsolationStrategy.RowLevel;
+                })
+                .WithHeaderResolver("X-Tenant-Id")
+                .WithEFCoreIsolation&lt;AppDbContext&gt;();
+            </code>
+            </example>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Adds the <see cref="T:AspNetCore.Multitenancy.TenantMiddleware"/> to the ASP.NET Core pipeline.
+            Call this in <c>app.Use*()</c> — before any routing or authorization middleware.
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.TenantContext">
+            <summary>
+            Default implementation of <see cref="T:AspNetCore.Multitenancy.ITenantContext"/>.
+            Registered as a scoped service so it is unique per HTTP request.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.TenantContext.CurrentTenant">
+            <inheritdoc />
+        </member>
+        <member name="P:AspNetCore.Multitenancy.TenantContext.HasTenant">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.TenantContext.SetTenant(AspNetCore.Multitenancy.TenantInfo)">
+            <summary>
+            Sets the current tenant. Called by <see cref="T:AspNetCore.Multitenancy.TenantMiddleware"/> after resolution.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.TenantContext.CreateTenantScope(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.TenantInfo">
+            <summary>
+            Represents a tenant in the system. All properties needed for routing,
+            database isolation, and feature access live here.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.TenantInfo.Id">
+            <summary>
+            Unique slug identifier for the tenant (e.g., "acme").
+            Used as the key for resolution and path prefixing.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.TenantInfo.Name">
+            <summary>
+            Human-readable display name (e.g., "Acme Corp").
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.TenantInfo.ConnectionString">
+            <summary>
+            Connection string for DB-per-tenant isolation strategy.
+            Leave empty for schema-per-tenant or row-level strategies.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.TenantInfo.Schema">
+            <summary>
+            Database schema name for schema-per-tenant isolation (e.g., "acme").
+            Leave empty for DB-per-tenant or row-level strategies.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.TenantInfo.Plan">
+            <summary>
+            Subscription plan identifier. Used for feature flag gating.
+            Typical values: "free", "pro", "enterprise".
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.TenantInfo.Settings">
+            <summary>
+            Arbitrary key-value settings for tenant-specific configuration.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.TenantInfo.IsActive">
+            <summary>
+            Whether this tenant is active. Inactive tenants are rejected during resolution.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.TenantInfo.CreatedAt">
+            <summary>
+            When the tenant was created (UTC).
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.TenantMiddleware">
+            <summary>
+            ASP.NET Core middleware that runs all registered <see cref="T:AspNetCore.Multitenancy.ITenantResolver"/>s
+            in order and populates <see cref="T:AspNetCore.Multitenancy.ITenantContext"/> for the request.
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.TenantNotFoundException">
+            <summary>
+            Thrown when a tenant cannot be resolved from the current HTTP request,
+            and the application requires a valid tenant context.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.TenantNotFoundException.#ctor">
+            <summary>
+            Initializes a new instance with a default message.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.TenantNotFoundException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance with the specified tenant identifier.
+            </summary>
+            <param name="tenantId">The tenant ID that could not be found.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.TenantNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance with a message and inner exception.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.TenantNotFoundException.TenantId">
+            <summary>
+            Gets the tenant ID that triggered the exception, if available.
+            </summary>
+        </member>
+    </members>
+</doc>

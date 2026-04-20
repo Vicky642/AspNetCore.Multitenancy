@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>AspNetCore.Multitenancy.EntityFrameworkCore</RootNamespace>
+
+    <PackageId>AspNetCore.Multitenancy.EFCore</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>AspNetCore.Multitenancy Contributors</Authors>
+    <Description>EF Core tenant isolation for AspNetCore.Multitenancy. Supports Database-per-tenant, Schema-per-tenant, and Row-level security strategies.</Description>
+    <PackageTags>aspnetcore;multitenancy;efcore;saas</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Vicky642/AspNetCore.Multitenancy</PackageProjectUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\AspNetCore.Multitenancy.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

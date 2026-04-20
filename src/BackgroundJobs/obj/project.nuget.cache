@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "NhZwJ1TaULw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\src\\BackgroundJobs\\AspNetCore.Multitenancy.Hangfire.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\hangfire.aspnetcore\\1.8.14\\hangfire.aspnetcore.1.8.14.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\hangfire.core\\1.8.14\\hangfire.core.1.8.14.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\hangfire.netcore\\1.8.14\\hangfire.netcore.1.8.14.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.0.0\\microsoft.extensions.configuration.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.0.0\\microsoft.extensions.fileproviders.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\3.0.0\\microsoft.extensions.hosting.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.0\\microsoft.extensions.logging.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.25\\microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.14\\microsoft.netcore.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.14\\microsoft.windowsdesktop.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.14\\microsoft.aspnetcore.app.ref.9.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,34 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/SaaSDemo/SaaSDemo.csproj" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/BackgroundJobs/">
+    <Project Path="src/BackgroundJobs/AspNetCore.Multitenancy.Hangfire.csproj" />
+  </Folder>
+  <Folder Name="/src/Core/">
+    <Project Path="src/Core/AspNetCore.Multitenancy.Core.csproj" />
+  </Folder>
+  <Folder Name="/src/EntityFrameworkCore/">
+    <Project Path="src/EntityFrameworkCore/AspNetCore.Multitenancy.EFCore.csproj" />
+  </Folder>
+  <Folder Name="/src/FeatureFlags/">
+    <Project Path="src/FeatureFlags/AspNetCore.Multitenancy.Features.csproj" />
+  </Folder>
+  <Folder Name="/src/FileStorage/">
+    <Project Path="src/FileStorage/AspNetCore.Multitenancy.Storage.csproj" />
+  </Folder>
+  <Folder Name="/src/Resolvers/">
+    <Project Path="src/Resolvers/AspNetCore.Multitenancy.Resolvers.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/E2E/">
+    <Project Path="tests/E2E/AspNetCore.Multitenancy.Tests.E2E.csproj" />
+  </Folder>
+  <Folder Name="/tests/Integration/">
+    <Project Path="tests/Integration/AspNetCore.Multitenancy.Tests.Integration.csproj" />
+  </Folder>
+  <Folder Name="/tests/Unit/">
+    <Project Path="tests/Unit/AspNetCore.Multitenancy.Tests.Unit.csproj" />
+  </Folder>
+</Solution>

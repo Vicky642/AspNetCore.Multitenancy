@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNetCore.Multitenancy.Resolvers</name>
+    </assembly>
+    <members>
+        <member name="T:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver">
+            <summary>
+            Resolves the current tenant from a JWT claim.
+            Default claim type: <c>tid</c> (tenant ID).
+            Requires the request to be authenticated.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)">
+            <param name="store">The tenant store to look up the resolved ID.</param>
+            <param name="claimType">The claim type that carries the tenant ID. Defaults to <c>tid</c>.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver">
+            <summary>
+            Resolves the current tenant from a configurable HTTP request header.
+            Default header: <c>X-Tenant-Id</c>.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)">
+            <param name="store">The tenant store to look up the resolved ID against.</param>
+            <param name="headerName">The HTTP header name to read. Defaults to <c>X-Tenant-Id</c>.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.Resolvers.HostTenantResolver">
+            <summary>
+            Resolves the current tenant from the request's host/subdomain.
+            Example: <c>acme.app.com</c> resolves tenant ID <c>acme</c>.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.Resolvers.HostTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)">
+            <param name="store">The tenant store to look up tenants.</param>
+            <param name="baseDomain">
+            Optional. The base domain to strip (e.g., "app.com").
+            If provided, "acme.app.com" → "acme".
+            If null, uses the first label of the host as tenant ID.
+            </param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.Resolvers.HostTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.Resolvers.PathTenantResolver">
+            <summary>
+            Resolves the current tenant from the URL path prefix.
+            Example: <c>/acme/products</c> resolves tenant ID <c>acme</c> and rewrites path to <c>/products</c>.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.Resolvers.PathTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.Resolvers.ResolverExtensions">
+            <summary>
+            Extension methods on <see cref="T:AspNetCore.Multitenancy.MultitenancyBuilder"/> for registering resolver strategies.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHeaderResolver(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)">
+            <summary>
+            Adds a <see cref="T:AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver"/> that reads tenant ID from an HTTP header.
+            </summary>
+            <param name="builder">The multitenancy builder.</param>
+            <param name="headerName">The header to read. Defaults to <c>X-Tenant-Id</c>.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHostResolver(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)">
+            <summary>
+            Adds a <see cref="T:AspNetCore.Multitenancy.Resolvers.HostTenantResolver"/> that resolves tenant from the request subdomain.
+            </summary>
+            <param name="builder">The multitenancy builder.</param>
+            <param name="baseDomain">Optional base domain to strip (e.g., "app.com").</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithClaimsResolver(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)">
+            <summary>
+            Adds a <see cref="T:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver"/> that resolves tenant from a JWT claim.
+            </summary>
+            <param name="builder">The multitenancy builder.</param>
+            <param name="claimType">The claim type that carries the tenant ID. Defaults to <c>tid</c>.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithPathResolver(AspNetCore.Multitenancy.MultitenancyBuilder)">
+            <summary>
+            Adds a <see cref="T:AspNetCore.Multitenancy.Resolvers.PathTenantResolver"/> that resolves tenant from the URL prefix.
+            </summary>
+        </member>
+    </members>
+</doc>

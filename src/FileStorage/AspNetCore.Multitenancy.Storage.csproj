@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>AspNetCore.Multitenancy.FileStorage</RootNamespace>
+
+    <PackageId>AspNetCore.Multitenancy.Storage</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>AspNetCore.Multitenancy Contributors</Authors>
+    <Description>Tenant-isolated file storage for AspNetCore.Multitenancy. Automatically prefixes all paths with tenant ID. Supports local disk, AWS S3, and Azure Blob Storage.</Description>
+    <PackageTags>aspnetcore;multitenancy;storage;s3;azure;saas</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Vicky642/AspNetCore.Multitenancy</PackageProjectUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\AspNetCore.Multitenancy.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.7.400.7" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.22.2" />
+  </ItemGroup>
+
+</Project>

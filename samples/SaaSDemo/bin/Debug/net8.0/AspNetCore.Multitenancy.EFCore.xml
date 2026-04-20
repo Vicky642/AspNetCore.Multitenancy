@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNetCore.Multitenancy.EFCore</name>
+    </assembly>
+    <members>
+        <member name="T:AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions">
+            <summary>
+            Extension methods on <see cref="T:AspNetCore.Multitenancy.MultitenancyBuilder"/> for configuring EF Core tenant isolation.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation``1(AspNetCore.Multitenancy.MultitenancyBuilder,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})">
+            <summary>
+            Registers the EF Core isolation services for the specified DbContext.
+            This sets up the <see cref="T:AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1"/> and
+            <see cref="T:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1"/>.
+            </summary>
+            <typeparam name="TContext">Your application DbContext.</typeparam>
+            <param name="builder">The multitenancy builder.</param>
+            <param name="configureDb">
+            A delegate that applies the database provider to the context options.
+            Example: <c>(opts, cs) => opts.UseSqlServer(cs)</c>
+            </param>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity">
+            <summary>
+            Marks an entity as tenant-scoped. The EF Core model builder and
+            <see cref="T:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext"/> use this interface to apply global query
+            filters and to stamp <see cref="P:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId"/> on insert automatically.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId">
+            <summary>
+            The tenant that owns this entity record.
+            Set automatically on SaveChanges — do not set manually.
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext">
+            <summary>
+            Base <see cref="T:Microsoft.EntityFrameworkCore.DbContext"/> for multi-tenant applications.
+            Automatically:
+            <list type="bullet">
+              <item>Applies global query filters for all <see cref="T:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity"/> entity types</item>
+              <item>Stamps <c>TenantId</c> on every insert via <c>SaveChanges</c></item>
+              <item>Sets the default schema from <see cref="T:AspNetCore.Multitenancy.ITenantContext"/> for schema-per-tenant strategy</item>
+            </list>
+            Inherit from this class in your application DbContext.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChanges(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChangesAsync(System.Boolean,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions">
+            <summary>
+            EF Core extension methods for applying tenant query filters to entities
+            that implement <see cref="T:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity"/>.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.HasTenantFilter``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},System.Func{System.String})">
+            <summary>
+            Applies a global query filter so that all queries for <typeparamref name="TEntity"/>
+            are automatically scoped to the current tenant.
+            Call inside <c>OnModelCreating</c>.
+            </summary>
+            <typeparam name="TEntity">Entity type implementing <see cref="T:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity"/>.</typeparam>
+            <param name="builder">The entity type builder.</param>
+            <param name="currentTenantId">A delegate that returns the current tenant ID at query time.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.ApplyTenantQueryFilters(Microsoft.EntityFrameworkCore.ModelBuilder,System.Func{System.String})">
+            <summary>
+            Applies tenant query filters to ALL entity types in the model that implement
+            <see cref="T:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity"/>. Call inside <c>OnModelCreating</c>.
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy">
+             <summary>
+             Isolation strategy: each tenant has a completely separate SQL Server/PostgreSQL database.
+             Maximum isolation. Recommended for enterprise and regulated tenants.
+            
+             Usage in Program.cs:
+             <code>
+             builder.Services.AddDbContext&lt;AppDbContext&gt;((sp, opts) =>
+                 DbPerTenantStrategy.Configure(opts, sp));
+             </code>
+             </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.Configure(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.IServiceProvider,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})">
+            <summary>
+            Configures a <see cref="T:Microsoft.EntityFrameworkCore.DbContextOptionsBuilder"/> to use the current tenant's
+            <see cref="P:AspNetCore.Multitenancy.TenantInfo.ConnectionString"/> at runtime.
+            </summary>
+            <param name="optionsBuilder">The EF Core options builder to configure.</param>
+            <param name="serviceProvider">DI provider used to resolve <see cref="T:AspNetCore.Multitenancy.ITenantContext"/>.</param>
+            <param name="useProvider">
+            A callback that applies the database provider, e.g.:
+            <c>(opts, cs) => opts.UseSqlServer(cs)</c>
+            </param>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy">
+             <summary>
+             Isolation strategy: all tenants share tables. Every table has a <c>TenantId</c> column.
+             EF Core global query filters automatically scope all queries.
+             Cheapest to operate. Recommended for low-risk SaaS.
+            
+             This strategy is applied automatically by <see cref="T:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext"/>.
+             Entities must implement <see cref="T:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity"/>.
+             </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.Apply(Microsoft.EntityFrameworkCore.ModelBuilder,System.Func{System.String})">
+            <summary>
+            Configures the model for row-level tenant isolation.
+            Applies <see cref="M:AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.ApplyTenantQueryFilters(Microsoft.EntityFrameworkCore.ModelBuilder,System.Func{System.String})"/> to all
+            <see cref="T:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity"/> entity types and adds a TenantId index for performance.
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy">
+             <summary>
+             Isolation strategy: all tenants share one database but each gets a dedicated schema
+             (e.g., <c>acme.Products</c>, <c>globex.Products</c>).
+             Good balance of isolation vs cost.
+            
+             The schema is taken from <see cref="P:AspNetCore.Multitenancy.TenantInfo.Schema"/>. If not set, falls back to
+             <see cref="P:AspNetCore.Multitenancy.TenantInfo.Id"/>.
+             </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.Apply(Microsoft.EntityFrameworkCore.ModelBuilder,AspNetCore.Multitenancy.ITenantContext)">
+            <summary>
+            Applies the current tenant's schema as the EF Core default schema.
+            Call from <c>OnModelCreating</c>:
+            <code>
+            protected override void OnModelCreating(ModelBuilder builder)
+            {
+                SchemaPerTenantStrategy.Apply(builder, _tenantContext);
+                base.OnModelCreating(builder);
+            }
+            </code>
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1">
+            <summary>
+            Creates <typeparamref name="TContext"/> instances configured for a specific tenant.
+            Used by the DB-per-tenant strategy to swap connection strings at runtime.
+            </summary>
+            <typeparam name="TContext">Your application's DbContext type.</typeparam>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1.#ctor(AspNetCore.Multitenancy.ITenantContext,System.IServiceProvider,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})">
+            <param name="tenantContext">The active tenant context.</param>
+            <param name="serviceProvider">The DI service provider.</param>
+            <param name="configureOptions">
+            A delegate that receives the options builder and the tenant's connection string,
+            and configures the database provider. Example:
+            <code>
+            (opts, cs) => opts.UseSqlServer(cs)
+            </code>
+            </param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1.CreateContext">
+            <summary>
+            Creates a <typeparamref name="TContext"/> using the current tenant's connection string.
+            </summary>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown if the current tenant has no <see cref="P:AspNetCore.Multitenancy.TenantInfo.ConnectionString"/>.
+            </exception>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1">
+            <summary>
+            Runs EF Core migrations for each tenant automatically.
+            Use during application startup or tenant provisioning to ensure all
+            tenant databases/schemas are up-to-date.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.MigrateAllTenantsAsync(System.Threading.CancellationToken)">
+            <summary>
+            Runs pending EF Core migrations for all active tenants.
+            Safe to call on every startup — EF Core migrations are idempotent.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.MigrateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)">
+            <summary>
+            Runs pending migrations for a single tenant.
+            </summary>
+        </member>
+    </members>
+</doc>

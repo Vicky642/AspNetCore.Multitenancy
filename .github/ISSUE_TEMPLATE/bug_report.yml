@@ -1,0 +1,89 @@
+name: Bug Report
+description: Report a bug in AspNetCore.Multitenancy
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out the sections below to help us reproduce and fix it.
+
+  - type: input
+    id: version
+    attributes:
+      label: Package Version
+      description: Which version of AspNetCore.Multitenancy are you using?
+      placeholder: "e.g. 0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: dotnet-version
+    attributes:
+      label: .NET Version
+      description: Output of `dotnet --version`
+      placeholder: "e.g. 8.0.100"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      placeholder: "e.g. Windows 11, Ubuntu 22.04, macOS 14"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: package
+    attributes:
+      label: Affected Package
+      options:
+        - AspNetCore.Multitenancy.Core
+        - AspNetCore.Multitenancy.Resolvers
+        - AspNetCore.Multitenancy.EFCore
+        - AspNetCore.Multitenancy.Hangfire
+        - AspNetCore.Multitenancy.Storage
+        - AspNetCore.Multitenancy.Features
+        - Sample App
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Add AddMultitenancy() to Program.cs
+        2. Configure HeaderResolver
+        3. Send request without X-Tenant-Id header
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: minimal-repro
+    attributes:
+      label: Minimal Reproduction
+      description: A minimal code snippet or repo link that reproduces the issue.

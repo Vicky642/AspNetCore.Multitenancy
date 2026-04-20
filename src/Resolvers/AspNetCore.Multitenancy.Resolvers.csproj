@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>AspNetCore.Multitenancy.Resolvers</RootNamespace>
+
+    <PackageId>AspNetCore.Multitenancy.Resolvers</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>AspNetCore.Multitenancy Contributors</Authors>
+    <Description>Plug-in tenant resolution strategies for AspNetCore.Multitenancy: Header, Host (subdomain), JWT Claims, and Path-based resolvers.</Description>
+    <PackageTags>aspnetcore;multitenancy;saas;tenant-resolver</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Vicky642/AspNetCore.Multitenancy</PackageProjectUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\AspNetCore.Multitenancy.Core.csproj" />
+  </ItemGroup>
+
+</Project>

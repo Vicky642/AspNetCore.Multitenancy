@@ -1,0 +1,48 @@
+name: Release to NuGet
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.x
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test tests/Unit/ --configuration Release --no-build
+
+      - name: Pack Core
+        run: dotnet pack src/Core/ --configuration Release --no-build --output ./nupkgs
+
+      - name: Pack Resolvers
+        run: dotnet pack src/Resolvers/ --configuration Release --no-build --output ./nupkgs
+
+      - name: Pack EFCore
+        run: dotnet pack src/EntityFrameworkCore/ --configuration Release --no-build --output ./nupkgs
+
+      - name: Pack BackgroundJobs
+        run: dotnet pack src/BackgroundJobs/ --configuration Release --no-build --output ./nupkgs
+
+      - name: Pack FileStorage
+        run: dotnet pack src/FileStorage/ --configuration Release --no-build --output ./nupkgs
+
+      - name: Pack FeatureFlags
+        run: dotnet pack src/FeatureFlags/ --configuration Release --no-build --output ./nupkgs
+
+      - name: Push to NuGet
+        run: dotnet nuget push ./nupkgs/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate

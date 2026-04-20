@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNetCore.Multitenancy.Hangfire</name>
+    </assembly>
+    <members>
+        <member name="T:AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions">
+            <summary>
+            Extension methods on <see cref="T:AspNetCore.Multitenancy.MultitenancyBuilder"/> for Hangfire integration.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.WithHangfireJobs(AspNetCore.Multitenancy.MultitenancyBuilder)">
+            <summary>
+            Registers tenant-aware Hangfire services:
+            <list type="bullet">
+              <item><see cref="T:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter"/> — propagates tenant context into jobs</item>
+              <item><see cref="T:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator"/> — resolves jobs from per-tenant DI scope</item>
+              <item><see cref="T:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager"/> — schedules jobs per tenant</item>
+            </list>
+            <para>
+            You still need to call <c>services.AddHangfire(...)</c> and <c>services.AddHangfireServer()</c>
+            separately with your storage configuration (SQL Server, Redis, etc.).
+            </para>
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.UseTenantJobFilter(Hangfire.IGlobalConfiguration,System.IServiceProvider)">
+            <summary>
+            Adds <see cref="T:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter"/> to the Hangfire global configuration pipeline.
+            Call this inside your <c>AddHangfire</c> configuration block:
+            <code>
+            services.AddHangfire((sp, config) =&gt;
+            {
+                config.UseSqlServerStorage(...);
+                config.UseTenantJobFilter(sp);
+            });
+            </code>
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService">
+            <summary>
+            Base class for tenant-aware hosted services (<see cref="T:Microsoft.Extensions.Hosting.IHostedService"/>).
+            Override <see cref="M:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteForTenantAsync(AspNetCore.Multitenancy.ITenantContext,System.Threading.CancellationToken)"/> to implement per-tenant logic.
+            The base class iterates all active tenants and calls your method in a scoped tenant context.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteForTenantAsync(AspNetCore.Multitenancy.ITenantContext,System.Threading.CancellationToken)">
+            <summary>
+            Override to implement per-tenant background work.
+            Called once per active tenant on each execution cycle.
+            </summary>
+            <param name="tenantContext">The tenant context for the current tenant.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.DelayAsync(System.Threading.CancellationToken)">
+            <summary>
+            Override to control how long to wait between execution cycles.
+            Default: 1 minute.
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator">
+            <summary>
+            Resolves Hangfire job instances from a per-tenant DI scope, ensuring that
+            any scoped services (including <see cref="T:AspNetCore.Multitenancy.ITenantContext"/>) are resolved
+            from the correct tenant scope.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob(System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope(Hangfire.Server.PerformContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter">
+             <summary>
+             Hangfire server filter that automatically propagates tenant context into background jobs.
+            
+             On enqueue: serializes the current <c>TenantId</c> into the Hangfire job parameters.
+             On execute: reads <c>TenantId</c> from job params, creates a tenant DI scope,
+                         sets <see cref="T:AspNetCore.Multitenancy.ITenantContext"/>, then executes the job in that scope.
+            
+             Register once in Program.cs — jobs see a fully populated ITenantContext identical
+             to an HTTP request context.
+             </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreating(Hangfire.Client.CreatingContext)">
+            <summary>Serializes the current tenant ID into the Hangfire job parameters at enqueue time.</summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerforming(Hangfire.Server.PerformingContext)">
+            <summary>Restores the tenant context before executing the job.</summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerformed(Hangfire.Server.PerformedContext)">
+            <summary>Disposes the tenant scope after job execution.</summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager">
+            <summary>
+            Schedules Hangfire recurring jobs for every active tenant automatically.
+            Use this instead of <see cref="T:Hangfire.RecurringJob"/> directly to ensure jobs
+            run once per tenant with a properly populated <see cref="T:AspNetCore.Multitenancy.ITenantContext"/>.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync``1(System.String,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Threading.Tasks.Task}},System.Threading.CancellationToken)">
+            <summary>
+            Schedules <typeparamref name="TJob"/> as a recurring Hangfire job for every active tenant.
+            Each tenant gets its own job entry: <c>{jobId}-{tenantId}</c>.
+            </summary>
+            <typeparam name="TJob">The Hangfire job type. Must have an <c>Execute()</c> or <c>ExecuteAsync()</c> method.</typeparam>
+            <param name="jobId">Base job identifier (e.g., "daily-report").</param>
+            <param name="cron">Cron expression (e.g., <see cref="M:Hangfire.Cron.Daily"/>).</param>
+            <param name="methodSelector">
+            Expression pointing to the job method.
+            Example: <c>job => job.ExecuteAsync()</c>
+            </param>
+            <param name="cancellationToken">Cancellation token.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Removes all recurring job entries for the given job ID across all tenants.
+            </summary>
+        </member>
+    </members>
+</doc>

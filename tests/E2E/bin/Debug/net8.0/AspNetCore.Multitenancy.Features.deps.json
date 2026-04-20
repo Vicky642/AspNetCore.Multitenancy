@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AspNetCore.Multitenancy.Features/0.1.0": {
+        "dependencies": {
+          "AspNetCore.Multitenancy.Core": "0.1.0"
+        },
+        "runtime": {
+          "AspNetCore.Multitenancy.Features.dll": {}
+        }
+      },
+      "AspNetCore.Multitenancy.Core/0.1.0": {
+        "runtime": {
+          "AspNetCore.Multitenancy.Core.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AspNetCore.Multitenancy.Features/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AspNetCore.Multitenancy.Core/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

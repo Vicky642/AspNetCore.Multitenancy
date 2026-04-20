@@ -1,0 +1,7 @@
+{
+  "AspNetCore.Multitenancy.Core, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\src\\Core",
+  "AspNetCore.Multitenancy.EFCore, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\src\\EntityFrameworkCore",
+  "AspNetCore.Multitenancy.Features, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\src\\FeatureFlags",
+  "AspNetCore.Multitenancy.Resolvers, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\src\\Resolvers",
+  "AspNetCore.Multitenancy.Storage, Version=0.1.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\src\\FileStorage"
+}

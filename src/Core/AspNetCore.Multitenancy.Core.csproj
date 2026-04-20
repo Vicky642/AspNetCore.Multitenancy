@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>AspNetCore.Multitenancy</RootNamespace>
+
+    <!-- NuGet metadata -->
+    <PackageId>AspNetCore.Multitenancy.Core</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>AspNetCore.Multitenancy Contributors</Authors>
+    <Description>Core abstractions for multi-tenancy in ASP.NET Core 8+. Provides ITenantContext, ITenantResolver, TenantInfo, TenantMiddleware, and the AddMultitenancy() fluent builder.</Description>
+    <PackageTags>aspnetcore;multitenancy;saas;tenancy</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Vicky642/AspNetCore.Multitenancy</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Vicky642/AspNetCore.Multitenancy</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="AspNetCore.Multitenancy.Hangfire" />
+  </ItemGroup>
+
+</Project>
