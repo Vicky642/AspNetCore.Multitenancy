@@ -1,0 +1,484 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  commentId: T:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  id: TenantStoragePathBuilder
+  parent: AspNetCore.Multitenancy.FileStorage
+  children:
+  - AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.#ctor(AspNetCore.Multitenancy.ITenantContext)
+  - AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build(System.String)
+  - AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix(System.String)
+  langs:
+  - csharp
+  - vb
+  name: TenantStoragePathBuilder
+  nameWithType: TenantStoragePathBuilder
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  type: Class
+  source:
+    remote:
+      path: src/FileStorage/TenantStoragePathBuilder.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: TenantStoragePathBuilder
+    path: ../src/FileStorage/TenantStoragePathBuilder.cs
+    startLine: 8
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: >-
+    Prepends the current tenant ID to all storage paths, ensuring complete
+
+    isolation between tenants even in a shared storage backend.
+
+
+    Example: tenant "acme" + path "invoices/jan.pdf" → "tenant-acme/invoices/jan.pdf"
+  example: []
+  syntax:
+    content: public class TenantStoragePathBuilder
+    content.vb: Public Class TenantStoragePathBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.#ctor(AspNetCore.Multitenancy.ITenantContext)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.#ctor(AspNetCore.Multitenancy.ITenantContext)
+  id: '#ctor(AspNetCore.Multitenancy.ITenantContext)'
+  parent: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  langs:
+  - csharp
+  - vb
+  name: TenantStoragePathBuilder(ITenantContext)
+  nameWithType: TenantStoragePathBuilder.TenantStoragePathBuilder(ITenantContext)
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.TenantStoragePathBuilder(AspNetCore.Multitenancy.ITenantContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/FileStorage/TenantStoragePathBuilder.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: .ctor
+    path: ../src/FileStorage/TenantStoragePathBuilder.cs
+    startLine: 12
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  syntax:
+    content: public TenantStoragePathBuilder(ITenantContext tenantContext)
+    parameters:
+    - id: tenantContext
+      type: AspNetCore.Multitenancy.ITenantContext
+    content.vb: Public Sub New(tenantContext As ITenantContext)
+  overload: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.#ctor*
+  nameWithType.vb: TenantStoragePathBuilder.New(ITenantContext)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.New(AspNetCore.Multitenancy.ITenantContext)
+  name.vb: New(ITenantContext)
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build(System.String)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build(System.String)
+  id: Build(System.String)
+  parent: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  langs:
+  - csharp
+  - vb
+  name: Build(string)
+  nameWithType: TenantStoragePathBuilder.Build(string)
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build(string)
+  type: Method
+  source:
+    remote:
+      path: src/FileStorage/TenantStoragePathBuilder.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: Build
+    path: ../src/FileStorage/TenantStoragePathBuilder.cs
+    startLine: 22
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: Builds the fully-qualified storage path for the current tenant.
+  example: []
+  syntax:
+    content: public string Build(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The logical path (e.g., "invoices/jan.pdf").
+    return:
+      type: System.String
+      description: The tenant-prefixed path (e.g., "tenant-acme/invoices/jan.pdf").
+    content.vb: Public Function Build(path As String) As String
+  overload: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build*
+  nameWithType.vb: TenantStoragePathBuilder.Build(String)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build(String)
+  name.vb: Build(String)
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix(System.String)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix(System.String)
+  id: StripPrefix(System.String)
+  parent: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  langs:
+  - csharp
+  - vb
+  name: StripPrefix(string)
+  nameWithType: TenantStoragePathBuilder.StripPrefix(string)
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix(string)
+  type: Method
+  source:
+    remote:
+      path: src/FileStorage/TenantStoragePathBuilder.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: StripPrefix
+    path: ../src/FileStorage/TenantStoragePathBuilder.cs
+    startLine: 35
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: Strips the tenant prefix from a full storage path, returning the logical path.
+  example: []
+  syntax:
+    content: public string StripPrefix(string fullPath)
+    parameters:
+    - id: fullPath
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function StripPrefix(fullPath As String) As String
+  overload: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix*
+  nameWithType.vb: TenantStoragePathBuilder.StripPrefix(String)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix(String)
+  name.vb: StripPrefix(String)
+references:
+- uid: AspNetCore.Multitenancy.FileStorage
+  commentId: N:AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.FileStorage
+  nameWithType: AspNetCore.Multitenancy.FileStorage
+  fullName: AspNetCore.Multitenancy.FileStorage
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.#ctor*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.#ctor
+  href: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html#AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder__ctor_AspNetCore_Multitenancy_ITenantContext_
+  name: TenantStoragePathBuilder
+  nameWithType: TenantStoragePathBuilder.TenantStoragePathBuilder
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.TenantStoragePathBuilder
+  nameWithType.vb: TenantStoragePathBuilder.New
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.New
+  name.vb: New
+- uid: AspNetCore.Multitenancy.ITenantContext
+  commentId: T:AspNetCore.Multitenancy.ITenantContext
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.ITenantContext.html
+  name: ITenantContext
+  nameWithType: ITenantContext
+  fullName: AspNetCore.Multitenancy.ITenantContext
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build
+  href: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html#AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder_Build_System_String_
+  name: Build
+  nameWithType: TenantStoragePathBuilder.Build
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix
+  href: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html#AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder_StripPrefix_System_String_
+  name: StripPrefix
+  nameWithType: TenantStoragePathBuilder.StripPrefix
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix

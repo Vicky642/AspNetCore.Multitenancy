@@ -1,0 +1,543 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  commentId: T:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  id: ITenantStorageProvider
+  parent: AspNetCore.Multitenancy.FileStorage
+  children:
+  - AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  - AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  - AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  - AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ITenantStorageProvider
+  nameWithType: ITenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  type: Interface
+  source:
+    remote:
+      path: src/FileStorage/ITenantStorageProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ITenantStorageProvider
+    path: ../src/FileStorage/ITenantStorageProvider.cs
+    startLine: 7
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: >-
+    Abstraction for tenant-isolated file storage.
+
+    All paths are automatically prefixed with the current tenant ID —
+
+    tenant A can never access tenant B's files even in a shared bucket.
+  example: []
+  syntax:
+    content: public interface ITenantStorageProvider
+    content.vb: Public Interface ITenantStorageProvider
+  derivedClasses:
+  - AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  - AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider
+  - AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  id: UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: UploadAsync(string, Stream, string?, CancellationToken)
+  nameWithType: ITenantStorageProvider.UploadAsync(string, Stream, string?, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(string, System.IO.Stream, string?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/FileStorage/ITenantStorageProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: UploadAsync
+    path: ../src/FileStorage/ITenantStorageProvider.cs
+    startLine: 17
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: Uploads a file. The path is automatically prefixed with the tenant ID.
+  example: []
+  syntax:
+    content: Task<string> UploadAsync(string path, Stream content, string? contentType = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: path
+      type: System.String
+      description: Logical path (e.g., "invoices/jan.pdf").
+    - id: content
+      type: System.IO.Stream
+      description: File content stream.
+    - id: contentType
+      type: System.String
+      description: Optional MIME type.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The full storage path including tenant prefix.
+    content.vb: Function UploadAsync(path As String, content As Stream, contentType As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of String)
+  overload: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync*
+  nameWithType.vb: ITenantStorageProvider.UploadAsync(String, Stream, String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(String, System.IO.Stream, String, System.Threading.CancellationToken)
+  name.vb: UploadAsync(String, Stream, String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  id: DownloadAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: DownloadAsync(string, CancellationToken)
+  nameWithType: ITenantStorageProvider.DownloadAsync(string, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/FileStorage/ITenantStorageProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: DownloadAsync
+    path: ../src/FileStorage/ITenantStorageProvider.cs
+    startLine: 24
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: Downloads a file by its logical path.
+  example: []
+  syntax:
+    content: Task<Stream> DownloadAsync(string path, CancellationToken cancellationToken = default)
+    parameters:
+    - id: path
+      type: System.String
+      description: Logical path (e.g., "invoices/jan.pdf").
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+    content.vb: Function DownloadAsync(path As String, cancellationToken As CancellationToken = Nothing) As Task(Of Stream)
+  overload: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync*
+  nameWithType.vb: ITenantStorageProvider.DownloadAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(String, System.Threading.CancellationToken)
+  name.vb: DownloadAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(string, CancellationToken)
+  nameWithType: ITenantStorageProvider.DeleteAsync(string, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/FileStorage/ITenantStorageProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: DeleteAsync
+    path: ../src/FileStorage/ITenantStorageProvider.cs
+    startLine: 29
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: Deletes a file by its logical path.
+  example: []
+  syntax:
+    content: Task DeleteAsync(string path, CancellationToken cancellationToken = default)
+    parameters:
+    - id: path
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteAsync(path As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync*
+  nameWithType.vb: ITenantStorageProvider.DeleteAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(String, System.Threading.CancellationToken)
+  name.vb: DeleteAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(string?, CancellationToken)
+  nameWithType: ITenantStorageProvider.ListAsync(string?, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(string?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/FileStorage/ITenantStorageProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ListAsync
+    path: ../src/FileStorage/ITenantStorageProvider.cs
+    startLine: 36
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: Lists all files under the given prefix (within the current tenant's namespace).
+  example: []
+  syntax:
+    content: Task<IEnumerable<string>> ListAsync(string? prefix = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: Optional path prefix to filter results.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+    content.vb: Function ListAsync(prefix As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of String))
+  overload: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync*
+  nameWithType.vb: ITenantStorageProvider.ListAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(String, System.Threading.CancellationToken)
+  name.vb: ListAsync(String, CancellationToken)
+references:
+- uid: AspNetCore.Multitenancy.FileStorage
+  commentId: N:AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.FileStorage
+  nameWithType: AspNetCore.Multitenancy.FileStorage
+  fullName: AspNetCore.Multitenancy.FileStorage
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync
+  href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_UploadAsync_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_
+  name: UploadAsync
+  nameWithType: ITenantStorageProvider.UploadAsync
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync
+  href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DownloadAsync_System_String_System_Threading_CancellationToken_
+  name: DownloadAsync
+  nameWithType: ITenantStorageProvider.DownloadAsync
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Stream>
+  nameWithType: Task<Stream>
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  nameWithType.vb: Task(Of Stream)
+  fullName.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync
+  href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DeleteAsync_System_String_System_Threading_CancellationToken_
+  name: DeleteAsync
+  nameWithType: ITenantStorageProvider.DeleteAsync
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync
+  href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_ListAsync_System_String_System_Threading_CancellationToken_
+  name: ListAsync
+  nameWithType: ITenantStorageProvider.ListAsync
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<string>>
+  nameWithType: Task<IEnumerable<string>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<string>>
+  nameWithType.vb: Task(Of IEnumerable(Of String))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Task(Of IEnumerable(Of String))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )

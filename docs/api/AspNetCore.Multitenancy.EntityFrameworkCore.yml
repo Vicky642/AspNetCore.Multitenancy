@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore
+  commentId: N:AspNetCore.Multitenancy.EntityFrameworkCore
+  id: AspNetCore.Multitenancy.EntityFrameworkCore
+  children:
+  - AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+  - AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+  - AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext
+  - AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions
+  - AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+  - AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+  langs:
+  - csharp
+  - vb
+  name: AspNetCore.Multitenancy.EntityFrameworkCore
+  nameWithType: AspNetCore.Multitenancy.EntityFrameworkCore
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore
+  type: Namespace
+  assemblies:
+  - AspNetCore.Multitenancy.EFCore
+references:
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.html
+  name: EFCoreExtensions
+  nameWithType: EFCoreExtensions
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.html
+  name: ITenantEntity
+  nameWithType: ITenantEntity
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html
+  name: MultitenantDbContext
+  nameWithType: MultitenantDbContext
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.html
+  name: QueryFilterExtensions
+  nameWithType: QueryFilterExtensions
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html
+  name: TenantDbContextFactory<TContext>
+  nameWithType: TenantDbContextFactory<TContext>
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory<TContext>
+  nameWithType.vb: TenantDbContextFactory(Of TContext)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory(Of TContext)
+  name.vb: TenantDbContextFactory(Of TContext)
+  spec.csharp:
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+    name: TenantDbContextFactory
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+    name: TenantDbContextFactory
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html
+  name: TenantSchemaMigrator<TContext>
+  nameWithType: TenantSchemaMigrator<TContext>
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator<TContext>
+  nameWithType.vb: TenantSchemaMigrator(Of TContext)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator(Of TContext)
+  name.vb: TenantSchemaMigrator(Of TContext)
+  spec.csharp:
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+    name: TenantSchemaMigrator
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+    name: TenantSchemaMigrator
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )

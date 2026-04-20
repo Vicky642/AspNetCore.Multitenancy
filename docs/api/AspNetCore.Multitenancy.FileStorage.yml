@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.FileStorage
+  commentId: N:AspNetCore.Multitenancy.FileStorage
+  id: AspNetCore.Multitenancy.FileStorage
+  children:
+  - AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  - AspNetCore.Multitenancy.FileStorage.StorageExtensions
+  - AspNetCore.Multitenancy.FileStorage.StorageProvider
+  - AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  langs:
+  - csharp
+  - vb
+  name: AspNetCore.Multitenancy.FileStorage
+  nameWithType: AspNetCore.Multitenancy.FileStorage
+  fullName: AspNetCore.Multitenancy.FileStorage
+  type: Namespace
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+references:
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  commentId: T:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  parent: AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html
+  name: ITenantStorageProvider
+  nameWithType: ITenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.StorageProvider
+  commentId: T:AspNetCore.Multitenancy.FileStorage.StorageProvider
+  parent: AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.Multitenancy.FileStorage.StorageProvider.html
+  name: StorageProvider
+  nameWithType: StorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.StorageExtensions
+  commentId: T:AspNetCore.Multitenancy.FileStorage.StorageExtensions
+  parent: AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.Multitenancy.FileStorage.StorageExtensions.html
+  name: StorageExtensions
+  nameWithType: StorageExtensions
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageExtensions
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  commentId: T:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  parent: AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html
+  name: TenantStoragePathBuilder
+  nameWithType: TenantStoragePathBuilder
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+- uid: AspNetCore.Multitenancy.FileStorage
+  commentId: N:AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.FileStorage
+  nameWithType: AspNetCore.Multitenancy.FileStorage
+  fullName: AspNetCore.Multitenancy.FileStorage
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html

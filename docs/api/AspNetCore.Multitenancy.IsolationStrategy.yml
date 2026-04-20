@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.IsolationStrategy
+  commentId: T:AspNetCore.Multitenancy.IsolationStrategy
+  id: IsolationStrategy
+  parent: AspNetCore.Multitenancy
+  children:
+  - AspNetCore.Multitenancy.IsolationStrategy.DbPerTenant
+  - AspNetCore.Multitenancy.IsolationStrategy.RowLevel
+  - AspNetCore.Multitenancy.IsolationStrategy.SchemaPerTenant
+  langs:
+  - csharp
+  - vb
+  name: IsolationStrategy
+  nameWithType: IsolationStrategy
+  fullName: AspNetCore.Multitenancy.IsolationStrategy
+  type: Enum
+  source:
+    remote:
+      path: src/Core/MultitenancyOptions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: IsolationStrategy
+    path: ../src/Core/MultitenancyOptions.cs
+    startLine: 20
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: Specifies the database isolation strategy for tenant data.
+  example: []
+  syntax:
+    content: public enum IsolationStrategy
+    content.vb: Public Enum IsolationStrategy
+- uid: AspNetCore.Multitenancy.IsolationStrategy.DbPerTenant
+  commentId: F:AspNetCore.Multitenancy.IsolationStrategy.DbPerTenant
+  id: DbPerTenant
+  parent: AspNetCore.Multitenancy.IsolationStrategy
+  langs:
+  - csharp
+  - vb
+  name: DbPerTenant
+  nameWithType: IsolationStrategy.DbPerTenant
+  fullName: AspNetCore.Multitenancy.IsolationStrategy.DbPerTenant
+  type: Field
+  source:
+    remote:
+      path: src/Core/MultitenancyOptions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: DbPerTenant
+    path: ../src/Core/MultitenancyOptions.cs
+    startLine: 23
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: Each tenant gets a completely separate database.
+  example: []
+  syntax:
+    content: DbPerTenant = 0
+    return:
+      type: AspNetCore.Multitenancy.IsolationStrategy
+- uid: AspNetCore.Multitenancy.IsolationStrategy.SchemaPerTenant
+  commentId: F:AspNetCore.Multitenancy.IsolationStrategy.SchemaPerTenant
+  id: SchemaPerTenant
+  parent: AspNetCore.Multitenancy.IsolationStrategy
+  langs:
+  - csharp
+  - vb
+  name: SchemaPerTenant
+  nameWithType: IsolationStrategy.SchemaPerTenant
+  fullName: AspNetCore.Multitenancy.IsolationStrategy.SchemaPerTenant
+  type: Field
+  source:
+    remote:
+      path: src/Core/MultitenancyOptions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: SchemaPerTenant
+    path: ../src/Core/MultitenancyOptions.cs
+    startLine: 26
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: All tenants share a database but use separate schemas.
+  example: []
+  syntax:
+    content: SchemaPerTenant = 1
+    return:
+      type: AspNetCore.Multitenancy.IsolationStrategy
+- uid: AspNetCore.Multitenancy.IsolationStrategy.RowLevel
+  commentId: F:AspNetCore.Multitenancy.IsolationStrategy.RowLevel
+  id: RowLevel
+  parent: AspNetCore.Multitenancy.IsolationStrategy
+  langs:
+  - csharp
+  - vb
+  name: RowLevel
+  nameWithType: IsolationStrategy.RowLevel
+  fullName: AspNetCore.Multitenancy.IsolationStrategy.RowLevel
+  type: Field
+  source:
+    remote:
+      path: src/Core/MultitenancyOptions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: RowLevel
+    path: ../src/Core/MultitenancyOptions.cs
+    startLine: 29
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: All tenants share tables; data is filtered by a TenantId column.
+  example: []
+  syntax:
+    content: RowLevel = 2
+    return:
+      type: AspNetCore.Multitenancy.IsolationStrategy
+references:
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+- uid: AspNetCore.Multitenancy.IsolationStrategy
+  commentId: T:AspNetCore.Multitenancy.IsolationStrategy
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.IsolationStrategy.html
+  name: IsolationStrategy
+  nameWithType: IsolationStrategy
+  fullName: AspNetCore.Multitenancy.IsolationStrategy

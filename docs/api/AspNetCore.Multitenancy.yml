@@ -1,0 +1,130 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  id: AspNetCore.Multitenancy
+  children:
+  - AspNetCore.Multitenancy.ITenantContext
+  - AspNetCore.Multitenancy.ITenantResolver
+  - AspNetCore.Multitenancy.ITenantStore
+  - AspNetCore.Multitenancy.InMemoryTenantStore
+  - AspNetCore.Multitenancy.IsolationStrategy
+  - AspNetCore.Multitenancy.MultitenancyBuilder
+  - AspNetCore.Multitenancy.MultitenancyOptions
+  - AspNetCore.Multitenancy.ServiceCollectionExtensions
+  - AspNetCore.Multitenancy.TenantInfo
+  - AspNetCore.Multitenancy.TenantMiddleware
+  - AspNetCore.Multitenancy.TenantNotFoundException
+  - AspNetCore.Multitenancy.TenantStore
+  langs:
+  - csharp
+  - vb
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  type: Namespace
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+references:
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore
+  commentId: T:AspNetCore.Multitenancy.InMemoryTenantStore
+  href: AspNetCore.Multitenancy.InMemoryTenantStore.html
+  name: InMemoryTenantStore
+  nameWithType: InMemoryTenantStore
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore
+- uid: AspNetCore.Multitenancy.ITenantContext
+  commentId: T:AspNetCore.Multitenancy.ITenantContext
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.ITenantContext.html
+  name: ITenantContext
+  nameWithType: ITenantContext
+  fullName: AspNetCore.Multitenancy.ITenantContext
+- uid: AspNetCore.Multitenancy.ITenantResolver
+  commentId: T:AspNetCore.Multitenancy.ITenantResolver
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.ITenantResolver.html
+  name: ITenantResolver
+  nameWithType: ITenantResolver
+  fullName: AspNetCore.Multitenancy.ITenantResolver
+- uid: AspNetCore.Multitenancy.ITenantStore
+  commentId: T:AspNetCore.Multitenancy.ITenantStore
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.ITenantStore.html
+  name: ITenantStore
+  nameWithType: ITenantStore
+  fullName: AspNetCore.Multitenancy.ITenantStore
+- uid: AspNetCore.Multitenancy.MultitenancyBuilder
+  commentId: T:AspNetCore.Multitenancy.MultitenancyBuilder
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.MultitenancyBuilder.html
+  name: MultitenancyBuilder
+  nameWithType: MultitenancyBuilder
+  fullName: AspNetCore.Multitenancy.MultitenancyBuilder
+- uid: AspNetCore.Multitenancy.TenantStore
+  commentId: T:AspNetCore.Multitenancy.TenantStore
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.TenantStore.html
+  name: TenantStore
+  nameWithType: TenantStore
+  fullName: AspNetCore.Multitenancy.TenantStore
+- uid: AspNetCore.Multitenancy.IsolationStrategy
+  commentId: T:AspNetCore.Multitenancy.IsolationStrategy
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.IsolationStrategy.html
+  name: IsolationStrategy
+  nameWithType: IsolationStrategy
+  fullName: AspNetCore.Multitenancy.IsolationStrategy
+- uid: AspNetCore.Multitenancy.MultitenancyOptions
+  commentId: T:AspNetCore.Multitenancy.MultitenancyOptions
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.MultitenancyOptions.html
+  name: MultitenancyOptions
+  nameWithType: MultitenancyOptions
+  fullName: AspNetCore.Multitenancy.MultitenancyOptions
+- uid: AspNetCore.Multitenancy.ServiceCollectionExtensions
+  commentId: T:AspNetCore.Multitenancy.ServiceCollectionExtensions
+  href: AspNetCore.Multitenancy.ServiceCollectionExtensions.html
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: AspNetCore.Multitenancy.ServiceCollectionExtensions
+- uid: AspNetCore.Multitenancy.TenantInfo
+  commentId: T:AspNetCore.Multitenancy.TenantInfo
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.TenantInfo.html
+  name: TenantInfo
+  nameWithType: TenantInfo
+  fullName: AspNetCore.Multitenancy.TenantInfo
+- uid: AspNetCore.Multitenancy.TenantMiddleware
+  commentId: T:AspNetCore.Multitenancy.TenantMiddleware
+  href: AspNetCore.Multitenancy.TenantMiddleware.html
+  name: TenantMiddleware
+  nameWithType: TenantMiddleware
+  fullName: AspNetCore.Multitenancy.TenantMiddleware
+- uid: AspNetCore.Multitenancy.TenantNotFoundException
+  commentId: T:AspNetCore.Multitenancy.TenantNotFoundException
+  href: AspNetCore.Multitenancy.TenantNotFoundException.html
+  name: TenantNotFoundException
+  nameWithType: TenantNotFoundException
+  fullName: AspNetCore.Multitenancy.TenantNotFoundException
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html

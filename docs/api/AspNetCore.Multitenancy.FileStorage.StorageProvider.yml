@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.FileStorage.StorageProvider
+  commentId: T:AspNetCore.Multitenancy.FileStorage.StorageProvider
+  id: StorageProvider
+  parent: AspNetCore.Multitenancy.FileStorage
+  children:
+  - AspNetCore.Multitenancy.FileStorage.StorageProvider.AzureBlob
+  - AspNetCore.Multitenancy.FileStorage.StorageProvider.Local
+  - AspNetCore.Multitenancy.FileStorage.StorageProvider.S3
+  langs:
+  - csharp
+  - vb
+  name: StorageProvider
+  nameWithType: StorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageProvider
+  type: Enum
+  source:
+    remote:
+      path: src/FileStorage/StorageExtensions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: StorageProvider
+    path: ../src/FileStorage/StorageExtensions.cs
+    startLine: 7
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: Specifies which storage backend to use.
+  example: []
+  syntax:
+    content: public enum StorageProvider
+    content.vb: Public Enum StorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.StorageProvider.Local
+  commentId: F:AspNetCore.Multitenancy.FileStorage.StorageProvider.Local
+  id: Local
+  parent: AspNetCore.Multitenancy.FileStorage.StorageProvider
+  langs:
+  - csharp
+  - vb
+  name: Local
+  nameWithType: StorageProvider.Local
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageProvider.Local
+  type: Field
+  source:
+    remote:
+      path: src/FileStorage/StorageExtensions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: Local
+    path: ../src/FileStorage/StorageExtensions.cs
+    startLine: 10
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: Local disk. For development and single-server deployments.
+  example: []
+  syntax:
+    content: Local = 0
+    return:
+      type: AspNetCore.Multitenancy.FileStorage.StorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.StorageProvider.S3
+  commentId: F:AspNetCore.Multitenancy.FileStorage.StorageProvider.S3
+  id: S3
+  parent: AspNetCore.Multitenancy.FileStorage.StorageProvider
+  langs:
+  - csharp
+  - vb
+  name: S3
+  nameWithType: StorageProvider.S3
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageProvider.S3
+  type: Field
+  source:
+    remote:
+      path: src/FileStorage/StorageExtensions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: S3
+    path: ../src/FileStorage/StorageExtensions.cs
+    startLine: 12
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: AWS S3.
+  example: []
+  syntax:
+    content: S3 = 1
+    return:
+      type: AspNetCore.Multitenancy.FileStorage.StorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.StorageProvider.AzureBlob
+  commentId: F:AspNetCore.Multitenancy.FileStorage.StorageProvider.AzureBlob
+  id: AzureBlob
+  parent: AspNetCore.Multitenancy.FileStorage.StorageProvider
+  langs:
+  - csharp
+  - vb
+  name: AzureBlob
+  nameWithType: StorageProvider.AzureBlob
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageProvider.AzureBlob
+  type: Field
+  source:
+    remote:
+      path: src/FileStorage/StorageExtensions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: AzureBlob
+    path: ../src/FileStorage/StorageExtensions.cs
+    startLine: 14
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage
+  summary: Azure Blob Storage.
+  example: []
+  syntax:
+    content: AzureBlob = 2
+    return:
+      type: AspNetCore.Multitenancy.FileStorage.StorageProvider
+references:
+- uid: AspNetCore.Multitenancy.FileStorage
+  commentId: N:AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.FileStorage
+  nameWithType: AspNetCore.Multitenancy.FileStorage
+  fullName: AspNetCore.Multitenancy.FileStorage
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html
+- uid: AspNetCore.Multitenancy.FileStorage.StorageProvider
+  commentId: T:AspNetCore.Multitenancy.FileStorage.StorageProvider
+  parent: AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.Multitenancy.FileStorage.StorageProvider.html
+  name: StorageProvider
+  nameWithType: StorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageProvider

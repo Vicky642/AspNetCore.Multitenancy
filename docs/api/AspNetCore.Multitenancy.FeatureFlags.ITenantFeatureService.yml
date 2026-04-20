@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  id: ITenantFeatureService
+  parent: AspNetCore.Multitenancy.FeatureFlags
+  children:
+  - AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+  - AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ITenantFeatureService
+  nameWithType: ITenantFeatureService
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  type: Interface
+  source:
+    remote:
+      path: src/FeatureFlags/ITenantFeatureService.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ITenantFeatureService
+    path: ../src/FeatureFlags/ITenantFeatureService.cs
+    startLine: 6
+  assemblies:
+  - AspNetCore.Multitenancy.Features
+  namespace: AspNetCore.Multitenancy.FeatureFlags
+  summary: >-
+    Checks whether a named feature is enabled for the current tenant.
+
+    Features are gated by the tenant's subscription plan.
+  example: []
+  syntax:
+    content: public interface ITenantFeatureService
+    content.vb: Public Interface ITenantFeatureService
+  derivedClasses:
+  - AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(System.String)
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(System.String)
+  id: IsEnabled(System.String)
+  parent: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  langs:
+  - csharp
+  - vb
+  name: IsEnabled(string)
+  nameWithType: ITenantFeatureService.IsEnabled(string)
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(string)
+  type: Method
+  source:
+    remote:
+      path: src/FeatureFlags/ITenantFeatureService.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: IsEnabled
+    path: ../src/FeatureFlags/ITenantFeatureService.cs
+    startLine: 12
+  assemblies:
+  - AspNetCore.Multitenancy.Features
+  namespace: AspNetCore.Multitenancy.FeatureFlags
+  summary: Returns <code>true</code> if the named feature is enabled for the current tenant's plan.
+  example: []
+  syntax:
+    content: bool IsEnabled(string featureName)
+    parameters:
+    - id: featureName
+      type: System.String
+      description: The feature name to check (e.g., "AdvancedReporting").
+    return:
+      type: System.Boolean
+    content.vb: Function IsEnabled(featureName As String) As Boolean
+  overload: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled*
+  nameWithType.vb: ITenantFeatureService.IsEnabled(String)
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(String)
+  name.vb: IsEnabled(String)
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+  id: GetEnabledFeatures
+  parent: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  langs:
+  - csharp
+  - vb
+  name: GetEnabledFeatures()
+  nameWithType: ITenantFeatureService.GetEnabledFeatures()
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures()
+  type: Method
+  source:
+    remote:
+      path: src/FeatureFlags/ITenantFeatureService.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: GetEnabledFeatures
+    path: ../src/FeatureFlags/ITenantFeatureService.cs
+    startLine: 17
+  assemblies:
+  - AspNetCore.Multitenancy.Features
+  namespace: AspNetCore.Multitenancy.FeatureFlags
+  summary: Returns all features enabled for the current tenant's plan.
+  example: []
+  syntax:
+    content: IReadOnlySet<string> GetEnabledFeatures()
+    return:
+      type: System.Collections.Generic.IReadOnlySet{System.String}
+    content.vb: Function GetEnabledFeatures() As IReadOnlySet(Of String)
+  overload: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures*
+references:
+- uid: AspNetCore.Multitenancy.FeatureFlags
+  commentId: N:AspNetCore.Multitenancy.FeatureFlags
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.FeatureFlags
+  nameWithType: AspNetCore.Multitenancy.FeatureFlags
+  fullName: AspNetCore.Multitenancy.FeatureFlags
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FeatureFlags
+    name: FeatureFlags
+    href: AspNetCore.Multitenancy.FeatureFlags.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FeatureFlags
+    name: FeatureFlags
+    href: AspNetCore.Multitenancy.FeatureFlags.html
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled*
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled
+  href: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_IsEnabled_System_String_
+  name: IsEnabled
+  nameWithType: ITenantFeatureService.IsEnabled
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures*
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+  href: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_GetEnabledFeatures
+  name: GetEnabledFeatures
+  nameWithType: ITenantFeatureService.GetEnabledFeatures
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+- uid: System.Collections.Generic.IReadOnlySet{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlySet{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlySet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  name: IReadOnlySet<string>
+  nameWithType: IReadOnlySet<string>
+  fullName: System.Collections.Generic.IReadOnlySet<string>
+  nameWithType.vb: IReadOnlySet(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlySet(Of String)
+  name.vb: IReadOnlySet(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlySet`1
+  commentId: T:System.Collections.Generic.IReadOnlySet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  name: IReadOnlySet<T>
+  nameWithType: IReadOnlySet<T>
+  fullName: System.Collections.Generic.IReadOnlySet<T>
+  nameWithType.vb: IReadOnlySet(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlySet(Of T)
+  name.vb: IReadOnlySet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

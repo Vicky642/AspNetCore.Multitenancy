@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.TenantStore
+  commentId: T:AspNetCore.Multitenancy.TenantStore
+  id: TenantStore
+  parent: AspNetCore.Multitenancy
+  children:
+  - AspNetCore.Multitenancy.TenantStore.Configuration
+  - AspNetCore.Multitenancy.TenantStore.EntityFramework
+  - AspNetCore.Multitenancy.TenantStore.InMemory
+  langs:
+  - csharp
+  - vb
+  name: TenantStore
+  nameWithType: TenantStore
+  fullName: AspNetCore.Multitenancy.TenantStore
+  type: Enum
+  source:
+    remote:
+      path: src/Core/MultitenancyOptions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: TenantStore
+    path: ../src/Core/MultitenancyOptions.cs
+    startLine: 5
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: Specifies where tenants are persisted.
+  example: []
+  syntax:
+    content: public enum TenantStore
+    content.vb: Public Enum TenantStore
+- uid: AspNetCore.Multitenancy.TenantStore.InMemory
+  commentId: F:AspNetCore.Multitenancy.TenantStore.InMemory
+  id: InMemory
+  parent: AspNetCore.Multitenancy.TenantStore
+  langs:
+  - csharp
+  - vb
+  name: InMemory
+  nameWithType: TenantStore.InMemory
+  fullName: AspNetCore.Multitenancy.TenantStore.InMemory
+  type: Field
+  source:
+    remote:
+      path: src/Core/MultitenancyOptions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: InMemory
+    path: ../src/Core/MultitenancyOptions.cs
+    startLine: 8
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: In-memory store — for development and testing only.
+  example: []
+  syntax:
+    content: InMemory = 0
+    return:
+      type: AspNetCore.Multitenancy.TenantStore
+- uid: AspNetCore.Multitenancy.TenantStore.EntityFramework
+  commentId: F:AspNetCore.Multitenancy.TenantStore.EntityFramework
+  id: EntityFramework
+  parent: AspNetCore.Multitenancy.TenantStore
+  langs:
+  - csharp
+  - vb
+  name: EntityFramework
+  nameWithType: TenantStore.EntityFramework
+  fullName: AspNetCore.Multitenancy.TenantStore.EntityFramework
+  type: Field
+  source:
+    remote:
+      path: src/Core/MultitenancyOptions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: EntityFramework
+    path: ../src/Core/MultitenancyOptions.cs
+    startLine: 11
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: Tenants are stored in a database via Entity Framework Core.
+  example: []
+  syntax:
+    content: EntityFramework = 1
+    return:
+      type: AspNetCore.Multitenancy.TenantStore
+- uid: AspNetCore.Multitenancy.TenantStore.Configuration
+  commentId: F:AspNetCore.Multitenancy.TenantStore.Configuration
+  id: Configuration
+  parent: AspNetCore.Multitenancy.TenantStore
+  langs:
+  - csharp
+  - vb
+  name: Configuration
+  nameWithType: TenantStore.Configuration
+  fullName: AspNetCore.Multitenancy.TenantStore.Configuration
+  type: Field
+  source:
+    remote:
+      path: src/Core/MultitenancyOptions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: Configuration
+    path: ../src/Core/MultitenancyOptions.cs
+    startLine: 14
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: Tenants are loaded from appsettings.json configuration.
+  example: []
+  syntax:
+    content: Configuration = 2
+    return:
+      type: AspNetCore.Multitenancy.TenantStore
+references:
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+- uid: AspNetCore.Multitenancy.TenantStore
+  commentId: T:AspNetCore.Multitenancy.TenantStore
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.TenantStore.html
+  name: TenantStore
+  nameWithType: TenantStore
+  fullName: AspNetCore.Multitenancy.TenantStore

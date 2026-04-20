@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  commentId: N:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  id: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  children:
+  - AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy
+  - AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy
+  - AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy
+  langs:
+  - csharp
+  - vb
+  name: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  nameWithType: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  type: Namespace
+  assemblies:
+  - AspNetCore.Multitenancy.EFCore
+references:
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.html
+  name: DbPerTenantStrategy
+  nameWithType: DbPerTenantStrategy
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.html
+  name: RowLevelStrategy
+  nameWithType: RowLevelStrategy
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.html
+  name: SchemaPerTenantStrategy
+  nameWithType: SchemaPerTenantStrategy
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy

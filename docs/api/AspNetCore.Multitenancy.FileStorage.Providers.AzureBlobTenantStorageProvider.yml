@@ -1,0 +1,1129 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  commentId: T:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  id: AzureBlobTenantStorageProvider
+  parent: AspNetCore.Multitenancy.FileStorage.Providers
+  children:
+  - AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.#ctor(Azure.Storage.Blobs.BlobContainerClient,AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder)
+  - AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  - AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  - AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  - AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: AzureBlobTenantStorageProvider
+  nameWithType: AzureBlobTenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  type: Class
+  source:
+    remote:
+      path: src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: AzureBlobTenantStorageProvider
+    path: ../src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+    startLine: 10
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage.Providers
+  summary: >-
+    Tenant-isolated Azure Blob Storage provider.
+
+    Each tenant's files are stored under a <code>tenant-{tenantId}/</code> blob path prefix
+
+    within a shared container.
+  example: []
+  syntax:
+    content: 'public class AzureBlobTenantStorageProvider : ITenantStorageProvider'
+    content.vb: Public Class AzureBlobTenantStorageProvider Implements ITenantStorageProvider
+  inheritance:
+  - System.Object
+  implements:
+  - AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.#ctor(Azure.Storage.Blobs.BlobContainerClient,AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.#ctor(Azure.Storage.Blobs.BlobContainerClient,AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder)
+  id: '#ctor(Azure.Storage.Blobs.BlobContainerClient,AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder)'
+  parent: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: AzureBlobTenantStorageProvider(BlobContainerClient, TenantStoragePathBuilder)
+  nameWithType: AzureBlobTenantStorageProvider.AzureBlobTenantStorageProvider(BlobContainerClient, TenantStoragePathBuilder)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.AzureBlobTenantStorageProvider(Azure.Storage.Blobs.BlobContainerClient, AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder)
+  type: Constructor
+  source:
+    remote:
+      path: src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: .ctor
+    path: ../src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+    startLine: 17
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage.Providers
+  example: []
+  syntax:
+    content: public AzureBlobTenantStorageProvider(BlobContainerClient containerClient, TenantStoragePathBuilder pathBuilder)
+    parameters:
+    - id: containerClient
+      type: Azure.Storage.Blobs.BlobContainerClient
+      description: The Azure Blob container client.
+    - id: pathBuilder
+      type: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+      description: The tenant-aware path builder.
+    content.vb: Public Sub New(containerClient As BlobContainerClient, pathBuilder As TenantStoragePathBuilder)
+  overload: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.#ctor*
+  nameWithType.vb: AzureBlobTenantStorageProvider.New(BlobContainerClient, TenantStoragePathBuilder)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.New(Azure.Storage.Blobs.BlobContainerClient, AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder)
+  name.vb: New(BlobContainerClient, TenantStoragePathBuilder)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  id: UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: UploadAsync(string, Stream, string?, CancellationToken)
+  nameWithType: AzureBlobTenantStorageProvider.UploadAsync(string, Stream, string?, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync(string, System.IO.Stream, string?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: UploadAsync
+    path: ../src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+    startLine: 24
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage.Providers
+  summary: Uploads a file. The path is automatically prefixed with the tenant ID.
+  example: []
+  syntax:
+    content: public Task<string> UploadAsync(string path, Stream content, string? contentType = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: path
+      type: System.String
+      description: Logical path (e.g., "invoices/jan.pdf").
+    - id: content
+      type: System.IO.Stream
+      description: File content stream.
+    - id: contentType
+      type: System.String
+      description: Optional MIME type.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: The full storage path including tenant prefix.
+    content.vb: Public Function UploadAsync(path As String, content As Stream, contentType As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of String)
+  overload: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync*
+  implements:
+  - AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  nameWithType.vb: AzureBlobTenantStorageProvider.UploadAsync(String, Stream, String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync(String, System.IO.Stream, String, System.Threading.CancellationToken)
+  name.vb: UploadAsync(String, Stream, String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  id: DownloadAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: DownloadAsync(string, CancellationToken)
+  nameWithType: AzureBlobTenantStorageProvider.DownloadAsync(string, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: DownloadAsync
+    path: ../src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+    startLine: 41
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage.Providers
+  summary: Downloads a file by its logical path.
+  example: []
+  syntax:
+    content: public Task<Stream> DownloadAsync(string path, CancellationToken cancellationToken = default)
+    parameters:
+    - id: path
+      type: System.String
+      description: Logical path (e.g., "invoices/jan.pdf").
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+    content.vb: Public Function DownloadAsync(path As String, cancellationToken As CancellationToken = Nothing) As Task(Of Stream)
+  overload: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync*
+  implements:
+  - AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: AzureBlobTenantStorageProvider.DownloadAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync(String, System.Threading.CancellationToken)
+  name.vb: DownloadAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(string, CancellationToken)
+  nameWithType: AzureBlobTenantStorageProvider.DeleteAsync(string, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: DeleteAsync
+    path: ../src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+    startLine: 50
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage.Providers
+  summary: Deletes a file by its logical path.
+  example: []
+  syntax:
+    content: public Task DeleteAsync(string path, CancellationToken cancellationToken = default)
+    parameters:
+    - id: path
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function DeleteAsync(path As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync*
+  implements:
+  - AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: AzureBlobTenantStorageProvider.DeleteAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync(String, System.Threading.CancellationToken)
+  name.vb: DeleteAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  id: ListAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: ListAsync(string?, CancellationToken)
+  nameWithType: AzureBlobTenantStorageProvider.ListAsync(string?, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync(string?, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ListAsync
+    path: ../src/FileStorage/Providers/AzureBlobTenantStorageProvider.cs
+    startLine: 58
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+  namespace: AspNetCore.Multitenancy.FileStorage.Providers
+  summary: Lists all files under the given prefix (within the current tenant's namespace).
+  example: []
+  syntax:
+    content: public Task<IEnumerable<string>> ListAsync(string? prefix = null, CancellationToken cancellationToken = default)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: Optional path prefix to filter results.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+    content.vb: Public Function ListAsync(prefix As String = Nothing, cancellationToken As CancellationToken = Nothing) As Task(Of IEnumerable(Of String))
+  overload: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync*
+  implements:
+  - AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: AzureBlobTenantStorageProvider.ListAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync(String, System.Threading.CancellationToken)
+  name.vb: ListAsync(String, CancellationToken)
+references:
+- uid: AspNetCore.Multitenancy.FileStorage.Providers
+  commentId: N:AspNetCore.Multitenancy.FileStorage.Providers
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.FileStorage.Providers
+  nameWithType: AspNetCore.Multitenancy.FileStorage.Providers
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage.Providers
+    name: Providers
+    href: AspNetCore.Multitenancy.FileStorage.Providers.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage.Providers
+    name: Providers
+    href: AspNetCore.Multitenancy.FileStorage.Providers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  commentId: T:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  parent: AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html
+  name: ITenantStorageProvider
+  nameWithType: ITenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AspNetCore.Multitenancy.FileStorage
+  commentId: N:AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.FileStorage
+  nameWithType: AspNetCore.Multitenancy.FileStorage
+  fullName: AspNetCore.Multitenancy.FileStorage
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FileStorage
+    name: FileStorage
+    href: AspNetCore.Multitenancy.FileStorage.html
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.#ctor*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.#ctor
+  href: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider__ctor_Azure_Storage_Blobs_BlobContainerClient_AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder_
+  name: AzureBlobTenantStorageProvider
+  nameWithType: AzureBlobTenantStorageProvider.AzureBlobTenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.AzureBlobTenantStorageProvider
+  nameWithType.vb: AzureBlobTenantStorageProvider.New
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.New
+  name.vb: New
+- uid: Azure.Storage.Blobs.BlobContainerClient
+  commentId: T:Azure.Storage.Blobs.BlobContainerClient
+  parent: Azure.Storage.Blobs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/azure.storage.blobs.blobcontainerclient
+  name: BlobContainerClient
+  nameWithType: BlobContainerClient
+  fullName: Azure.Storage.Blobs.BlobContainerClient
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  commentId: T:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  parent: AspNetCore.Multitenancy.FileStorage
+  href: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html
+  name: TenantStoragePathBuilder
+  nameWithType: TenantStoragePathBuilder
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+- uid: Azure.Storage.Blobs
+  commentId: N:Azure.Storage.Blobs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/azure
+  name: Azure.Storage.Blobs
+  nameWithType: Azure.Storage.Blobs
+  fullName: Azure.Storage.Blobs
+  spec.csharp:
+  - uid: Azure
+    name: Azure
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/azure
+  - name: .
+  - uid: Azure.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/azure.storage
+  - name: .
+  - uid: Azure.Storage.Blobs
+    name: Blobs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/azure.storage.blobs
+  spec.vb:
+  - uid: Azure
+    name: Azure
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/azure
+  - name: .
+  - uid: Azure.Storage
+    name: Storage
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/azure.storage
+  - name: .
+  - uid: Azure.Storage.Blobs
+    name: Blobs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/azure.storage.blobs
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync
+  href: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_UploadAsync_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_
+  name: UploadAsync
+  nameWithType: AzureBlobTenantStorageProvider.UploadAsync
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  isExternal: true
+  href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_UploadAsync_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_
+  name: UploadAsync(string, Stream, string, CancellationToken)
+  nameWithType: ITenantStorageProvider.UploadAsync(string, Stream, string, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(string, System.IO.Stream, string, System.Threading.CancellationToken)
+  nameWithType.vb: ITenantStorageProvider.UploadAsync(String, Stream, String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(String, System.IO.Stream, String, System.Threading.CancellationToken)
+  name.vb: UploadAsync(String, Stream, String, CancellationToken)
+  spec.csharp:
+  - uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+    name: UploadAsync
+    href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_UploadAsync_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+    name: UploadAsync
+    href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_UploadAsync_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync
+  href: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_DownloadAsync_System_String_System_Threading_CancellationToken_
+  name: DownloadAsync
+  nameWithType: AzureBlobTenantStorageProvider.DownloadAsync
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  isExternal: true
+  href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DownloadAsync_System_String_System_Threading_CancellationToken_
+  name: DownloadAsync(string, CancellationToken)
+  nameWithType: ITenantStorageProvider.DownloadAsync(string, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: ITenantStorageProvider.DownloadAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(String, System.Threading.CancellationToken)
+  name.vb: DownloadAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+    name: DownloadAsync
+    href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DownloadAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+    name: DownloadAsync
+    href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DownloadAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Stream>
+  nameWithType: Task<Stream>
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  nameWithType.vb: Task(Of Stream)
+  fullName.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync
+  href: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_DeleteAsync_System_String_System_Threading_CancellationToken_
+  name: DeleteAsync
+  nameWithType: AzureBlobTenantStorageProvider.DeleteAsync
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  isExternal: true
+  href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DeleteAsync_System_String_System_Threading_CancellationToken_
+  name: DeleteAsync(string, CancellationToken)
+  nameWithType: ITenantStorageProvider.DeleteAsync(string, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: ITenantStorageProvider.DeleteAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(String, System.Threading.CancellationToken)
+  name.vb: DeleteAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+    name: DeleteAsync
+    href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DeleteAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+    name: DeleteAsync
+    href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DeleteAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync*
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync
+  href: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_ListAsync_System_String_System_Threading_CancellationToken_
+  name: ListAsync
+  nameWithType: AzureBlobTenantStorageProvider.ListAsync
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  isExternal: true
+  href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_ListAsync_System_String_System_Threading_CancellationToken_
+  name: ListAsync(string, CancellationToken)
+  nameWithType: ITenantStorageProvider.ListAsync(string, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: ITenantStorageProvider.ListAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(String, System.Threading.CancellationToken)
+  name.vb: ListAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+    name: ListAsync
+    href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_ListAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+    name: ListAsync
+    href: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_ListAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<string>>
+  nameWithType: Task<IEnumerable<string>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<string>>
+  nameWithType.vb: Task(Of IEnumerable(Of String))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of String))
+  name.vb: Task(Of IEnumerable(Of String))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )

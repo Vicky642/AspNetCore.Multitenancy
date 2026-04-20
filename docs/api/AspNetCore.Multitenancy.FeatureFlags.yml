@@ -1,0 +1,91 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.FeatureFlags
+  commentId: N:AspNetCore.Multitenancy.FeatureFlags
+  id: AspNetCore.Multitenancy.FeatureFlags
+  children:
+  - AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions
+  - AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  - AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+  - AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute
+  - AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware
+  - AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  langs:
+  - csharp
+  - vb
+  name: AspNetCore.Multitenancy.FeatureFlags
+  nameWithType: AspNetCore.Multitenancy.FeatureFlags
+  fullName: AspNetCore.Multitenancy.FeatureFlags
+  type: Namespace
+  assemblies:
+  - AspNetCore.Multitenancy.Features
+references:
+- uid: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions
+  parent: AspNetCore.Multitenancy.FeatureFlags
+  href: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.html
+  name: FeatureFlagExtensions
+  nameWithType: FeatureFlagExtensions
+  fullName: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  parent: AspNetCore.Multitenancy.FeatureFlags
+  href: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html
+  name: ITenantFeatureService
+  nameWithType: ITenantFeatureService
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+- uid: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute
+  href: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.html
+  name: RequireFeatureAttribute
+  nameWithType: RequireFeatureAttribute
+  fullName: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware
+  href: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.html
+  name: TenantFeatureMiddleware
+  nameWithType: TenantFeatureMiddleware
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  href: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html
+  name: TenantPlanFeatureProvider
+  nameWithType: TenantPlanFeatureProvider
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+- uid: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+  parent: AspNetCore.Multitenancy.FeatureFlags
+  href: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.html
+  name: PlanFeatureOptions
+  nameWithType: PlanFeatureOptions
+  fullName: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+- uid: AspNetCore.Multitenancy.FeatureFlags
+  commentId: N:AspNetCore.Multitenancy.FeatureFlags
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.FeatureFlags
+  nameWithType: AspNetCore.Multitenancy.FeatureFlags
+  fullName: AspNetCore.Multitenancy.FeatureFlags
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FeatureFlags
+    name: FeatureFlags
+    href: AspNetCore.Multitenancy.FeatureFlags.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FeatureFlags
+    name: FeatureFlags
+    href: AspNetCore.Multitenancy.FeatureFlags.html

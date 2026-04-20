@@ -1,0 +1,2191 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: AspNetCore.Multitenancy
+  name: AspNetCore.Multitenancy
+  href: api/AspNetCore.Multitenancy.html
+  commentId: N:AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+- uid: AspNetCore.Multitenancy.BackgroundJobs
+  name: AspNetCore.Multitenancy.BackgroundJobs
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.html
+  commentId: N:AspNetCore.Multitenancy.BackgroundJobs
+  fullName: AspNetCore.Multitenancy.BackgroundJobs
+  nameWithType: AspNetCore.Multitenancy.BackgroundJobs
+- uid: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions
+  name: HangfireExtensions
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.html
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions
+  nameWithType: HangfireExtensions
+- uid: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.UseTenantJobFilter(Hangfire.IGlobalConfiguration,System.IServiceProvider)
+  name: UseTenantJobFilter(IGlobalConfiguration, IServiceProvider)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.html#AspNetCore_Multitenancy_BackgroundJobs_HangfireExtensions_UseTenantJobFilter_Hangfire_IGlobalConfiguration_System_IServiceProvider_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.UseTenantJobFilter(Hangfire.IGlobalConfiguration,System.IServiceProvider)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.UseTenantJobFilter(Hangfire.IGlobalConfiguration, System.IServiceProvider)
+  nameWithType: HangfireExtensions.UseTenantJobFilter(IGlobalConfiguration, IServiceProvider)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.UseTenantJobFilter*
+  name: UseTenantJobFilter
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.html#AspNetCore_Multitenancy_BackgroundJobs_HangfireExtensions_UseTenantJobFilter_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.UseTenantJobFilter
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.UseTenantJobFilter
+  nameWithType: HangfireExtensions.UseTenantJobFilter
+- uid: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.WithHangfireJobs(AspNetCore.Multitenancy.MultitenancyBuilder)
+  name: WithHangfireJobs(MultitenancyBuilder)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.html#AspNetCore_Multitenancy_BackgroundJobs_HangfireExtensions_WithHangfireJobs_AspNetCore_Multitenancy_MultitenancyBuilder_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.WithHangfireJobs(AspNetCore.Multitenancy.MultitenancyBuilder)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.WithHangfireJobs(AspNetCore.Multitenancy.MultitenancyBuilder)
+  nameWithType: HangfireExtensions.WithHangfireJobs(MultitenancyBuilder)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.WithHangfireJobs*
+  name: WithHangfireJobs
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.html#AspNetCore_Multitenancy_BackgroundJobs_HangfireExtensions_WithHangfireJobs_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.WithHangfireJobs
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.WithHangfireJobs
+  nameWithType: HangfireExtensions.WithHangfireJobs
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService
+  name: TenantBackgroundService
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.html
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService
+  nameWithType: TenantBackgroundService
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.#ctor(AspNetCore.Multitenancy.ITenantStore,AspNetCore.Multitenancy.ITenantContext,Microsoft.Extensions.Logging.ILogger)
+  name: TenantBackgroundService(ITenantStore, ITenantContext, ILogger)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.html#AspNetCore_Multitenancy_BackgroundJobs_TenantBackgroundService__ctor_AspNetCore_Multitenancy_ITenantStore_AspNetCore_Multitenancy_ITenantContext_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.#ctor(AspNetCore.Multitenancy.ITenantStore,AspNetCore.Multitenancy.ITenantContext,Microsoft.Extensions.Logging.ILogger)
+  name.vb: New(ITenantStore, ITenantContext, ILogger)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.TenantBackgroundService(AspNetCore.Multitenancy.ITenantStore, AspNetCore.Multitenancy.ITenantContext, Microsoft.Extensions.Logging.ILogger)
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.New(AspNetCore.Multitenancy.ITenantStore, AspNetCore.Multitenancy.ITenantContext, Microsoft.Extensions.Logging.ILogger)
+  nameWithType: TenantBackgroundService.TenantBackgroundService(ITenantStore, ITenantContext, ILogger)
+  nameWithType.vb: TenantBackgroundService.New(ITenantStore, ITenantContext, ILogger)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.#ctor*
+  name: TenantBackgroundService
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.html#AspNetCore_Multitenancy_BackgroundJobs_TenantBackgroundService__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.TenantBackgroundService
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.New
+  nameWithType: TenantBackgroundService.TenantBackgroundService
+  nameWithType.vb: TenantBackgroundService.New
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.DelayAsync(System.Threading.CancellationToken)
+  name: DelayAsync(CancellationToken)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.html#AspNetCore_Multitenancy_BackgroundJobs_TenantBackgroundService_DelayAsync_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.DelayAsync(System.Threading.CancellationToken)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.DelayAsync(System.Threading.CancellationToken)
+  nameWithType: TenantBackgroundService.DelayAsync(CancellationToken)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.DelayAsync*
+  name: DelayAsync
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.html#AspNetCore_Multitenancy_BackgroundJobs_TenantBackgroundService_DelayAsync_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.DelayAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.DelayAsync
+  nameWithType: TenantBackgroundService.DelayAsync
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  name: ExecuteAsync(CancellationToken)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.html#AspNetCore_Multitenancy_BackgroundJobs_TenantBackgroundService_ExecuteAsync_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteAsync(System.Threading.CancellationToken)
+  nameWithType: TenantBackgroundService.ExecuteAsync(CancellationToken)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.html#AspNetCore_Multitenancy_BackgroundJobs_TenantBackgroundService_ExecuteAsync_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteAsync
+  nameWithType: TenantBackgroundService.ExecuteAsync
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteForTenantAsync(AspNetCore.Multitenancy.ITenantContext,System.Threading.CancellationToken)
+  name: ExecuteForTenantAsync(ITenantContext, CancellationToken)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.html#AspNetCore_Multitenancy_BackgroundJobs_TenantBackgroundService_ExecuteForTenantAsync_AspNetCore_Multitenancy_ITenantContext_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteForTenantAsync(AspNetCore.Multitenancy.ITenantContext,System.Threading.CancellationToken)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteForTenantAsync(AspNetCore.Multitenancy.ITenantContext, System.Threading.CancellationToken)
+  nameWithType: TenantBackgroundService.ExecuteForTenantAsync(ITenantContext, CancellationToken)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteForTenantAsync*
+  name: ExecuteForTenantAsync
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.html#AspNetCore_Multitenancy_BackgroundJobs_TenantBackgroundService_ExecuteForTenantAsync_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteForTenantAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteForTenantAsync
+  nameWithType: TenantBackgroundService.ExecuteForTenantAsync
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  name: TenantJobActivator
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  nameWithType: TenantJobActivator
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.#ctor(System.IServiceProvider)
+  name: TenantJobActivator(IServiceProvider)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobActivator__ctor_System_IServiceProvider_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.TenantJobActivator(System.IServiceProvider)
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.New(System.IServiceProvider)
+  nameWithType: TenantJobActivator.TenantJobActivator(IServiceProvider)
+  nameWithType.vb: TenantJobActivator.New(IServiceProvider)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.#ctor*
+  name: TenantJobActivator
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobActivator__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.TenantJobActivator
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.New
+  nameWithType: TenantJobActivator.TenantJobActivator
+  nameWithType.vb: TenantJobActivator.New
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob(System.Type)
+  name: ActivateJob(Type)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobActivator_ActivateJob_System_Type_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob(System.Type)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob(System.Type)
+  nameWithType: TenantJobActivator.ActivateJob(Type)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob*
+  name: ActivateJob
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobActivator_ActivateJob_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob
+  nameWithType: TenantJobActivator.ActivateJob
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope(Hangfire.Server.PerformContext)
+  name: BeginScope(PerformContext)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobActivator_BeginScope_Hangfire_Server_PerformContext_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope(Hangfire.Server.PerformContext)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope(Hangfire.Server.PerformContext)
+  nameWithType: TenantJobActivator.BeginScope(PerformContext)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope*
+  name: BeginScope
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobActivator_BeginScope_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope
+  nameWithType: TenantJobActivator.BeginScope
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter
+  name: TenantJobFilter
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter
+  nameWithType: TenantJobFilter
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.#ctor(AspNetCore.Multitenancy.ITenantStore,System.IServiceProvider)
+  name: TenantJobFilter(ITenantStore, IServiceProvider)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobFilter__ctor_AspNetCore_Multitenancy_ITenantStore_System_IServiceProvider_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.#ctor(AspNetCore.Multitenancy.ITenantStore,System.IServiceProvider)
+  name.vb: New(ITenantStore, IServiceProvider)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.TenantJobFilter(AspNetCore.Multitenancy.ITenantStore, System.IServiceProvider)
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.New(AspNetCore.Multitenancy.ITenantStore, System.IServiceProvider)
+  nameWithType: TenantJobFilter.TenantJobFilter(ITenantStore, IServiceProvider)
+  nameWithType.vb: TenantJobFilter.New(ITenantStore, IServiceProvider)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.#ctor*
+  name: TenantJobFilter
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobFilter__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.TenantJobFilter
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.New
+  nameWithType: TenantJobFilter.TenantJobFilter
+  nameWithType.vb: TenantJobFilter.New
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreated(Hangfire.Client.CreatedContext)
+  name: OnCreated(CreatedContext)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobFilter_OnCreated_Hangfire_Client_CreatedContext_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreated(Hangfire.Client.CreatedContext)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreated(Hangfire.Client.CreatedContext)
+  nameWithType: TenantJobFilter.OnCreated(CreatedContext)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreated*
+  name: OnCreated
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobFilter_OnCreated_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreated
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreated
+  nameWithType: TenantJobFilter.OnCreated
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreating(Hangfire.Client.CreatingContext)
+  name: OnCreating(CreatingContext)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobFilter_OnCreating_Hangfire_Client_CreatingContext_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreating(Hangfire.Client.CreatingContext)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreating(Hangfire.Client.CreatingContext)
+  nameWithType: TenantJobFilter.OnCreating(CreatingContext)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreating*
+  name: OnCreating
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobFilter_OnCreating_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreating
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnCreating
+  nameWithType: TenantJobFilter.OnCreating
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerformed(Hangfire.Server.PerformedContext)
+  name: OnPerformed(PerformedContext)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobFilter_OnPerformed_Hangfire_Server_PerformedContext_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerformed(Hangfire.Server.PerformedContext)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerformed(Hangfire.Server.PerformedContext)
+  nameWithType: TenantJobFilter.OnPerformed(PerformedContext)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerformed*
+  name: OnPerformed
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobFilter_OnPerformed_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerformed
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerformed
+  nameWithType: TenantJobFilter.OnPerformed
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerforming(Hangfire.Server.PerformingContext)
+  name: OnPerforming(PerformingContext)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobFilter_OnPerforming_Hangfire_Server_PerformingContext_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerforming(Hangfire.Server.PerformingContext)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerforming(Hangfire.Server.PerformingContext)
+  nameWithType: TenantJobFilter.OnPerforming(PerformingContext)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerforming*
+  name: OnPerforming
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobFilter_OnPerforming_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerforming
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.OnPerforming
+  nameWithType: TenantJobFilter.OnPerforming
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  name: TenantRecurringJobManager
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  nameWithType: TenantRecurringJobManager
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.#ctor(AspNetCore.Multitenancy.ITenantStore,Hangfire.IRecurringJobManager)
+  name: TenantRecurringJobManager(ITenantStore, IRecurringJobManager)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html#AspNetCore_Multitenancy_BackgroundJobs_TenantRecurringJobManager__ctor_AspNetCore_Multitenancy_ITenantStore_Hangfire_IRecurringJobManager_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.#ctor(AspNetCore.Multitenancy.ITenantStore,Hangfire.IRecurringJobManager)
+  name.vb: New(ITenantStore, IRecurringJobManager)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.TenantRecurringJobManager(AspNetCore.Multitenancy.ITenantStore, Hangfire.IRecurringJobManager)
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.New(AspNetCore.Multitenancy.ITenantStore, Hangfire.IRecurringJobManager)
+  nameWithType: TenantRecurringJobManager.TenantRecurringJobManager(ITenantStore, IRecurringJobManager)
+  nameWithType.vb: TenantRecurringJobManager.New(ITenantStore, IRecurringJobManager)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.#ctor*
+  name: TenantRecurringJobManager
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html#AspNetCore_Multitenancy_BackgroundJobs_TenantRecurringJobManager__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.TenantRecurringJobManager
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.New
+  nameWithType: TenantRecurringJobManager.TenantRecurringJobManager
+  nameWithType.vb: TenantRecurringJobManager.New
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync(System.String,System.Threading.CancellationToken)
+  name: RemoveForAllAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html#AspNetCore_Multitenancy_BackgroundJobs_TenantRecurringJobManager_RemoveForAllAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync(System.String,System.Threading.CancellationToken)
+  name.vb: RemoveForAllAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync(String, System.Threading.CancellationToken)
+  nameWithType: TenantRecurringJobManager.RemoveForAllAsync(string, CancellationToken)
+  nameWithType.vb: TenantRecurringJobManager.RemoveForAllAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync*
+  name: RemoveForAllAsync
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html#AspNetCore_Multitenancy_BackgroundJobs_TenantRecurringJobManager_RemoveForAllAsync_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync
+  nameWithType: TenantRecurringJobManager.RemoveForAllAsync
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync*
+  name: ScheduleForAllAsync
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html#AspNetCore_Multitenancy_BackgroundJobs_TenantRecurringJobManager_ScheduleForAllAsync_
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync
+  nameWithType: TenantRecurringJobManager.ScheduleForAllAsync
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync``1(System.String,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Threading.Tasks.Task}},System.Threading.CancellationToken)
+  name: ScheduleForAllAsync<TJob>(string, string, Expression<Func<TJob, Task>>, CancellationToken)
+  href: api/AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html#AspNetCore_Multitenancy_BackgroundJobs_TenantRecurringJobManager_ScheduleForAllAsync__1_System_String_System_String_System_Linq_Expressions_Expression_System_Func___0_System_Threading_Tasks_Task___System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync``1(System.String,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Threading.Tasks.Task}},System.Threading.CancellationToken)
+  name.vb: ScheduleForAllAsync(Of TJob)(String, String, Expression(Of Func(Of TJob, Task)), CancellationToken)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync<TJob>(string, string, System.Linq.Expressions.Expression<System.Func<TJob, System.Threading.Tasks.Task>>, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync(Of TJob)(String, String, System.Linq.Expressions.Expression(Of System.Func(Of TJob, System.Threading.Tasks.Task)), System.Threading.CancellationToken)
+  nameWithType: TenantRecurringJobManager.ScheduleForAllAsync<TJob>(string, string, Expression<Func<TJob, Task>>, CancellationToken)
+  nameWithType.vb: TenantRecurringJobManager.ScheduleForAllAsync(Of TJob)(String, String, Expression(Of Func(Of TJob, Task)), CancellationToken)
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore
+  name: AspNetCore.Multitenancy.EntityFrameworkCore
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.html
+  commentId: N:AspNetCore.Multitenancy.EntityFrameworkCore
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore
+  nameWithType: AspNetCore.Multitenancy.EntityFrameworkCore
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+  name: EFCoreExtensions
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.html
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+  nameWithType: EFCoreExtensions
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation*
+  name: WithEFCoreIsolation
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.html#AspNetCore_Multitenancy_EntityFrameworkCore_EFCoreExtensions_WithEFCoreIsolation_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation
+  nameWithType: EFCoreExtensions.WithEFCoreIsolation
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation``1(AspNetCore.Multitenancy.MultitenancyBuilder,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})
+  name: WithEFCoreIsolation<TContext>(MultitenancyBuilder, Action<DbContextOptionsBuilder, string>?)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.html#AspNetCore_Multitenancy_EntityFrameworkCore_EFCoreExtensions_WithEFCoreIsolation__1_AspNetCore_Multitenancy_MultitenancyBuilder_System_Action_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_System_String__
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation``1(AspNetCore.Multitenancy.MultitenancyBuilder,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})
+  name.vb: WithEFCoreIsolation(Of TContext)(MultitenancyBuilder, Action(Of DbContextOptionsBuilder, String))
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation<TContext>(AspNetCore.Multitenancy.MultitenancyBuilder, System.Action<Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, string>?)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation(Of TContext)(AspNetCore.Multitenancy.MultitenancyBuilder, System.Action(Of Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, String))
+  nameWithType: EFCoreExtensions.WithEFCoreIsolation<TContext>(MultitenancyBuilder, Action<DbContextOptionsBuilder, string>?)
+  nameWithType.vb: EFCoreExtensions.WithEFCoreIsolation(Of TContext)(MultitenancyBuilder, Action(Of DbContextOptionsBuilder, String))
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+  name: ITenantEntity
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.html
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+  nameWithType: ITenantEntity
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  name: TenantId
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.html#AspNetCore_Multitenancy_EntityFrameworkCore_ITenantEntity_TenantId
+  commentId: P:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  nameWithType: ITenantEntity.TenantId
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId*
+  name: TenantId
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.html#AspNetCore_Multitenancy_EntityFrameworkCore_ITenantEntity_TenantId_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  nameWithType: ITenantEntity.TenantId
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext
+  name: MultitenantDbContext
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext
+  nameWithType: MultitenantDbContext
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions,AspNetCore.Multitenancy.ITenantContext)
+  name: MultitenantDbContext(DbContextOptions, ITenantContext)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html#AspNetCore_Multitenancy_EntityFrameworkCore_MultitenantDbContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_AspNetCore_Multitenancy_ITenantContext_
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions,AspNetCore.Multitenancy.ITenantContext)
+  name.vb: New(DbContextOptions, ITenantContext)
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.MultitenantDbContext(Microsoft.EntityFrameworkCore.DbContextOptions, AspNetCore.Multitenancy.ITenantContext)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.New(Microsoft.EntityFrameworkCore.DbContextOptions, AspNetCore.Multitenancy.ITenantContext)
+  nameWithType: MultitenantDbContext.MultitenantDbContext(DbContextOptions, ITenantContext)
+  nameWithType.vb: MultitenantDbContext.New(DbContextOptions, ITenantContext)
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.#ctor*
+  name: MultitenantDbContext
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html#AspNetCore_Multitenancy_EntityFrameworkCore_MultitenantDbContext__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.MultitenantDbContext
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.New
+  nameWithType: MultitenantDbContext.MultitenantDbContext
+  nameWithType.vb: MultitenantDbContext.New
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: OnModelCreating(ModelBuilder)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html#AspNetCore_Multitenancy_EntityFrameworkCore_MultitenantDbContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: MultitenantDbContext.OnModelCreating(ModelBuilder)
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.OnModelCreating*
+  name: OnModelCreating
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html#AspNetCore_Multitenancy_EntityFrameworkCore_MultitenantDbContext_OnModelCreating_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.OnModelCreating
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.OnModelCreating
+  nameWithType: MultitenantDbContext.OnModelCreating
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChanges(System.Boolean)
+  name: SaveChanges(bool)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html#AspNetCore_Multitenancy_EntityFrameworkCore_MultitenantDbContext_SaveChanges_System_Boolean_
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChanges(System.Boolean)
+  name.vb: SaveChanges(Boolean)
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChanges(bool)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChanges(Boolean)
+  nameWithType: MultitenantDbContext.SaveChanges(bool)
+  nameWithType.vb: MultitenantDbContext.SaveChanges(Boolean)
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChanges*
+  name: SaveChanges
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html#AspNetCore_Multitenancy_EntityFrameworkCore_MultitenantDbContext_SaveChanges_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChanges
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChanges
+  nameWithType: MultitenantDbContext.SaveChanges
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChangesAsync(System.Boolean,System.Threading.CancellationToken)
+  name: SaveChangesAsync(bool, CancellationToken)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html#AspNetCore_Multitenancy_EntityFrameworkCore_MultitenantDbContext_SaveChangesAsync_System_Boolean_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChangesAsync(System.Boolean,System.Threading.CancellationToken)
+  name.vb: SaveChangesAsync(Boolean, CancellationToken)
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChangesAsync(bool, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChangesAsync(Boolean, System.Threading.CancellationToken)
+  nameWithType: MultitenantDbContext.SaveChangesAsync(bool, CancellationToken)
+  nameWithType.vb: MultitenantDbContext.SaveChangesAsync(Boolean, CancellationToken)
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html#AspNetCore_Multitenancy_EntityFrameworkCore_MultitenantDbContext_SaveChangesAsync_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChangesAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.SaveChangesAsync
+  nameWithType: MultitenantDbContext.SaveChangesAsync
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions
+  name: QueryFilterExtensions
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.html
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions
+  nameWithType: QueryFilterExtensions
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.ApplyTenantQueryFilters(Microsoft.EntityFrameworkCore.ModelBuilder,System.Func{System.String})
+  name: ApplyTenantQueryFilters(ModelBuilder, Func<string?>)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.html#AspNetCore_Multitenancy_EntityFrameworkCore_QueryFilterExtensions_ApplyTenantQueryFilters_Microsoft_EntityFrameworkCore_ModelBuilder_System_Func_System_String__
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.ApplyTenantQueryFilters(Microsoft.EntityFrameworkCore.ModelBuilder,System.Func{System.String})
+  name.vb: ApplyTenantQueryFilters(ModelBuilder, Func(Of String))
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.ApplyTenantQueryFilters(Microsoft.EntityFrameworkCore.ModelBuilder, System.Func<string?>)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.ApplyTenantQueryFilters(Microsoft.EntityFrameworkCore.ModelBuilder, System.Func(Of String))
+  nameWithType: QueryFilterExtensions.ApplyTenantQueryFilters(ModelBuilder, Func<string?>)
+  nameWithType.vb: QueryFilterExtensions.ApplyTenantQueryFilters(ModelBuilder, Func(Of String))
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.ApplyTenantQueryFilters*
+  name: ApplyTenantQueryFilters
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.html#AspNetCore_Multitenancy_EntityFrameworkCore_QueryFilterExtensions_ApplyTenantQueryFilters_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.ApplyTenantQueryFilters
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.ApplyTenantQueryFilters
+  nameWithType: QueryFilterExtensions.ApplyTenantQueryFilters
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.HasTenantFilter*
+  name: HasTenantFilter
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.html#AspNetCore_Multitenancy_EntityFrameworkCore_QueryFilterExtensions_HasTenantFilter_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.HasTenantFilter
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.HasTenantFilter
+  nameWithType: QueryFilterExtensions.HasTenantFilter
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.HasTenantFilter``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},System.Func{System.String})
+  name: HasTenantFilter<TEntity>(EntityTypeBuilder<TEntity>, Func<string?>)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.html#AspNetCore_Multitenancy_EntityFrameworkCore_QueryFilterExtensions_HasTenantFilter__1_Microsoft_EntityFrameworkCore_Metadata_Builders_EntityTypeBuilder___0__System_Func_System_String__
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.HasTenantFilter``1(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{``0},System.Func{System.String})
+  name.vb: HasTenantFilter(Of TEntity)(EntityTypeBuilder(Of TEntity), Func(Of String))
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.HasTenantFilter<TEntity>(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<TEntity>, System.Func<string?>)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.HasTenantFilter(Of TEntity)(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of TEntity), System.Func(Of String))
+  nameWithType: QueryFilterExtensions.HasTenantFilter<TEntity>(EntityTypeBuilder<TEntity>, Func<string?>)
+  nameWithType.vb: QueryFilterExtensions.HasTenantFilter(Of TEntity)(EntityTypeBuilder(Of TEntity), Func(Of String))
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  name: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.html
+  commentId: N:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  nameWithType: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy
+  name: DbPerTenantStrategy
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.html
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy
+  nameWithType: DbPerTenantStrategy
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.Configure(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.IServiceProvider,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})
+  name: Configure(DbContextOptionsBuilder, IServiceProvider, Action<DbContextOptionsBuilder, string>?)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.html#AspNetCore_Multitenancy_EntityFrameworkCore_Strategies_DbPerTenantStrategy_Configure_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_System_IServiceProvider_System_Action_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_System_String__
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.Configure(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.IServiceProvider,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})
+  name.vb: Configure(DbContextOptionsBuilder, IServiceProvider, Action(Of DbContextOptionsBuilder, String))
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.Configure(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, System.IServiceProvider, System.Action<Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, string>?)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.Configure(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, System.IServiceProvider, System.Action(Of Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, String))
+  nameWithType: DbPerTenantStrategy.Configure(DbContextOptionsBuilder, IServiceProvider, Action<DbContextOptionsBuilder, string>?)
+  nameWithType.vb: DbPerTenantStrategy.Configure(DbContextOptionsBuilder, IServiceProvider, Action(Of DbContextOptionsBuilder, String))
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.Configure*
+  name: Configure
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.html#AspNetCore_Multitenancy_EntityFrameworkCore_Strategies_DbPerTenantStrategy_Configure_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.Configure
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.Configure
+  nameWithType: DbPerTenantStrategy.Configure
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy
+  name: RowLevelStrategy
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.html
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy
+  nameWithType: RowLevelStrategy
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.Apply(Microsoft.EntityFrameworkCore.ModelBuilder,System.Func{System.String})
+  name: Apply(ModelBuilder, Func<string?>)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.html#AspNetCore_Multitenancy_EntityFrameworkCore_Strategies_RowLevelStrategy_Apply_Microsoft_EntityFrameworkCore_ModelBuilder_System_Func_System_String__
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.Apply(Microsoft.EntityFrameworkCore.ModelBuilder,System.Func{System.String})
+  name.vb: Apply(ModelBuilder, Func(Of String))
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.Apply(Microsoft.EntityFrameworkCore.ModelBuilder, System.Func<string?>)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.Apply(Microsoft.EntityFrameworkCore.ModelBuilder, System.Func(Of String))
+  nameWithType: RowLevelStrategy.Apply(ModelBuilder, Func<string?>)
+  nameWithType.vb: RowLevelStrategy.Apply(ModelBuilder, Func(Of String))
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.Apply*
+  name: Apply
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.html#AspNetCore_Multitenancy_EntityFrameworkCore_Strategies_RowLevelStrategy_Apply_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.Apply
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.Apply
+  nameWithType: RowLevelStrategy.Apply
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy
+  name: SchemaPerTenantStrategy
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.html
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy
+  nameWithType: SchemaPerTenantStrategy
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.Apply(Microsoft.EntityFrameworkCore.ModelBuilder,AspNetCore.Multitenancy.ITenantContext)
+  name: Apply(ModelBuilder, ITenantContext)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.html#AspNetCore_Multitenancy_EntityFrameworkCore_Strategies_SchemaPerTenantStrategy_Apply_Microsoft_EntityFrameworkCore_ModelBuilder_AspNetCore_Multitenancy_ITenantContext_
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.Apply(Microsoft.EntityFrameworkCore.ModelBuilder,AspNetCore.Multitenancy.ITenantContext)
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.Apply(Microsoft.EntityFrameworkCore.ModelBuilder, AspNetCore.Multitenancy.ITenantContext)
+  nameWithType: SchemaPerTenantStrategy.Apply(ModelBuilder, ITenantContext)
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.Apply*
+  name: Apply
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.html#AspNetCore_Multitenancy_EntityFrameworkCore_Strategies_SchemaPerTenantStrategy_Apply_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.Apply
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.Apply
+  nameWithType: SchemaPerTenantStrategy.Apply
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+  name: TenantDbContextFactory<TContext>
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+  name.vb: TenantDbContextFactory(Of TContext)
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory<TContext>
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory(Of TContext)
+  nameWithType: TenantDbContextFactory<TContext>
+  nameWithType.vb: TenantDbContextFactory(Of TContext)
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1.#ctor(AspNetCore.Multitenancy.ITenantContext,System.IServiceProvider,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})
+  name: TenantDbContextFactory(ITenantContext, IServiceProvider, Action<DbContextOptionsBuilder, string>)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html#AspNetCore_Multitenancy_EntityFrameworkCore_TenantDbContextFactory_1__ctor_AspNetCore_Multitenancy_ITenantContext_System_IServiceProvider_System_Action_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_System_String__
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1.#ctor(AspNetCore.Multitenancy.ITenantContext,System.IServiceProvider,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})
+  name.vb: New(ITenantContext, IServiceProvider, Action(Of DbContextOptionsBuilder, String))
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory<TContext>.TenantDbContextFactory(AspNetCore.Multitenancy.ITenantContext, System.IServiceProvider, System.Action<Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, string>)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory(Of TContext).New(AspNetCore.Multitenancy.ITenantContext, System.IServiceProvider, System.Action(Of Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, String))
+  nameWithType: TenantDbContextFactory<TContext>.TenantDbContextFactory(ITenantContext, IServiceProvider, Action<DbContextOptionsBuilder, string>)
+  nameWithType.vb: TenantDbContextFactory(Of TContext).New(ITenantContext, IServiceProvider, Action(Of DbContextOptionsBuilder, String))
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1.#ctor*
+  name: TenantDbContextFactory
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html#AspNetCore_Multitenancy_EntityFrameworkCore_TenantDbContextFactory_1__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory<TContext>.TenantDbContextFactory
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory(Of TContext).New
+  nameWithType: TenantDbContextFactory<TContext>.TenantDbContextFactory
+  nameWithType.vb: TenantDbContextFactory(Of TContext).New
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1.CreateContext
+  name: CreateContext()
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html#AspNetCore_Multitenancy_EntityFrameworkCore_TenantDbContextFactory_1_CreateContext
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1.CreateContext
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory<TContext>.CreateContext()
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory(Of TContext).CreateContext()
+  nameWithType: TenantDbContextFactory<TContext>.CreateContext()
+  nameWithType.vb: TenantDbContextFactory(Of TContext).CreateContext()
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1.CreateContext*
+  name: CreateContext
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html#AspNetCore_Multitenancy_EntityFrameworkCore_TenantDbContextFactory_1_CreateContext_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1.CreateContext
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory<TContext>.CreateContext
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory(Of TContext).CreateContext
+  nameWithType: TenantDbContextFactory<TContext>.CreateContext
+  nameWithType.vb: TenantDbContextFactory(Of TContext).CreateContext
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+  name: TenantSchemaMigrator<TContext>
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+  name.vb: TenantSchemaMigrator(Of TContext)
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator<TContext>
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator(Of TContext)
+  nameWithType: TenantSchemaMigrator<TContext>
+  nameWithType.vb: TenantSchemaMigrator(Of TContext)
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.#ctor(AspNetCore.Multitenancy.ITenantStore,AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory{`0},Microsoft.Extensions.Logging.ILogger{AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator{`0}})
+  name: TenantSchemaMigrator(ITenantStore, TenantDbContextFactory<TContext>, ILogger<TenantSchemaMigrator<TContext>>)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html#AspNetCore_Multitenancy_EntityFrameworkCore_TenantSchemaMigrator_1__ctor_AspNetCore_Multitenancy_ITenantStore_AspNetCore_Multitenancy_EntityFrameworkCore_TenantDbContextFactory__0__Microsoft_Extensions_Logging_ILogger_AspNetCore_Multitenancy_EntityFrameworkCore_TenantSchemaMigrator__0___
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.#ctor(AspNetCore.Multitenancy.ITenantStore,AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory{`0},Microsoft.Extensions.Logging.ILogger{AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator{`0}})
+  name.vb: New(ITenantStore, TenantDbContextFactory(Of TContext), ILogger(Of TenantSchemaMigrator(Of TContext)))
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator<TContext>.TenantSchemaMigrator(AspNetCore.Multitenancy.ITenantStore, AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory<TContext>, Microsoft.Extensions.Logging.ILogger<AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator<TContext>>)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator(Of TContext).New(AspNetCore.Multitenancy.ITenantStore, AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory(Of TContext), Microsoft.Extensions.Logging.ILogger(Of AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator(Of TContext)))
+  nameWithType: TenantSchemaMigrator<TContext>.TenantSchemaMigrator(ITenantStore, TenantDbContextFactory<TContext>, ILogger<TenantSchemaMigrator<TContext>>)
+  nameWithType.vb: TenantSchemaMigrator(Of TContext).New(ITenantStore, TenantDbContextFactory(Of TContext), ILogger(Of TenantSchemaMigrator(Of TContext)))
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.#ctor*
+  name: TenantSchemaMigrator
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html#AspNetCore_Multitenancy_EntityFrameworkCore_TenantSchemaMigrator_1__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator<TContext>.TenantSchemaMigrator
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator(Of TContext).New
+  nameWithType: TenantSchemaMigrator<TContext>.TenantSchemaMigrator
+  nameWithType.vb: TenantSchemaMigrator(Of TContext).New
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.MigrateAllTenantsAsync(System.Threading.CancellationToken)
+  name: MigrateAllTenantsAsync(CancellationToken)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html#AspNetCore_Multitenancy_EntityFrameworkCore_TenantSchemaMigrator_1_MigrateAllTenantsAsync_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.MigrateAllTenantsAsync(System.Threading.CancellationToken)
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator<TContext>.MigrateAllTenantsAsync(System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator(Of TContext).MigrateAllTenantsAsync(System.Threading.CancellationToken)
+  nameWithType: TenantSchemaMigrator<TContext>.MigrateAllTenantsAsync(CancellationToken)
+  nameWithType.vb: TenantSchemaMigrator(Of TContext).MigrateAllTenantsAsync(CancellationToken)
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.MigrateAllTenantsAsync*
+  name: MigrateAllTenantsAsync
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html#AspNetCore_Multitenancy_EntityFrameworkCore_TenantSchemaMigrator_1_MigrateAllTenantsAsync_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.MigrateAllTenantsAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator<TContext>.MigrateAllTenantsAsync
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator(Of TContext).MigrateAllTenantsAsync
+  nameWithType: TenantSchemaMigrator<TContext>.MigrateAllTenantsAsync
+  nameWithType.vb: TenantSchemaMigrator(Of TContext).MigrateAllTenantsAsync
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.MigrateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  name: MigrateTenantAsync(TenantInfo, CancellationToken)
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html#AspNetCore_Multitenancy_EntityFrameworkCore_TenantSchemaMigrator_1_MigrateTenantAsync_AspNetCore_Multitenancy_TenantInfo_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.MigrateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator<TContext>.MigrateTenantAsync(AspNetCore.Multitenancy.TenantInfo, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator(Of TContext).MigrateTenantAsync(AspNetCore.Multitenancy.TenantInfo, System.Threading.CancellationToken)
+  nameWithType: TenantSchemaMigrator<TContext>.MigrateTenantAsync(TenantInfo, CancellationToken)
+  nameWithType.vb: TenantSchemaMigrator(Of TContext).MigrateTenantAsync(TenantInfo, CancellationToken)
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.MigrateTenantAsync*
+  name: MigrateTenantAsync
+  href: api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html#AspNetCore_Multitenancy_EntityFrameworkCore_TenantSchemaMigrator_1_MigrateTenantAsync_
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1.MigrateTenantAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator<TContext>.MigrateTenantAsync
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator(Of TContext).MigrateTenantAsync
+  nameWithType: TenantSchemaMigrator<TContext>.MigrateTenantAsync
+  nameWithType.vb: TenantSchemaMigrator(Of TContext).MigrateTenantAsync
+- uid: AspNetCore.Multitenancy.FeatureFlags
+  name: AspNetCore.Multitenancy.FeatureFlags
+  href: api/AspNetCore.Multitenancy.FeatureFlags.html
+  commentId: N:AspNetCore.Multitenancy.FeatureFlags
+  fullName: AspNetCore.Multitenancy.FeatureFlags
+  nameWithType: AspNetCore.Multitenancy.FeatureFlags
+- uid: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions
+  name: FeatureFlagExtensions
+  href: api/AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.html
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions
+  fullName: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions
+  nameWithType: FeatureFlagExtensions
+- uid: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.UseTenantFeatures(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseTenantFeatures(IApplicationBuilder)
+  href: api/AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.html#AspNetCore_Multitenancy_FeatureFlags_FeatureFlagExtensions_UseTenantFeatures_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.UseTenantFeatures(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.UseTenantFeatures(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: FeatureFlagExtensions.UseTenantFeatures(IApplicationBuilder)
+- uid: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.UseTenantFeatures*
+  name: UseTenantFeatures
+  href: api/AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.html#AspNetCore_Multitenancy_FeatureFlags_FeatureFlagExtensions_UseTenantFeatures_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.UseTenantFeatures
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.UseTenantFeatures
+  nameWithType: FeatureFlagExtensions.UseTenantFeatures
+- uid: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.WithFeatureFlags(AspNetCore.Multitenancy.MultitenancyBuilder,System.Action{AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions})
+  name: WithFeatureFlags(MultitenancyBuilder, Action<PlanFeatureOptions>)
+  href: api/AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.html#AspNetCore_Multitenancy_FeatureFlags_FeatureFlagExtensions_WithFeatureFlags_AspNetCore_Multitenancy_MultitenancyBuilder_System_Action_AspNetCore_Multitenancy_FeatureFlags_PlanFeatureOptions__
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.WithFeatureFlags(AspNetCore.Multitenancy.MultitenancyBuilder,System.Action{AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions})
+  name.vb: WithFeatureFlags(MultitenancyBuilder, Action(Of PlanFeatureOptions))
+  fullName: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.WithFeatureFlags(AspNetCore.Multitenancy.MultitenancyBuilder, System.Action<AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions>)
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.WithFeatureFlags(AspNetCore.Multitenancy.MultitenancyBuilder, System.Action(Of AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions))
+  nameWithType: FeatureFlagExtensions.WithFeatureFlags(MultitenancyBuilder, Action<PlanFeatureOptions>)
+  nameWithType.vb: FeatureFlagExtensions.WithFeatureFlags(MultitenancyBuilder, Action(Of PlanFeatureOptions))
+- uid: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.WithFeatureFlags*
+  name: WithFeatureFlags
+  href: api/AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.html#AspNetCore_Multitenancy_FeatureFlags_FeatureFlagExtensions_WithFeatureFlags_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.WithFeatureFlags
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.WithFeatureFlags
+  nameWithType: FeatureFlagExtensions.WithFeatureFlags
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  name: ITenantFeatureService
+  href: api/AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  nameWithType: ITenantFeatureService
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+  name: GetEnabledFeatures()
+  href: api/AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_GetEnabledFeatures
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures()
+  nameWithType: ITenantFeatureService.GetEnabledFeatures()
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures*
+  name: GetEnabledFeatures
+  href: api/AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_GetEnabledFeatures_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+  nameWithType: ITenantFeatureService.GetEnabledFeatures
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(System.String)
+  name: IsEnabled(string)
+  href: api/AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_IsEnabled_System_String_
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(System.String)
+  name.vb: IsEnabled(String)
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(string)
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(String)
+  nameWithType: ITenantFeatureService.IsEnabled(string)
+  nameWithType.vb: ITenantFeatureService.IsEnabled(String)
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled*
+  name: IsEnabled
+  href: api/AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_IsEnabled_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled
+  nameWithType: ITenantFeatureService.IsEnabled
+- uid: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+  name: PlanFeatureOptions
+  href: api/AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.html
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+  fullName: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+  nameWithType: PlanFeatureOptions
+- uid: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.AddPlan(System.String,System.Collections.Generic.IEnumerable{System.String})
+  name: AddPlan(string, IEnumerable<string>)
+  href: api/AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.html#AspNetCore_Multitenancy_FeatureFlags_PlanFeatureOptions_AddPlan_System_String_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.AddPlan(System.String,System.Collections.Generic.IEnumerable{System.String})
+  name.vb: AddPlan(String, IEnumerable(Of String))
+  fullName: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.AddPlan(string, System.Collections.Generic.IEnumerable<string>)
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.AddPlan(String, System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: PlanFeatureOptions.AddPlan(string, IEnumerable<string>)
+  nameWithType.vb: PlanFeatureOptions.AddPlan(String, IEnumerable(Of String))
+- uid: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.AddPlan*
+  name: AddPlan
+  href: api/AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.html#AspNetCore_Multitenancy_FeatureFlags_PlanFeatureOptions_AddPlan_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.AddPlan
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.AddPlan
+  nameWithType: PlanFeatureOptions.AddPlan
+- uid: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute
+  name: RequireFeatureAttribute
+  href: api/AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.html
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute
+  fullName: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute
+  nameWithType: RequireFeatureAttribute
+- uid: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.#ctor(System.String)
+  name: RequireFeatureAttribute(string)
+  href: api/AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.html#AspNetCore_Multitenancy_FeatureFlags_RequireFeatureAttribute__ctor_System_String_
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.#ctor(System.String)
+  name.vb: New(String)
+  fullName: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.RequireFeatureAttribute(string)
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.New(String)
+  nameWithType: RequireFeatureAttribute.RequireFeatureAttribute(string)
+  nameWithType.vb: RequireFeatureAttribute.New(String)
+- uid: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.#ctor*
+  name: RequireFeatureAttribute
+  href: api/AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.html#AspNetCore_Multitenancy_FeatureFlags_RequireFeatureAttribute__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.RequireFeatureAttribute
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.New
+  nameWithType: RequireFeatureAttribute.RequireFeatureAttribute
+  nameWithType.vb: RequireFeatureAttribute.New
+- uid: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.FeatureName
+  name: FeatureName
+  href: api/AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.html#AspNetCore_Multitenancy_FeatureFlags_RequireFeatureAttribute_FeatureName
+  commentId: P:AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.FeatureName
+  fullName: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.FeatureName
+  nameWithType: RequireFeatureAttribute.FeatureName
+- uid: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.FeatureName*
+  name: FeatureName
+  href: api/AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.html#AspNetCore_Multitenancy_FeatureFlags_RequireFeatureAttribute_FeatureName_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.FeatureName
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.FeatureName
+  nameWithType: RequireFeatureAttribute.FeatureName
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware
+  name: TenantFeatureMiddleware
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.html
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware
+  nameWithType: TenantFeatureMiddleware
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+  name: TenantFeatureMiddleware(RequestDelegate)
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.html#AspNetCore_Multitenancy_FeatureFlags_TenantFeatureMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+  name.vb: New(RequestDelegate)
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.TenantFeatureMiddleware(Microsoft.AspNetCore.Http.RequestDelegate)
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.New(Microsoft.AspNetCore.Http.RequestDelegate)
+  nameWithType: TenantFeatureMiddleware.TenantFeatureMiddleware(RequestDelegate)
+  nameWithType.vb: TenantFeatureMiddleware.New(RequestDelegate)
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.#ctor*
+  name: TenantFeatureMiddleware
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.html#AspNetCore_Multitenancy_FeatureFlags_TenantFeatureMiddleware__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.TenantFeatureMiddleware
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.New
+  nameWithType: TenantFeatureMiddleware.TenantFeatureMiddleware
+  nameWithType.vb: TenantFeatureMiddleware.New
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext,AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService)
+  name: InvokeAsync(HttpContext, ITenantFeatureService)
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.html#AspNetCore_Multitenancy_FeatureFlags_TenantFeatureMiddleware_InvokeAsync_Microsoft_AspNetCore_Http_HttpContext_AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext,AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService)
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext, AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService)
+  nameWithType: TenantFeatureMiddleware.InvokeAsync(HttpContext, ITenantFeatureService)
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.InvokeAsync*
+  name: InvokeAsync
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.html#AspNetCore_Multitenancy_FeatureFlags_TenantFeatureMiddleware_InvokeAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.InvokeAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.InvokeAsync
+  nameWithType: TenantFeatureMiddleware.InvokeAsync
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  name: TenantPlanFeatureProvider
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  nameWithType: TenantPlanFeatureProvider
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.#ctor(AspNetCore.Multitenancy.ITenantContext,AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions)
+  name: TenantPlanFeatureProvider(ITenantContext, PlanFeatureOptions)
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html#AspNetCore_Multitenancy_FeatureFlags_TenantPlanFeatureProvider__ctor_AspNetCore_Multitenancy_ITenantContext_AspNetCore_Multitenancy_FeatureFlags_PlanFeatureOptions_
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.#ctor(AspNetCore.Multitenancy.ITenantContext,AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions)
+  name.vb: New(ITenantContext, PlanFeatureOptions)
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.TenantPlanFeatureProvider(AspNetCore.Multitenancy.ITenantContext, AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions)
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.New(AspNetCore.Multitenancy.ITenantContext, AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions)
+  nameWithType: TenantPlanFeatureProvider.TenantPlanFeatureProvider(ITenantContext, PlanFeatureOptions)
+  nameWithType.vb: TenantPlanFeatureProvider.New(ITenantContext, PlanFeatureOptions)
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.#ctor*
+  name: TenantPlanFeatureProvider
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html#AspNetCore_Multitenancy_FeatureFlags_TenantPlanFeatureProvider__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.TenantPlanFeatureProvider
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.New
+  nameWithType: TenantPlanFeatureProvider.TenantPlanFeatureProvider
+  nameWithType.vb: TenantPlanFeatureProvider.New
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures
+  name: GetEnabledFeatures()
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html#AspNetCore_Multitenancy_FeatureFlags_TenantPlanFeatureProvider_GetEnabledFeatures
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures()
+  nameWithType: TenantPlanFeatureProvider.GetEnabledFeatures()
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures*
+  name: GetEnabledFeatures
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html#AspNetCore_Multitenancy_FeatureFlags_TenantPlanFeatureProvider_GetEnabledFeatures_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures
+  nameWithType: TenantPlanFeatureProvider.GetEnabledFeatures
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled(System.String)
+  name: IsEnabled(string)
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html#AspNetCore_Multitenancy_FeatureFlags_TenantPlanFeatureProvider_IsEnabled_System_String_
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled(System.String)
+  name.vb: IsEnabled(String)
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled(string)
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled(String)
+  nameWithType: TenantPlanFeatureProvider.IsEnabled(string)
+  nameWithType.vb: TenantPlanFeatureProvider.IsEnabled(String)
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled*
+  name: IsEnabled
+  href: api/AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html#AspNetCore_Multitenancy_FeatureFlags_TenantPlanFeatureProvider_IsEnabled_
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled
+  nameWithType: TenantPlanFeatureProvider.IsEnabled
+- uid: AspNetCore.Multitenancy.FileStorage
+  name: AspNetCore.Multitenancy.FileStorage
+  href: api/AspNetCore.Multitenancy.FileStorage.html
+  commentId: N:AspNetCore.Multitenancy.FileStorage
+  fullName: AspNetCore.Multitenancy.FileStorage
+  nameWithType: AspNetCore.Multitenancy.FileStorage
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  name: ITenantStorageProvider
+  href: api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html
+  commentId: T:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+  nameWithType: ITenantStorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  name: DeleteAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DeleteAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  name.vb: DeleteAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(String, System.Threading.CancellationToken)
+  nameWithType: ITenantStorageProvider.DeleteAsync(string, CancellationToken)
+  nameWithType.vb: ITenantStorageProvider.DeleteAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync*
+  name: DeleteAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DeleteAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync
+  nameWithType: ITenantStorageProvider.DeleteAsync
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  name: DownloadAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DownloadAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  name.vb: DownloadAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(String, System.Threading.CancellationToken)
+  nameWithType: ITenantStorageProvider.DownloadAsync(string, CancellationToken)
+  nameWithType.vb: ITenantStorageProvider.DownloadAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync*
+  name: DownloadAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DownloadAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync
+  nameWithType: ITenantStorageProvider.DownloadAsync
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  name: ListAsync(string?, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_ListAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  name.vb: ListAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(String, System.Threading.CancellationToken)
+  nameWithType: ITenantStorageProvider.ListAsync(string?, CancellationToken)
+  nameWithType.vb: ITenantStorageProvider.ListAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync*
+  name: ListAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_ListAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync
+  nameWithType: ITenantStorageProvider.ListAsync
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  name: UploadAsync(string, Stream, string?, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_UploadAsync_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  name.vb: UploadAsync(String, Stream, String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(string, System.IO.Stream, string?, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(String, System.IO.Stream, String, System.Threading.CancellationToken)
+  nameWithType: ITenantStorageProvider.UploadAsync(string, Stream, string?, CancellationToken)
+  nameWithType.vb: ITenantStorageProvider.UploadAsync(String, Stream, String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync*
+  name: UploadAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_UploadAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync
+  nameWithType: ITenantStorageProvider.UploadAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers
+  name: AspNetCore.Multitenancy.FileStorage.Providers
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.html
+  commentId: N:AspNetCore.Multitenancy.FileStorage.Providers
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers
+  nameWithType: AspNetCore.Multitenancy.FileStorage.Providers
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  name: AzureBlobTenantStorageProvider
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html
+  commentId: T:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  nameWithType: AzureBlobTenantStorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.#ctor(Azure.Storage.Blobs.BlobContainerClient,AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder)
+  name: AzureBlobTenantStorageProvider(BlobContainerClient, TenantStoragePathBuilder)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider__ctor_Azure_Storage_Blobs_BlobContainerClient_AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.#ctor(Azure.Storage.Blobs.BlobContainerClient,AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder)
+  name.vb: New(BlobContainerClient, TenantStoragePathBuilder)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.AzureBlobTenantStorageProvider(Azure.Storage.Blobs.BlobContainerClient, AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.New(Azure.Storage.Blobs.BlobContainerClient, AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder)
+  nameWithType: AzureBlobTenantStorageProvider.AzureBlobTenantStorageProvider(BlobContainerClient, TenantStoragePathBuilder)
+  nameWithType.vb: AzureBlobTenantStorageProvider.New(BlobContainerClient, TenantStoragePathBuilder)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.#ctor*
+  name: AzureBlobTenantStorageProvider
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.AzureBlobTenantStorageProvider
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.New
+  nameWithType: AzureBlobTenantStorageProvider.AzureBlobTenantStorageProvider
+  nameWithType.vb: AzureBlobTenantStorageProvider.New
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  name: DeleteAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_DeleteAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  name.vb: DeleteAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync(String, System.Threading.CancellationToken)
+  nameWithType: AzureBlobTenantStorageProvider.DeleteAsync(string, CancellationToken)
+  nameWithType.vb: AzureBlobTenantStorageProvider.DeleteAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync*
+  name: DeleteAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_DeleteAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync
+  nameWithType: AzureBlobTenantStorageProvider.DeleteAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  name: DownloadAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_DownloadAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  name.vb: DownloadAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync(String, System.Threading.CancellationToken)
+  nameWithType: AzureBlobTenantStorageProvider.DownloadAsync(string, CancellationToken)
+  nameWithType.vb: AzureBlobTenantStorageProvider.DownloadAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync*
+  name: DownloadAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_DownloadAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync
+  nameWithType: AzureBlobTenantStorageProvider.DownloadAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  name: ListAsync(string?, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_ListAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  name.vb: ListAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync(String, System.Threading.CancellationToken)
+  nameWithType: AzureBlobTenantStorageProvider.ListAsync(string?, CancellationToken)
+  nameWithType.vb: AzureBlobTenantStorageProvider.ListAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync*
+  name: ListAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_ListAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync
+  nameWithType: AzureBlobTenantStorageProvider.ListAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  name: UploadAsync(string, Stream, string?, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_UploadAsync_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  name.vb: UploadAsync(String, Stream, String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync(string, System.IO.Stream, string?, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync(String, System.IO.Stream, String, System.Threading.CancellationToken)
+  nameWithType: AzureBlobTenantStorageProvider.UploadAsync(string, Stream, string?, CancellationToken)
+  nameWithType.vb: AzureBlobTenantStorageProvider.UploadAsync(String, Stream, String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync*
+  name: UploadAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_AzureBlobTenantStorageProvider_UploadAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync
+  nameWithType: AzureBlobTenantStorageProvider.UploadAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider
+  name: LocalTenantStorageProvider
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html
+  commentId: T:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider
+  nameWithType: LocalTenantStorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.#ctor(AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder,System.String)
+  name: LocalTenantStorageProvider(TenantStoragePathBuilder, string)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_LocalTenantStorageProvider__ctor_AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder_System_String_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.#ctor(AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder,System.String)
+  name.vb: New(TenantStoragePathBuilder, String)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.LocalTenantStorageProvider(AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder, string)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.New(AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder, String)
+  nameWithType: LocalTenantStorageProvider.LocalTenantStorageProvider(TenantStoragePathBuilder, string)
+  nameWithType.vb: LocalTenantStorageProvider.New(TenantStoragePathBuilder, String)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.#ctor*
+  name: LocalTenantStorageProvider
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_LocalTenantStorageProvider__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.LocalTenantStorageProvider
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.New
+  nameWithType: LocalTenantStorageProvider.LocalTenantStorageProvider
+  nameWithType.vb: LocalTenantStorageProvider.New
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  name: DeleteAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_LocalTenantStorageProvider_DeleteAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  name.vb: DeleteAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DeleteAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DeleteAsync(String, System.Threading.CancellationToken)
+  nameWithType: LocalTenantStorageProvider.DeleteAsync(string, CancellationToken)
+  nameWithType.vb: LocalTenantStorageProvider.DeleteAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DeleteAsync*
+  name: DeleteAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_LocalTenantStorageProvider_DeleteAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DeleteAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DeleteAsync
+  nameWithType: LocalTenantStorageProvider.DeleteAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  name: DownloadAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_LocalTenantStorageProvider_DownloadAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  name.vb: DownloadAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DownloadAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DownloadAsync(String, System.Threading.CancellationToken)
+  nameWithType: LocalTenantStorageProvider.DownloadAsync(string, CancellationToken)
+  nameWithType.vb: LocalTenantStorageProvider.DownloadAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DownloadAsync*
+  name: DownloadAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_LocalTenantStorageProvider_DownloadAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DownloadAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DownloadAsync
+  nameWithType: LocalTenantStorageProvider.DownloadAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  name: ListAsync(string?, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_LocalTenantStorageProvider_ListAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  name.vb: ListAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.ListAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.ListAsync(String, System.Threading.CancellationToken)
+  nameWithType: LocalTenantStorageProvider.ListAsync(string?, CancellationToken)
+  nameWithType.vb: LocalTenantStorageProvider.ListAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.ListAsync*
+  name: ListAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_LocalTenantStorageProvider_ListAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.ListAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.ListAsync
+  nameWithType: LocalTenantStorageProvider.ListAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  name: UploadAsync(string, Stream, string?, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_LocalTenantStorageProvider_UploadAsync_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  name.vb: UploadAsync(String, Stream, String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.UploadAsync(string, System.IO.Stream, string?, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.UploadAsync(String, System.IO.Stream, String, System.Threading.CancellationToken)
+  nameWithType: LocalTenantStorageProvider.UploadAsync(string, Stream, string?, CancellationToken)
+  nameWithType.vb: LocalTenantStorageProvider.UploadAsync(String, Stream, String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.UploadAsync*
+  name: UploadAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_LocalTenantStorageProvider_UploadAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.UploadAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.UploadAsync
+  nameWithType: LocalTenantStorageProvider.UploadAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider
+  name: S3TenantStorageProvider
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html
+  commentId: T:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider
+  nameWithType: S3TenantStorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.#ctor(Amazon.S3.IAmazonS3,AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder,System.String)
+  name: S3TenantStorageProvider(IAmazonS3, TenantStoragePathBuilder, string)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_S3TenantStorageProvider__ctor_Amazon_S3_IAmazonS3_AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder_System_String_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.#ctor(Amazon.S3.IAmazonS3,AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder,System.String)
+  name.vb: New(IAmazonS3, TenantStoragePathBuilder, String)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.S3TenantStorageProvider(Amazon.S3.IAmazonS3, AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder, string)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.New(Amazon.S3.IAmazonS3, AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder, String)
+  nameWithType: S3TenantStorageProvider.S3TenantStorageProvider(IAmazonS3, TenantStoragePathBuilder, string)
+  nameWithType.vb: S3TenantStorageProvider.New(IAmazonS3, TenantStoragePathBuilder, String)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.#ctor*
+  name: S3TenantStorageProvider
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_S3TenantStorageProvider__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.S3TenantStorageProvider
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.New
+  nameWithType: S3TenantStorageProvider.S3TenantStorageProvider
+  nameWithType.vb: S3TenantStorageProvider.New
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  name: DeleteAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_S3TenantStorageProvider_DeleteAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)
+  name.vb: DeleteAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DeleteAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DeleteAsync(String, System.Threading.CancellationToken)
+  nameWithType: S3TenantStorageProvider.DeleteAsync(string, CancellationToken)
+  nameWithType.vb: S3TenantStorageProvider.DeleteAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DeleteAsync*
+  name: DeleteAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_S3TenantStorageProvider_DeleteAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DeleteAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DeleteAsync
+  nameWithType: S3TenantStorageProvider.DeleteAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  name: DownloadAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_S3TenantStorageProvider_DownloadAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)
+  name.vb: DownloadAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DownloadAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DownloadAsync(String, System.Threading.CancellationToken)
+  nameWithType: S3TenantStorageProvider.DownloadAsync(string, CancellationToken)
+  nameWithType.vb: S3TenantStorageProvider.DownloadAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DownloadAsync*
+  name: DownloadAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_S3TenantStorageProvider_DownloadAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DownloadAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DownloadAsync
+  nameWithType: S3TenantStorageProvider.DownloadAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  name: ListAsync(string?, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_S3TenantStorageProvider_ListAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)
+  name.vb: ListAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.ListAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.ListAsync(String, System.Threading.CancellationToken)
+  nameWithType: S3TenantStorageProvider.ListAsync(string?, CancellationToken)
+  nameWithType.vb: S3TenantStorageProvider.ListAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.ListAsync*
+  name: ListAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_S3TenantStorageProvider_ListAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.ListAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.ListAsync
+  nameWithType: S3TenantStorageProvider.ListAsync
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  name: UploadAsync(string, Stream, string?, CancellationToken)
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_S3TenantStorageProvider_UploadAsync_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)
+  name.vb: UploadAsync(String, Stream, String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.UploadAsync(string, System.IO.Stream, string?, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.UploadAsync(String, System.IO.Stream, String, System.Threading.CancellationToken)
+  nameWithType: S3TenantStorageProvider.UploadAsync(string, Stream, string?, CancellationToken)
+  nameWithType.vb: S3TenantStorageProvider.UploadAsync(String, Stream, String, CancellationToken)
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.UploadAsync*
+  name: UploadAsync
+  href: api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html#AspNetCore_Multitenancy_FileStorage_Providers_S3TenantStorageProvider_UploadAsync_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.UploadAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.UploadAsync
+  nameWithType: S3TenantStorageProvider.UploadAsync
+- uid: AspNetCore.Multitenancy.FileStorage.StorageExtensions
+  name: StorageExtensions
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.html
+  commentId: T:AspNetCore.Multitenancy.FileStorage.StorageExtensions
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageExtensions
+  nameWithType: StorageExtensions
+- uid: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithAzureBlobStorage(AspNetCore.Multitenancy.MultitenancyBuilder)
+  name: WithAzureBlobStorage(MultitenancyBuilder)
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.html#AspNetCore_Multitenancy_FileStorage_StorageExtensions_WithAzureBlobStorage_AspNetCore_Multitenancy_MultitenancyBuilder_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithAzureBlobStorage(AspNetCore.Multitenancy.MultitenancyBuilder)
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithAzureBlobStorage(AspNetCore.Multitenancy.MultitenancyBuilder)
+  nameWithType: StorageExtensions.WithAzureBlobStorage(MultitenancyBuilder)
+- uid: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithAzureBlobStorage*
+  name: WithAzureBlobStorage
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.html#AspNetCore_Multitenancy_FileStorage_StorageExtensions_WithAzureBlobStorage_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithAzureBlobStorage
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithAzureBlobStorage
+  nameWithType: StorageExtensions.WithAzureBlobStorage
+- uid: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithLocalStorage(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)
+  name: WithLocalStorage(MultitenancyBuilder, string)
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.html#AspNetCore_Multitenancy_FileStorage_StorageExtensions_WithLocalStorage_AspNetCore_Multitenancy_MultitenancyBuilder_System_String_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithLocalStorage(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)
+  name.vb: WithLocalStorage(MultitenancyBuilder, String)
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithLocalStorage(AspNetCore.Multitenancy.MultitenancyBuilder, string)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithLocalStorage(AspNetCore.Multitenancy.MultitenancyBuilder, String)
+  nameWithType: StorageExtensions.WithLocalStorage(MultitenancyBuilder, string)
+  nameWithType.vb: StorageExtensions.WithLocalStorage(MultitenancyBuilder, String)
+- uid: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithLocalStorage*
+  name: WithLocalStorage
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.html#AspNetCore_Multitenancy_FileStorage_StorageExtensions_WithLocalStorage_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithLocalStorage
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithLocalStorage
+  nameWithType: StorageExtensions.WithLocalStorage
+- uid: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithS3Storage(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)
+  name: WithS3Storage(MultitenancyBuilder, string)
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.html#AspNetCore_Multitenancy_FileStorage_StorageExtensions_WithS3Storage_AspNetCore_Multitenancy_MultitenancyBuilder_System_String_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithS3Storage(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)
+  name.vb: WithS3Storage(MultitenancyBuilder, String)
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithS3Storage(AspNetCore.Multitenancy.MultitenancyBuilder, string)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithS3Storage(AspNetCore.Multitenancy.MultitenancyBuilder, String)
+  nameWithType: StorageExtensions.WithS3Storage(MultitenancyBuilder, string)
+  nameWithType.vb: StorageExtensions.WithS3Storage(MultitenancyBuilder, String)
+- uid: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithS3Storage*
+  name: WithS3Storage
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.html#AspNetCore_Multitenancy_FileStorage_StorageExtensions_WithS3Storage_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithS3Storage
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithS3Storage
+  nameWithType: StorageExtensions.WithS3Storage
+- uid: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithTenantStorage(AspNetCore.Multitenancy.MultitenancyBuilder,AspNetCore.Multitenancy.FileStorage.StorageProvider)
+  name: WithTenantStorage(MultitenancyBuilder, StorageProvider)
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.html#AspNetCore_Multitenancy_FileStorage_StorageExtensions_WithTenantStorage_AspNetCore_Multitenancy_MultitenancyBuilder_AspNetCore_Multitenancy_FileStorage_StorageProvider_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithTenantStorage(AspNetCore.Multitenancy.MultitenancyBuilder,AspNetCore.Multitenancy.FileStorage.StorageProvider)
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithTenantStorage(AspNetCore.Multitenancy.MultitenancyBuilder, AspNetCore.Multitenancy.FileStorage.StorageProvider)
+  nameWithType: StorageExtensions.WithTenantStorage(MultitenancyBuilder, StorageProvider)
+- uid: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithTenantStorage*
+  name: WithTenantStorage
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.html#AspNetCore_Multitenancy_FileStorage_StorageExtensions_WithTenantStorage_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithTenantStorage
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithTenantStorage
+  nameWithType: StorageExtensions.WithTenantStorage
+- uid: AspNetCore.Multitenancy.FileStorage.StorageProvider
+  name: StorageProvider
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageProvider.html
+  commentId: T:AspNetCore.Multitenancy.FileStorage.StorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageProvider
+  nameWithType: StorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.StorageProvider.AzureBlob
+  name: AzureBlob
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageProvider.html#AspNetCore_Multitenancy_FileStorage_StorageProvider_AzureBlob
+  commentId: F:AspNetCore.Multitenancy.FileStorage.StorageProvider.AzureBlob
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageProvider.AzureBlob
+  nameWithType: StorageProvider.AzureBlob
+- uid: AspNetCore.Multitenancy.FileStorage.StorageProvider.Local
+  name: Local
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageProvider.html#AspNetCore_Multitenancy_FileStorage_StorageProvider_Local
+  commentId: F:AspNetCore.Multitenancy.FileStorage.StorageProvider.Local
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageProvider.Local
+  nameWithType: StorageProvider.Local
+- uid: AspNetCore.Multitenancy.FileStorage.StorageProvider.S3
+  name: S3
+  href: api/AspNetCore.Multitenancy.FileStorage.StorageProvider.html#AspNetCore_Multitenancy_FileStorage_StorageProvider_S3
+  commentId: F:AspNetCore.Multitenancy.FileStorage.StorageProvider.S3
+  fullName: AspNetCore.Multitenancy.FileStorage.StorageProvider.S3
+  nameWithType: StorageProvider.S3
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  name: TenantStoragePathBuilder
+  href: api/AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html
+  commentId: T:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+  nameWithType: TenantStoragePathBuilder
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.#ctor(AspNetCore.Multitenancy.ITenantContext)
+  name: TenantStoragePathBuilder(ITenantContext)
+  href: api/AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html#AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder__ctor_AspNetCore_Multitenancy_ITenantContext_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.#ctor(AspNetCore.Multitenancy.ITenantContext)
+  name.vb: New(ITenantContext)
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.TenantStoragePathBuilder(AspNetCore.Multitenancy.ITenantContext)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.New(AspNetCore.Multitenancy.ITenantContext)
+  nameWithType: TenantStoragePathBuilder.TenantStoragePathBuilder(ITenantContext)
+  nameWithType.vb: TenantStoragePathBuilder.New(ITenantContext)
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.#ctor*
+  name: TenantStoragePathBuilder
+  href: api/AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html#AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.TenantStoragePathBuilder
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.New
+  nameWithType: TenantStoragePathBuilder.TenantStoragePathBuilder
+  nameWithType.vb: TenantStoragePathBuilder.New
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build(System.String)
+  name: Build(string)
+  href: api/AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html#AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder_Build_System_String_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build(System.String)
+  name.vb: Build(String)
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build(string)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build(String)
+  nameWithType: TenantStoragePathBuilder.Build(string)
+  nameWithType.vb: TenantStoragePathBuilder.Build(String)
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build*
+  name: Build
+  href: api/AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html#AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder_Build_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build
+  nameWithType: TenantStoragePathBuilder.Build
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix(System.String)
+  name: StripPrefix(string)
+  href: api/AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html#AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder_StripPrefix_System_String_
+  commentId: M:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix(System.String)
+  name.vb: StripPrefix(String)
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix(string)
+  fullName.vb: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix(String)
+  nameWithType: TenantStoragePathBuilder.StripPrefix(string)
+  nameWithType.vb: TenantStoragePathBuilder.StripPrefix(String)
+- uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix*
+  name: StripPrefix
+  href: api/AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html#AspNetCore_Multitenancy_FileStorage_TenantStoragePathBuilder_StripPrefix_
+  commentId: Overload:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix
+  nameWithType: TenantStoragePathBuilder.StripPrefix
+- uid: AspNetCore.Multitenancy.ITenantContext
+  name: ITenantContext
+  href: api/AspNetCore.Multitenancy.ITenantContext.html
+  commentId: T:AspNetCore.Multitenancy.ITenantContext
+  fullName: AspNetCore.Multitenancy.ITenantContext
+  nameWithType: ITenantContext
+- uid: AspNetCore.Multitenancy.ITenantContext.CreateTenantScope(System.String)
+  name: CreateTenantScope(string)
+  href: api/AspNetCore.Multitenancy.ITenantContext.html#AspNetCore_Multitenancy_ITenantContext_CreateTenantScope_System_String_
+  commentId: M:AspNetCore.Multitenancy.ITenantContext.CreateTenantScope(System.String)
+  name.vb: CreateTenantScope(String)
+  fullName: AspNetCore.Multitenancy.ITenantContext.CreateTenantScope(string)
+  fullName.vb: AspNetCore.Multitenancy.ITenantContext.CreateTenantScope(String)
+  nameWithType: ITenantContext.CreateTenantScope(string)
+  nameWithType.vb: ITenantContext.CreateTenantScope(String)
+- uid: AspNetCore.Multitenancy.ITenantContext.CreateTenantScope*
+  name: CreateTenantScope
+  href: api/AspNetCore.Multitenancy.ITenantContext.html#AspNetCore_Multitenancy_ITenantContext_CreateTenantScope_
+  commentId: Overload:AspNetCore.Multitenancy.ITenantContext.CreateTenantScope
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.ITenantContext.CreateTenantScope
+  nameWithType: ITenantContext.CreateTenantScope
+- uid: AspNetCore.Multitenancy.ITenantContext.CurrentTenant
+  name: CurrentTenant
+  href: api/AspNetCore.Multitenancy.ITenantContext.html#AspNetCore_Multitenancy_ITenantContext_CurrentTenant
+  commentId: P:AspNetCore.Multitenancy.ITenantContext.CurrentTenant
+  fullName: AspNetCore.Multitenancy.ITenantContext.CurrentTenant
+  nameWithType: ITenantContext.CurrentTenant
+- uid: AspNetCore.Multitenancy.ITenantContext.CurrentTenant*
+  name: CurrentTenant
+  href: api/AspNetCore.Multitenancy.ITenantContext.html#AspNetCore_Multitenancy_ITenantContext_CurrentTenant_
+  commentId: Overload:AspNetCore.Multitenancy.ITenantContext.CurrentTenant
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.ITenantContext.CurrentTenant
+  nameWithType: ITenantContext.CurrentTenant
+- uid: AspNetCore.Multitenancy.ITenantContext.HasTenant
+  name: HasTenant
+  href: api/AspNetCore.Multitenancy.ITenantContext.html#AspNetCore_Multitenancy_ITenantContext_HasTenant
+  commentId: P:AspNetCore.Multitenancy.ITenantContext.HasTenant
+  fullName: AspNetCore.Multitenancy.ITenantContext.HasTenant
+  nameWithType: ITenantContext.HasTenant
+- uid: AspNetCore.Multitenancy.ITenantContext.HasTenant*
+  name: HasTenant
+  href: api/AspNetCore.Multitenancy.ITenantContext.html#AspNetCore_Multitenancy_ITenantContext_HasTenant_
+  commentId: Overload:AspNetCore.Multitenancy.ITenantContext.HasTenant
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.ITenantContext.HasTenant
+  nameWithType: ITenantContext.HasTenant
+- uid: AspNetCore.Multitenancy.ITenantResolver
+  name: ITenantResolver
+  href: api/AspNetCore.Multitenancy.ITenantResolver.html
+  commentId: T:AspNetCore.Multitenancy.ITenantResolver
+  fullName: AspNetCore.Multitenancy.ITenantResolver
+  nameWithType: ITenantResolver
+- uid: AspNetCore.Multitenancy.ITenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  name: ResolveAsync(HttpContext)
+  href: api/AspNetCore.Multitenancy.ITenantResolver.html#AspNetCore_Multitenancy_ITenantResolver_ResolveAsync_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:AspNetCore.Multitenancy.ITenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: AspNetCore.Multitenancy.ITenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: ITenantResolver.ResolveAsync(HttpContext)
+- uid: AspNetCore.Multitenancy.ITenantResolver.ResolveAsync*
+  name: ResolveAsync
+  href: api/AspNetCore.Multitenancy.ITenantResolver.html#AspNetCore_Multitenancy_ITenantResolver_ResolveAsync_
+  commentId: Overload:AspNetCore.Multitenancy.ITenantResolver.ResolveAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.ITenantResolver.ResolveAsync
+  nameWithType: ITenantResolver.ResolveAsync
+- uid: AspNetCore.Multitenancy.ITenantStore
+  name: ITenantStore
+  href: api/AspNetCore.Multitenancy.ITenantStore.html
+  commentId: T:AspNetCore.Multitenancy.ITenantStore
+  fullName: AspNetCore.Multitenancy.ITenantStore
+  nameWithType: ITenantStore
+- uid: AspNetCore.Multitenancy.ITenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  name: AddTenantAsync(TenantInfo, CancellationToken)
+  href: api/AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_AddTenantAsync_AspNetCore_Multitenancy_TenantInfo_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.ITenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  fullName: AspNetCore.Multitenancy.ITenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo, System.Threading.CancellationToken)
+  nameWithType: ITenantStore.AddTenantAsync(TenantInfo, CancellationToken)
+- uid: AspNetCore.Multitenancy.ITenantStore.AddTenantAsync*
+  name: AddTenantAsync
+  href: api/AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_AddTenantAsync_
+  commentId: Overload:AspNetCore.Multitenancy.ITenantStore.AddTenantAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.ITenantStore.AddTenantAsync
+  nameWithType: ITenantStore.AddTenantAsync
+- uid: AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)
+  name: GetAllTenantsAsync(CancellationToken)
+  href: api/AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_GetAllTenantsAsync_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)
+  fullName: AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)
+  nameWithType: ITenantStore.GetAllTenantsAsync(CancellationToken)
+- uid: AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync*
+  name: GetAllTenantsAsync
+  href: api/AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_GetAllTenantsAsync_
+  commentId: Overload:AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync
+  nameWithType: ITenantStore.GetAllTenantsAsync
+- uid: AspNetCore.Multitenancy.ITenantStore.GetTenantAsync(System.String,System.Threading.CancellationToken)
+  name: GetTenantAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_GetTenantAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.ITenantStore.GetTenantAsync(System.String,System.Threading.CancellationToken)
+  name.vb: GetTenantAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.ITenantStore.GetTenantAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.ITenantStore.GetTenantAsync(String, System.Threading.CancellationToken)
+  nameWithType: ITenantStore.GetTenantAsync(string, CancellationToken)
+  nameWithType.vb: ITenantStore.GetTenantAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.ITenantStore.GetTenantAsync*
+  name: GetTenantAsync
+  href: api/AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_GetTenantAsync_
+  commentId: Overload:AspNetCore.Multitenancy.ITenantStore.GetTenantAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.ITenantStore.GetTenantAsync
+  nameWithType: ITenantStore.GetTenantAsync
+- uid: AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync(System.String,System.Threading.CancellationToken)
+  name: RemoveTenantAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_RemoveTenantAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync(System.String,System.Threading.CancellationToken)
+  name.vb: RemoveTenantAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync(String, System.Threading.CancellationToken)
+  nameWithType: ITenantStore.RemoveTenantAsync(string, CancellationToken)
+  nameWithType.vb: ITenantStore.RemoveTenantAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync*
+  name: RemoveTenantAsync
+  href: api/AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_RemoveTenantAsync_
+  commentId: Overload:AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync
+  nameWithType: ITenantStore.RemoveTenantAsync
+- uid: AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  name: UpdateTenantAsync(TenantInfo, CancellationToken)
+  href: api/AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_UpdateTenantAsync_AspNetCore_Multitenancy_TenantInfo_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  fullName: AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo, System.Threading.CancellationToken)
+  nameWithType: ITenantStore.UpdateTenantAsync(TenantInfo, CancellationToken)
+- uid: AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync*
+  name: UpdateTenantAsync
+  href: api/AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_UpdateTenantAsync_
+  commentId: Overload:AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync
+  nameWithType: ITenantStore.UpdateTenantAsync
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore
+  name: InMemoryTenantStore
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html
+  commentId: T:AspNetCore.Multitenancy.InMemoryTenantStore
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore
+  nameWithType: InMemoryTenantStore
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.#ctor(System.Collections.Generic.IEnumerable{AspNetCore.Multitenancy.TenantInfo})
+  name: InMemoryTenantStore(IEnumerable<TenantInfo>?)
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore__ctor_System_Collections_Generic_IEnumerable_AspNetCore_Multitenancy_TenantInfo__
+  commentId: M:AspNetCore.Multitenancy.InMemoryTenantStore.#ctor(System.Collections.Generic.IEnumerable{AspNetCore.Multitenancy.TenantInfo})
+  name.vb: New(IEnumerable(Of TenantInfo))
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.InMemoryTenantStore(System.Collections.Generic.IEnumerable<AspNetCore.Multitenancy.TenantInfo>?)
+  fullName.vb: AspNetCore.Multitenancy.InMemoryTenantStore.New(System.Collections.Generic.IEnumerable(Of AspNetCore.Multitenancy.TenantInfo))
+  nameWithType: InMemoryTenantStore.InMemoryTenantStore(IEnumerable<TenantInfo>?)
+  nameWithType.vb: InMemoryTenantStore.New(IEnumerable(Of TenantInfo))
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.#ctor*
+  name: InMemoryTenantStore
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.InMemoryTenantStore.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.InMemoryTenantStore
+  fullName.vb: AspNetCore.Multitenancy.InMemoryTenantStore.New
+  nameWithType: InMemoryTenantStore.InMemoryTenantStore
+  nameWithType.vb: InMemoryTenantStore.New
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  name: AddTenantAsync(TenantInfo, CancellationToken)
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore_AddTenantAsync_AspNetCore_Multitenancy_TenantInfo_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.InMemoryTenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo, System.Threading.CancellationToken)
+  nameWithType: InMemoryTenantStore.AddTenantAsync(TenantInfo, CancellationToken)
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.AddTenantAsync*
+  name: AddTenantAsync
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore_AddTenantAsync_
+  commentId: Overload:AspNetCore.Multitenancy.InMemoryTenantStore.AddTenantAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.AddTenantAsync
+  nameWithType: InMemoryTenantStore.AddTenantAsync
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)
+  name: GetAllTenantsAsync(CancellationToken)
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore_GetAllTenantsAsync_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.InMemoryTenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)
+  nameWithType: InMemoryTenantStore.GetAllTenantsAsync(CancellationToken)
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.GetAllTenantsAsync*
+  name: GetAllTenantsAsync
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore_GetAllTenantsAsync_
+  commentId: Overload:AspNetCore.Multitenancy.InMemoryTenantStore.GetAllTenantsAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.GetAllTenantsAsync
+  nameWithType: InMemoryTenantStore.GetAllTenantsAsync
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.GetTenantAsync(System.String,System.Threading.CancellationToken)
+  name: GetTenantAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore_GetTenantAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.InMemoryTenantStore.GetTenantAsync(System.String,System.Threading.CancellationToken)
+  name.vb: GetTenantAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.GetTenantAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.InMemoryTenantStore.GetTenantAsync(String, System.Threading.CancellationToken)
+  nameWithType: InMemoryTenantStore.GetTenantAsync(string, CancellationToken)
+  nameWithType.vb: InMemoryTenantStore.GetTenantAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.GetTenantAsync*
+  name: GetTenantAsync
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore_GetTenantAsync_
+  commentId: Overload:AspNetCore.Multitenancy.InMemoryTenantStore.GetTenantAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.GetTenantAsync
+  nameWithType: InMemoryTenantStore.GetTenantAsync
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.RemoveTenantAsync(System.String,System.Threading.CancellationToken)
+  name: RemoveTenantAsync(string, CancellationToken)
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore_RemoveTenantAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.InMemoryTenantStore.RemoveTenantAsync(System.String,System.Threading.CancellationToken)
+  name.vb: RemoveTenantAsync(String, CancellationToken)
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.RemoveTenantAsync(string, System.Threading.CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.InMemoryTenantStore.RemoveTenantAsync(String, System.Threading.CancellationToken)
+  nameWithType: InMemoryTenantStore.RemoveTenantAsync(string, CancellationToken)
+  nameWithType.vb: InMemoryTenantStore.RemoveTenantAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.RemoveTenantAsync*
+  name: RemoveTenantAsync
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore_RemoveTenantAsync_
+  commentId: Overload:AspNetCore.Multitenancy.InMemoryTenantStore.RemoveTenantAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.RemoveTenantAsync
+  nameWithType: InMemoryTenantStore.RemoveTenantAsync
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  name: UpdateTenantAsync(TenantInfo, CancellationToken)
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore_UpdateTenantAsync_AspNetCore_Multitenancy_TenantInfo_System_Threading_CancellationToken_
+  commentId: M:AspNetCore.Multitenancy.InMemoryTenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo, System.Threading.CancellationToken)
+  nameWithType: InMemoryTenantStore.UpdateTenantAsync(TenantInfo, CancellationToken)
+- uid: AspNetCore.Multitenancy.InMemoryTenantStore.UpdateTenantAsync*
+  name: UpdateTenantAsync
+  href: api/AspNetCore.Multitenancy.InMemoryTenantStore.html#AspNetCore_Multitenancy_InMemoryTenantStore_UpdateTenantAsync_
+  commentId: Overload:AspNetCore.Multitenancy.InMemoryTenantStore.UpdateTenantAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.InMemoryTenantStore.UpdateTenantAsync
+  nameWithType: InMemoryTenantStore.UpdateTenantAsync
+- uid: AspNetCore.Multitenancy.IsolationStrategy
+  name: IsolationStrategy
+  href: api/AspNetCore.Multitenancy.IsolationStrategy.html
+  commentId: T:AspNetCore.Multitenancy.IsolationStrategy
+  fullName: AspNetCore.Multitenancy.IsolationStrategy
+  nameWithType: IsolationStrategy
+- uid: AspNetCore.Multitenancy.IsolationStrategy.DbPerTenant
+  name: DbPerTenant
+  href: api/AspNetCore.Multitenancy.IsolationStrategy.html#AspNetCore_Multitenancy_IsolationStrategy_DbPerTenant
+  commentId: F:AspNetCore.Multitenancy.IsolationStrategy.DbPerTenant
+  fullName: AspNetCore.Multitenancy.IsolationStrategy.DbPerTenant
+  nameWithType: IsolationStrategy.DbPerTenant
+- uid: AspNetCore.Multitenancy.IsolationStrategy.RowLevel
+  name: RowLevel
+  href: api/AspNetCore.Multitenancy.IsolationStrategy.html#AspNetCore_Multitenancy_IsolationStrategy_RowLevel
+  commentId: F:AspNetCore.Multitenancy.IsolationStrategy.RowLevel
+  fullName: AspNetCore.Multitenancy.IsolationStrategy.RowLevel
+  nameWithType: IsolationStrategy.RowLevel
+- uid: AspNetCore.Multitenancy.IsolationStrategy.SchemaPerTenant
+  name: SchemaPerTenant
+  href: api/AspNetCore.Multitenancy.IsolationStrategy.html#AspNetCore_Multitenancy_IsolationStrategy_SchemaPerTenant
+  commentId: F:AspNetCore.Multitenancy.IsolationStrategy.SchemaPerTenant
+  fullName: AspNetCore.Multitenancy.IsolationStrategy.SchemaPerTenant
+  nameWithType: IsolationStrategy.SchemaPerTenant
+- uid: AspNetCore.Multitenancy.MultitenancyBuilder
+  name: MultitenancyBuilder
+  href: api/AspNetCore.Multitenancy.MultitenancyBuilder.html
+  commentId: T:AspNetCore.Multitenancy.MultitenancyBuilder
+  fullName: AspNetCore.Multitenancy.MultitenancyBuilder
+  nameWithType: MultitenancyBuilder
+- uid: AspNetCore.Multitenancy.MultitenancyBuilder.Options
+  name: Options
+  href: api/AspNetCore.Multitenancy.MultitenancyBuilder.html#AspNetCore_Multitenancy_MultitenancyBuilder_Options
+  commentId: P:AspNetCore.Multitenancy.MultitenancyBuilder.Options
+  fullName: AspNetCore.Multitenancy.MultitenancyBuilder.Options
+  nameWithType: MultitenancyBuilder.Options
+- uid: AspNetCore.Multitenancy.MultitenancyBuilder.Options*
+  name: Options
+  href: api/AspNetCore.Multitenancy.MultitenancyBuilder.html#AspNetCore_Multitenancy_MultitenancyBuilder_Options_
+  commentId: Overload:AspNetCore.Multitenancy.MultitenancyBuilder.Options
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.MultitenancyBuilder.Options
+  nameWithType: MultitenancyBuilder.Options
+- uid: AspNetCore.Multitenancy.MultitenancyBuilder.Services
+  name: Services
+  href: api/AspNetCore.Multitenancy.MultitenancyBuilder.html#AspNetCore_Multitenancy_MultitenancyBuilder_Services
+  commentId: P:AspNetCore.Multitenancy.MultitenancyBuilder.Services
+  fullName: AspNetCore.Multitenancy.MultitenancyBuilder.Services
+  nameWithType: MultitenancyBuilder.Services
+- uid: AspNetCore.Multitenancy.MultitenancyBuilder.Services*
+  name: Services
+  href: api/AspNetCore.Multitenancy.MultitenancyBuilder.html#AspNetCore_Multitenancy_MultitenancyBuilder_Services_
+  commentId: Overload:AspNetCore.Multitenancy.MultitenancyBuilder.Services
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.MultitenancyBuilder.Services
+  nameWithType: MultitenancyBuilder.Services
+- uid: AspNetCore.Multitenancy.MultitenancyOptions
+  name: MultitenancyOptions
+  href: api/AspNetCore.Multitenancy.MultitenancyOptions.html
+  commentId: T:AspNetCore.Multitenancy.MultitenancyOptions
+  fullName: AspNetCore.Multitenancy.MultitenancyOptions
+  nameWithType: MultitenancyOptions
+- uid: AspNetCore.Multitenancy.MultitenancyOptions.IsolationStrategy
+  name: IsolationStrategy
+  href: api/AspNetCore.Multitenancy.MultitenancyOptions.html#AspNetCore_Multitenancy_MultitenancyOptions_IsolationStrategy
+  commentId: P:AspNetCore.Multitenancy.MultitenancyOptions.IsolationStrategy
+  fullName: AspNetCore.Multitenancy.MultitenancyOptions.IsolationStrategy
+  nameWithType: MultitenancyOptions.IsolationStrategy
+- uid: AspNetCore.Multitenancy.MultitenancyOptions.IsolationStrategy*
+  name: IsolationStrategy
+  href: api/AspNetCore.Multitenancy.MultitenancyOptions.html#AspNetCore_Multitenancy_MultitenancyOptions_IsolationStrategy_
+  commentId: Overload:AspNetCore.Multitenancy.MultitenancyOptions.IsolationStrategy
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.MultitenancyOptions.IsolationStrategy
+  nameWithType: MultitenancyOptions.IsolationStrategy
+- uid: AspNetCore.Multitenancy.MultitenancyOptions.RequireTenant
+  name: RequireTenant
+  href: api/AspNetCore.Multitenancy.MultitenancyOptions.html#AspNetCore_Multitenancy_MultitenancyOptions_RequireTenant
+  commentId: P:AspNetCore.Multitenancy.MultitenancyOptions.RequireTenant
+  fullName: AspNetCore.Multitenancy.MultitenancyOptions.RequireTenant
+  nameWithType: MultitenancyOptions.RequireTenant
+- uid: AspNetCore.Multitenancy.MultitenancyOptions.RequireTenant*
+  name: RequireTenant
+  href: api/AspNetCore.Multitenancy.MultitenancyOptions.html#AspNetCore_Multitenancy_MultitenancyOptions_RequireTenant_
+  commentId: Overload:AspNetCore.Multitenancy.MultitenancyOptions.RequireTenant
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.MultitenancyOptions.RequireTenant
+  nameWithType: MultitenancyOptions.RequireTenant
+- uid: AspNetCore.Multitenancy.MultitenancyOptions.TenantNotFoundStatusCode
+  name: TenantNotFoundStatusCode
+  href: api/AspNetCore.Multitenancy.MultitenancyOptions.html#AspNetCore_Multitenancy_MultitenancyOptions_TenantNotFoundStatusCode
+  commentId: P:AspNetCore.Multitenancy.MultitenancyOptions.TenantNotFoundStatusCode
+  fullName: AspNetCore.Multitenancy.MultitenancyOptions.TenantNotFoundStatusCode
+  nameWithType: MultitenancyOptions.TenantNotFoundStatusCode
+- uid: AspNetCore.Multitenancy.MultitenancyOptions.TenantNotFoundStatusCode*
+  name: TenantNotFoundStatusCode
+  href: api/AspNetCore.Multitenancy.MultitenancyOptions.html#AspNetCore_Multitenancy_MultitenancyOptions_TenantNotFoundStatusCode_
+  commentId: Overload:AspNetCore.Multitenancy.MultitenancyOptions.TenantNotFoundStatusCode
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.MultitenancyOptions.TenantNotFoundStatusCode
+  nameWithType: MultitenancyOptions.TenantNotFoundStatusCode
+- uid: AspNetCore.Multitenancy.MultitenancyOptions.TenantStore
+  name: TenantStore
+  href: api/AspNetCore.Multitenancy.MultitenancyOptions.html#AspNetCore_Multitenancy_MultitenancyOptions_TenantStore
+  commentId: P:AspNetCore.Multitenancy.MultitenancyOptions.TenantStore
+  fullName: AspNetCore.Multitenancy.MultitenancyOptions.TenantStore
+  nameWithType: MultitenancyOptions.TenantStore
+- uid: AspNetCore.Multitenancy.MultitenancyOptions.TenantStore*
+  name: TenantStore
+  href: api/AspNetCore.Multitenancy.MultitenancyOptions.html#AspNetCore_Multitenancy_MultitenancyOptions_TenantStore_
+  commentId: Overload:AspNetCore.Multitenancy.MultitenancyOptions.TenantStore
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.MultitenancyOptions.TenantStore
+  nameWithType: MultitenancyOptions.TenantStore
+- uid: AspNetCore.Multitenancy.Resolvers
+  name: AspNetCore.Multitenancy.Resolvers
+  href: api/AspNetCore.Multitenancy.Resolvers.html
+  commentId: N:AspNetCore.Multitenancy.Resolvers
+  fullName: AspNetCore.Multitenancy.Resolvers
+  nameWithType: AspNetCore.Multitenancy.Resolvers
+- uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+  name: ClaimsTenantResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.html
+  commentId: T:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+  fullName: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+  nameWithType: ClaimsTenantResolver
+- uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)
+  name: ClaimsTenantResolver(ITenantStore, string)
+  href: api/AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.html#AspNetCore_Multitenancy_Resolvers_ClaimsTenantResolver__ctor_AspNetCore_Multitenancy_ITenantStore_System_String_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)
+  name.vb: New(ITenantStore, String)
+  fullName: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ClaimsTenantResolver(AspNetCore.Multitenancy.ITenantStore, string)
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.New(AspNetCore.Multitenancy.ITenantStore, String)
+  nameWithType: ClaimsTenantResolver.ClaimsTenantResolver(ITenantStore, string)
+  nameWithType.vb: ClaimsTenantResolver.New(ITenantStore, String)
+- uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.#ctor*
+  name: ClaimsTenantResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.html#AspNetCore_Multitenancy_Resolvers_ClaimsTenantResolver__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ClaimsTenantResolver
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.New
+  nameWithType: ClaimsTenantResolver.ClaimsTenantResolver
+  nameWithType.vb: ClaimsTenantResolver.New
+- uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  name: ResolveAsync(HttpContext)
+  href: api/AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.html#AspNetCore_Multitenancy_Resolvers_ClaimsTenantResolver_ResolveAsync_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: ClaimsTenantResolver.ResolveAsync(HttpContext)
+- uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync*
+  name: ResolveAsync
+  href: api/AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.html#AspNetCore_Multitenancy_Resolvers_ClaimsTenantResolver_ResolveAsync_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync
+  nameWithType: ClaimsTenantResolver.ResolveAsync
+- uid: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver
+  name: HeaderTenantResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.html
+  commentId: T:AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver
+  fullName: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver
+  nameWithType: HeaderTenantResolver
+- uid: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)
+  name: HeaderTenantResolver(ITenantStore, string)
+  href: api/AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.html#AspNetCore_Multitenancy_Resolvers_HeaderTenantResolver__ctor_AspNetCore_Multitenancy_ITenantStore_System_String_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)
+  name.vb: New(ITenantStore, String)
+  fullName: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.HeaderTenantResolver(AspNetCore.Multitenancy.ITenantStore, string)
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.New(AspNetCore.Multitenancy.ITenantStore, String)
+  nameWithType: HeaderTenantResolver.HeaderTenantResolver(ITenantStore, string)
+  nameWithType.vb: HeaderTenantResolver.New(ITenantStore, String)
+- uid: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.#ctor*
+  name: HeaderTenantResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.html#AspNetCore_Multitenancy_Resolvers_HeaderTenantResolver__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.HeaderTenantResolver
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.New
+  nameWithType: HeaderTenantResolver.HeaderTenantResolver
+  nameWithType.vb: HeaderTenantResolver.New
+- uid: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  name: ResolveAsync(HttpContext)
+  href: api/AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.html#AspNetCore_Multitenancy_Resolvers_HeaderTenantResolver_ResolveAsync_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: HeaderTenantResolver.ResolveAsync(HttpContext)
+- uid: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.ResolveAsync*
+  name: ResolveAsync
+  href: api/AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.html#AspNetCore_Multitenancy_Resolvers_HeaderTenantResolver_ResolveAsync_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.ResolveAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.ResolveAsync
+  nameWithType: HeaderTenantResolver.ResolveAsync
+- uid: AspNetCore.Multitenancy.Resolvers.HostTenantResolver
+  name: HostTenantResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.HostTenantResolver.html
+  commentId: T:AspNetCore.Multitenancy.Resolvers.HostTenantResolver
+  fullName: AspNetCore.Multitenancy.Resolvers.HostTenantResolver
+  nameWithType: HostTenantResolver
+- uid: AspNetCore.Multitenancy.Resolvers.HostTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)
+  name: HostTenantResolver(ITenantStore, string?)
+  href: api/AspNetCore.Multitenancy.Resolvers.HostTenantResolver.html#AspNetCore_Multitenancy_Resolvers_HostTenantResolver__ctor_AspNetCore_Multitenancy_ITenantStore_System_String_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.HostTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)
+  name.vb: New(ITenantStore, String)
+  fullName: AspNetCore.Multitenancy.Resolvers.HostTenantResolver.HostTenantResolver(AspNetCore.Multitenancy.ITenantStore, string?)
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.HostTenantResolver.New(AspNetCore.Multitenancy.ITenantStore, String)
+  nameWithType: HostTenantResolver.HostTenantResolver(ITenantStore, string?)
+  nameWithType.vb: HostTenantResolver.New(ITenantStore, String)
+- uid: AspNetCore.Multitenancy.Resolvers.HostTenantResolver.#ctor*
+  name: HostTenantResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.HostTenantResolver.html#AspNetCore_Multitenancy_Resolvers_HostTenantResolver__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.HostTenantResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.Resolvers.HostTenantResolver.HostTenantResolver
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.HostTenantResolver.New
+  nameWithType: HostTenantResolver.HostTenantResolver
+  nameWithType.vb: HostTenantResolver.New
+- uid: AspNetCore.Multitenancy.Resolvers.HostTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  name: ResolveAsync(HttpContext)
+  href: api/AspNetCore.Multitenancy.Resolvers.HostTenantResolver.html#AspNetCore_Multitenancy_Resolvers_HostTenantResolver_ResolveAsync_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.HostTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: AspNetCore.Multitenancy.Resolvers.HostTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: HostTenantResolver.ResolveAsync(HttpContext)
+- uid: AspNetCore.Multitenancy.Resolvers.HostTenantResolver.ResolveAsync*
+  name: ResolveAsync
+  href: api/AspNetCore.Multitenancy.Resolvers.HostTenantResolver.html#AspNetCore_Multitenancy_Resolvers_HostTenantResolver_ResolveAsync_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.HostTenantResolver.ResolveAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.Resolvers.HostTenantResolver.ResolveAsync
+  nameWithType: HostTenantResolver.ResolveAsync
+- uid: AspNetCore.Multitenancy.Resolvers.PathTenantResolver
+  name: PathTenantResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.PathTenantResolver.html
+  commentId: T:AspNetCore.Multitenancy.Resolvers.PathTenantResolver
+  fullName: AspNetCore.Multitenancy.Resolvers.PathTenantResolver
+  nameWithType: PathTenantResolver
+- uid: AspNetCore.Multitenancy.Resolvers.PathTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore)
+  name: PathTenantResolver(ITenantStore)
+  href: api/AspNetCore.Multitenancy.Resolvers.PathTenantResolver.html#AspNetCore_Multitenancy_Resolvers_PathTenantResolver__ctor_AspNetCore_Multitenancy_ITenantStore_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.PathTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore)
+  name.vb: New(ITenantStore)
+  fullName: AspNetCore.Multitenancy.Resolvers.PathTenantResolver.PathTenantResolver(AspNetCore.Multitenancy.ITenantStore)
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.PathTenantResolver.New(AspNetCore.Multitenancy.ITenantStore)
+  nameWithType: PathTenantResolver.PathTenantResolver(ITenantStore)
+  nameWithType.vb: PathTenantResolver.New(ITenantStore)
+- uid: AspNetCore.Multitenancy.Resolvers.PathTenantResolver.#ctor*
+  name: PathTenantResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.PathTenantResolver.html#AspNetCore_Multitenancy_Resolvers_PathTenantResolver__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.PathTenantResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.Resolvers.PathTenantResolver.PathTenantResolver
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.PathTenantResolver.New
+  nameWithType: PathTenantResolver.PathTenantResolver
+  nameWithType.vb: PathTenantResolver.New
+- uid: AspNetCore.Multitenancy.Resolvers.PathTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  name: ResolveAsync(HttpContext)
+  href: api/AspNetCore.Multitenancy.Resolvers.PathTenantResolver.html#AspNetCore_Multitenancy_Resolvers_PathTenantResolver_ResolveAsync_Microsoft_AspNetCore_Http_HttpContext_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.PathTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  fullName: AspNetCore.Multitenancy.Resolvers.PathTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  nameWithType: PathTenantResolver.ResolveAsync(HttpContext)
+- uid: AspNetCore.Multitenancy.Resolvers.PathTenantResolver.ResolveAsync*
+  name: ResolveAsync
+  href: api/AspNetCore.Multitenancy.Resolvers.PathTenantResolver.html#AspNetCore_Multitenancy_Resolvers_PathTenantResolver_ResolveAsync_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.PathTenantResolver.ResolveAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.Resolvers.PathTenantResolver.ResolveAsync
+  nameWithType: PathTenantResolver.ResolveAsync
+- uid: AspNetCore.Multitenancy.Resolvers.ResolverExtensions
+  name: ResolverExtensions
+  href: api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.html
+  commentId: T:AspNetCore.Multitenancy.Resolvers.ResolverExtensions
+  fullName: AspNetCore.Multitenancy.Resolvers.ResolverExtensions
+  nameWithType: ResolverExtensions
+- uid: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithClaimsResolver(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)
+  name: WithClaimsResolver(MultitenancyBuilder, string)
+  href: api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.html#AspNetCore_Multitenancy_Resolvers_ResolverExtensions_WithClaimsResolver_AspNetCore_Multitenancy_MultitenancyBuilder_System_String_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithClaimsResolver(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)
+  name.vb: WithClaimsResolver(MultitenancyBuilder, String)
+  fullName: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithClaimsResolver(AspNetCore.Multitenancy.MultitenancyBuilder, string)
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithClaimsResolver(AspNetCore.Multitenancy.MultitenancyBuilder, String)
+  nameWithType: ResolverExtensions.WithClaimsResolver(MultitenancyBuilder, string)
+  nameWithType.vb: ResolverExtensions.WithClaimsResolver(MultitenancyBuilder, String)
+- uid: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithClaimsResolver*
+  name: WithClaimsResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.html#AspNetCore_Multitenancy_Resolvers_ResolverExtensions_WithClaimsResolver_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithClaimsResolver
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithClaimsResolver
+  nameWithType: ResolverExtensions.WithClaimsResolver
+- uid: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHeaderResolver(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)
+  name: WithHeaderResolver(MultitenancyBuilder, string)
+  href: api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.html#AspNetCore_Multitenancy_Resolvers_ResolverExtensions_WithHeaderResolver_AspNetCore_Multitenancy_MultitenancyBuilder_System_String_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHeaderResolver(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)
+  name.vb: WithHeaderResolver(MultitenancyBuilder, String)
+  fullName: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHeaderResolver(AspNetCore.Multitenancy.MultitenancyBuilder, string)
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHeaderResolver(AspNetCore.Multitenancy.MultitenancyBuilder, String)
+  nameWithType: ResolverExtensions.WithHeaderResolver(MultitenancyBuilder, string)
+  nameWithType.vb: ResolverExtensions.WithHeaderResolver(MultitenancyBuilder, String)
+- uid: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHeaderResolver*
+  name: WithHeaderResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.html#AspNetCore_Multitenancy_Resolvers_ResolverExtensions_WithHeaderResolver_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHeaderResolver
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHeaderResolver
+  nameWithType: ResolverExtensions.WithHeaderResolver
+- uid: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHostResolver(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)
+  name: WithHostResolver(MultitenancyBuilder, string?)
+  href: api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.html#AspNetCore_Multitenancy_Resolvers_ResolverExtensions_WithHostResolver_AspNetCore_Multitenancy_MultitenancyBuilder_System_String_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHostResolver(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)
+  name.vb: WithHostResolver(MultitenancyBuilder, String)
+  fullName: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHostResolver(AspNetCore.Multitenancy.MultitenancyBuilder, string?)
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHostResolver(AspNetCore.Multitenancy.MultitenancyBuilder, String)
+  nameWithType: ResolverExtensions.WithHostResolver(MultitenancyBuilder, string?)
+  nameWithType.vb: ResolverExtensions.WithHostResolver(MultitenancyBuilder, String)
+- uid: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHostResolver*
+  name: WithHostResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.html#AspNetCore_Multitenancy_Resolvers_ResolverExtensions_WithHostResolver_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHostResolver
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithHostResolver
+  nameWithType: ResolverExtensions.WithHostResolver
+- uid: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithPathResolver(AspNetCore.Multitenancy.MultitenancyBuilder)
+  name: WithPathResolver(MultitenancyBuilder)
+  href: api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.html#AspNetCore_Multitenancy_Resolvers_ResolverExtensions_WithPathResolver_AspNetCore_Multitenancy_MultitenancyBuilder_
+  commentId: M:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithPathResolver(AspNetCore.Multitenancy.MultitenancyBuilder)
+  fullName: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithPathResolver(AspNetCore.Multitenancy.MultitenancyBuilder)
+  nameWithType: ResolverExtensions.WithPathResolver(MultitenancyBuilder)
+- uid: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithPathResolver*
+  name: WithPathResolver
+  href: api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.html#AspNetCore_Multitenancy_Resolvers_ResolverExtensions_WithPathResolver_
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithPathResolver
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.WithPathResolver
+  nameWithType: ResolverExtensions.WithPathResolver
+- uid: AspNetCore.Multitenancy.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/AspNetCore.Multitenancy.ServiceCollectionExtensions.html
+  commentId: T:AspNetCore.Multitenancy.ServiceCollectionExtensions
+  fullName: AspNetCore.Multitenancy.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{AspNetCore.Multitenancy.MultitenancyOptions})
+  name: AddMultitenancy(IServiceCollection, Action<MultitenancyOptions>?)
+  href: api/AspNetCore.Multitenancy.ServiceCollectionExtensions.html#AspNetCore_Multitenancy_ServiceCollectionExtensions_AddMultitenancy_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_AspNetCore_Multitenancy_MultitenancyOptions__
+  commentId: M:AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{AspNetCore.Multitenancy.MultitenancyOptions})
+  name.vb: AddMultitenancy(IServiceCollection, Action(Of MultitenancyOptions))
+  fullName: AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<AspNetCore.Multitenancy.MultitenancyOptions>?)
+  fullName.vb: AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of AspNetCore.Multitenancy.MultitenancyOptions))
+  nameWithType: ServiceCollectionExtensions.AddMultitenancy(IServiceCollection, Action<MultitenancyOptions>?)
+  nameWithType.vb: ServiceCollectionExtensions.AddMultitenancy(IServiceCollection, Action(Of MultitenancyOptions))
+- uid: AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy*
+  name: AddMultitenancy
+  href: api/AspNetCore.Multitenancy.ServiceCollectionExtensions.html#AspNetCore_Multitenancy_ServiceCollectionExtensions_AddMultitenancy_
+  commentId: Overload:AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy
+  nameWithType: ServiceCollectionExtensions.AddMultitenancy
+- uid: AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseMultitenancy(IApplicationBuilder)
+  href: api/AspNetCore.Multitenancy.ServiceCollectionExtensions.html#AspNetCore_Multitenancy_ServiceCollectionExtensions_UseMultitenancy_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: ServiceCollectionExtensions.UseMultitenancy(IApplicationBuilder)
+- uid: AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy*
+  name: UseMultitenancy
+  href: api/AspNetCore.Multitenancy.ServiceCollectionExtensions.html#AspNetCore_Multitenancy_ServiceCollectionExtensions_UseMultitenancy_
+  commentId: Overload:AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy
+  nameWithType: ServiceCollectionExtensions.UseMultitenancy
+- uid: AspNetCore.Multitenancy.TenantInfo
+  name: TenantInfo
+  href: api/AspNetCore.Multitenancy.TenantInfo.html
+  commentId: T:AspNetCore.Multitenancy.TenantInfo
+  fullName: AspNetCore.Multitenancy.TenantInfo
+  nameWithType: TenantInfo
+- uid: AspNetCore.Multitenancy.TenantInfo.ConnectionString
+  name: ConnectionString
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_ConnectionString
+  commentId: P:AspNetCore.Multitenancy.TenantInfo.ConnectionString
+  fullName: AspNetCore.Multitenancy.TenantInfo.ConnectionString
+  nameWithType: TenantInfo.ConnectionString
+- uid: AspNetCore.Multitenancy.TenantInfo.ConnectionString*
+  name: ConnectionString
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_ConnectionString_
+  commentId: Overload:AspNetCore.Multitenancy.TenantInfo.ConnectionString
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.TenantInfo.ConnectionString
+  nameWithType: TenantInfo.ConnectionString
+- uid: AspNetCore.Multitenancy.TenantInfo.CreatedAt
+  name: CreatedAt
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_CreatedAt
+  commentId: P:AspNetCore.Multitenancy.TenantInfo.CreatedAt
+  fullName: AspNetCore.Multitenancy.TenantInfo.CreatedAt
+  nameWithType: TenantInfo.CreatedAt
+- uid: AspNetCore.Multitenancy.TenantInfo.CreatedAt*
+  name: CreatedAt
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_CreatedAt_
+  commentId: Overload:AspNetCore.Multitenancy.TenantInfo.CreatedAt
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.TenantInfo.CreatedAt
+  nameWithType: TenantInfo.CreatedAt
+- uid: AspNetCore.Multitenancy.TenantInfo.Id
+  name: Id
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_Id
+  commentId: P:AspNetCore.Multitenancy.TenantInfo.Id
+  fullName: AspNetCore.Multitenancy.TenantInfo.Id
+  nameWithType: TenantInfo.Id
+- uid: AspNetCore.Multitenancy.TenantInfo.Id*
+  name: Id
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_Id_
+  commentId: Overload:AspNetCore.Multitenancy.TenantInfo.Id
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.TenantInfo.Id
+  nameWithType: TenantInfo.Id
+- uid: AspNetCore.Multitenancy.TenantInfo.IsActive
+  name: IsActive
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_IsActive
+  commentId: P:AspNetCore.Multitenancy.TenantInfo.IsActive
+  fullName: AspNetCore.Multitenancy.TenantInfo.IsActive
+  nameWithType: TenantInfo.IsActive
+- uid: AspNetCore.Multitenancy.TenantInfo.IsActive*
+  name: IsActive
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_IsActive_
+  commentId: Overload:AspNetCore.Multitenancy.TenantInfo.IsActive
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.TenantInfo.IsActive
+  nameWithType: TenantInfo.IsActive
+- uid: AspNetCore.Multitenancy.TenantInfo.Name
+  name: Name
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_Name
+  commentId: P:AspNetCore.Multitenancy.TenantInfo.Name
+  fullName: AspNetCore.Multitenancy.TenantInfo.Name
+  nameWithType: TenantInfo.Name
+- uid: AspNetCore.Multitenancy.TenantInfo.Name*
+  name: Name
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_Name_
+  commentId: Overload:AspNetCore.Multitenancy.TenantInfo.Name
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.TenantInfo.Name
+  nameWithType: TenantInfo.Name
+- uid: AspNetCore.Multitenancy.TenantInfo.Plan
+  name: Plan
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_Plan
+  commentId: P:AspNetCore.Multitenancy.TenantInfo.Plan
+  fullName: AspNetCore.Multitenancy.TenantInfo.Plan
+  nameWithType: TenantInfo.Plan
+- uid: AspNetCore.Multitenancy.TenantInfo.Plan*
+  name: Plan
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_Plan_
+  commentId: Overload:AspNetCore.Multitenancy.TenantInfo.Plan
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.TenantInfo.Plan
+  nameWithType: TenantInfo.Plan
+- uid: AspNetCore.Multitenancy.TenantInfo.Schema
+  name: Schema
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_Schema
+  commentId: P:AspNetCore.Multitenancy.TenantInfo.Schema
+  fullName: AspNetCore.Multitenancy.TenantInfo.Schema
+  nameWithType: TenantInfo.Schema
+- uid: AspNetCore.Multitenancy.TenantInfo.Schema*
+  name: Schema
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_Schema_
+  commentId: Overload:AspNetCore.Multitenancy.TenantInfo.Schema
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.TenantInfo.Schema
+  nameWithType: TenantInfo.Schema
+- uid: AspNetCore.Multitenancy.TenantInfo.Settings
+  name: Settings
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_Settings
+  commentId: P:AspNetCore.Multitenancy.TenantInfo.Settings
+  fullName: AspNetCore.Multitenancy.TenantInfo.Settings
+  nameWithType: TenantInfo.Settings
+- uid: AspNetCore.Multitenancy.TenantInfo.Settings*
+  name: Settings
+  href: api/AspNetCore.Multitenancy.TenantInfo.html#AspNetCore_Multitenancy_TenantInfo_Settings_
+  commentId: Overload:AspNetCore.Multitenancy.TenantInfo.Settings
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.TenantInfo.Settings
+  nameWithType: TenantInfo.Settings
+- uid: AspNetCore.Multitenancy.TenantMiddleware
+  name: TenantMiddleware
+  href: api/AspNetCore.Multitenancy.TenantMiddleware.html
+  commentId: T:AspNetCore.Multitenancy.TenantMiddleware
+  fullName: AspNetCore.Multitenancy.TenantMiddleware
+  nameWithType: TenantMiddleware
+- uid: AspNetCore.Multitenancy.TenantMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,AspNetCore.Multitenancy.MultitenancyOptions,Microsoft.Extensions.Logging.ILogger{AspNetCore.Multitenancy.TenantMiddleware})
+  name: TenantMiddleware(RequestDelegate, MultitenancyOptions, ILogger<TenantMiddleware>)
+  href: api/AspNetCore.Multitenancy.TenantMiddleware.html#AspNetCore_Multitenancy_TenantMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_AspNetCore_Multitenancy_MultitenancyOptions_Microsoft_Extensions_Logging_ILogger_AspNetCore_Multitenancy_TenantMiddleware__
+  commentId: M:AspNetCore.Multitenancy.TenantMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,AspNetCore.Multitenancy.MultitenancyOptions,Microsoft.Extensions.Logging.ILogger{AspNetCore.Multitenancy.TenantMiddleware})
+  name.vb: New(RequestDelegate, MultitenancyOptions, ILogger(Of TenantMiddleware))
+  fullName: AspNetCore.Multitenancy.TenantMiddleware.TenantMiddleware(Microsoft.AspNetCore.Http.RequestDelegate, AspNetCore.Multitenancy.MultitenancyOptions, Microsoft.Extensions.Logging.ILogger<AspNetCore.Multitenancy.TenantMiddleware>)
+  fullName.vb: AspNetCore.Multitenancy.TenantMiddleware.New(Microsoft.AspNetCore.Http.RequestDelegate, AspNetCore.Multitenancy.MultitenancyOptions, Microsoft.Extensions.Logging.ILogger(Of AspNetCore.Multitenancy.TenantMiddleware))
+  nameWithType: TenantMiddleware.TenantMiddleware(RequestDelegate, MultitenancyOptions, ILogger<TenantMiddleware>)
+  nameWithType.vb: TenantMiddleware.New(RequestDelegate, MultitenancyOptions, ILogger(Of TenantMiddleware))
+- uid: AspNetCore.Multitenancy.TenantMiddleware.#ctor*
+  name: TenantMiddleware
+  href: api/AspNetCore.Multitenancy.TenantMiddleware.html#AspNetCore_Multitenancy_TenantMiddleware__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.TenantMiddleware.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.TenantMiddleware.TenantMiddleware
+  fullName.vb: AspNetCore.Multitenancy.TenantMiddleware.New
+  nameWithType: TenantMiddleware.TenantMiddleware
+  nameWithType.vb: TenantMiddleware.New
+- uid: AspNetCore.Multitenancy.TenantMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext,AspNetCore.Multitenancy.ITenantContext)
+  name: InvokeAsync(HttpContext, ITenantContext)
+  href: api/AspNetCore.Multitenancy.TenantMiddleware.html#AspNetCore_Multitenancy_TenantMiddleware_InvokeAsync_Microsoft_AspNetCore_Http_HttpContext_AspNetCore_Multitenancy_ITenantContext_
+  commentId: M:AspNetCore.Multitenancy.TenantMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext,AspNetCore.Multitenancy.ITenantContext)
+  fullName: AspNetCore.Multitenancy.TenantMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext, AspNetCore.Multitenancy.ITenantContext)
+  nameWithType: TenantMiddleware.InvokeAsync(HttpContext, ITenantContext)
+- uid: AspNetCore.Multitenancy.TenantMiddleware.InvokeAsync*
+  name: InvokeAsync
+  href: api/AspNetCore.Multitenancy.TenantMiddleware.html#AspNetCore_Multitenancy_TenantMiddleware_InvokeAsync_
+  commentId: Overload:AspNetCore.Multitenancy.TenantMiddleware.InvokeAsync
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.TenantMiddleware.InvokeAsync
+  nameWithType: TenantMiddleware.InvokeAsync
+- uid: AspNetCore.Multitenancy.TenantNotFoundException
+  name: TenantNotFoundException
+  href: api/AspNetCore.Multitenancy.TenantNotFoundException.html
+  commentId: T:AspNetCore.Multitenancy.TenantNotFoundException
+  fullName: AspNetCore.Multitenancy.TenantNotFoundException
+  nameWithType: TenantNotFoundException
+- uid: AspNetCore.Multitenancy.TenantNotFoundException.#ctor
+  name: TenantNotFoundException()
+  href: api/AspNetCore.Multitenancy.TenantNotFoundException.html#AspNetCore_Multitenancy_TenantNotFoundException__ctor
+  commentId: M:AspNetCore.Multitenancy.TenantNotFoundException.#ctor
+  name.vb: New()
+  fullName: AspNetCore.Multitenancy.TenantNotFoundException.TenantNotFoundException()
+  fullName.vb: AspNetCore.Multitenancy.TenantNotFoundException.New()
+  nameWithType: TenantNotFoundException.TenantNotFoundException()
+  nameWithType.vb: TenantNotFoundException.New()
+- uid: AspNetCore.Multitenancy.TenantNotFoundException.#ctor(System.String)
+  name: TenantNotFoundException(string)
+  href: api/AspNetCore.Multitenancy.TenantNotFoundException.html#AspNetCore_Multitenancy_TenantNotFoundException__ctor_System_String_
+  commentId: M:AspNetCore.Multitenancy.TenantNotFoundException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: AspNetCore.Multitenancy.TenantNotFoundException.TenantNotFoundException(string)
+  fullName.vb: AspNetCore.Multitenancy.TenantNotFoundException.New(String)
+  nameWithType: TenantNotFoundException.TenantNotFoundException(string)
+  nameWithType.vb: TenantNotFoundException.New(String)
+- uid: AspNetCore.Multitenancy.TenantNotFoundException.#ctor(System.String,System.Exception)
+  name: TenantNotFoundException(string, Exception)
+  href: api/AspNetCore.Multitenancy.TenantNotFoundException.html#AspNetCore_Multitenancy_TenantNotFoundException__ctor_System_String_System_Exception_
+  commentId: M:AspNetCore.Multitenancy.TenantNotFoundException.#ctor(System.String,System.Exception)
+  name.vb: New(String, Exception)
+  fullName: AspNetCore.Multitenancy.TenantNotFoundException.TenantNotFoundException(string, System.Exception)
+  fullName.vb: AspNetCore.Multitenancy.TenantNotFoundException.New(String, System.Exception)
+  nameWithType: TenantNotFoundException.TenantNotFoundException(string, Exception)
+  nameWithType.vb: TenantNotFoundException.New(String, Exception)
+- uid: AspNetCore.Multitenancy.TenantNotFoundException.#ctor*
+  name: TenantNotFoundException
+  href: api/AspNetCore.Multitenancy.TenantNotFoundException.html#AspNetCore_Multitenancy_TenantNotFoundException__ctor_
+  commentId: Overload:AspNetCore.Multitenancy.TenantNotFoundException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: AspNetCore.Multitenancy.TenantNotFoundException.TenantNotFoundException
+  fullName.vb: AspNetCore.Multitenancy.TenantNotFoundException.New
+  nameWithType: TenantNotFoundException.TenantNotFoundException
+  nameWithType.vb: TenantNotFoundException.New
+- uid: AspNetCore.Multitenancy.TenantNotFoundException.TenantId
+  name: TenantId
+  href: api/AspNetCore.Multitenancy.TenantNotFoundException.html#AspNetCore_Multitenancy_TenantNotFoundException_TenantId
+  commentId: P:AspNetCore.Multitenancy.TenantNotFoundException.TenantId
+  fullName: AspNetCore.Multitenancy.TenantNotFoundException.TenantId
+  nameWithType: TenantNotFoundException.TenantId
+- uid: AspNetCore.Multitenancy.TenantNotFoundException.TenantId*
+  name: TenantId
+  href: api/AspNetCore.Multitenancy.TenantNotFoundException.html#AspNetCore_Multitenancy_TenantNotFoundException_TenantId_
+  commentId: Overload:AspNetCore.Multitenancy.TenantNotFoundException.TenantId
+  isSpec: "True"
+  fullName: AspNetCore.Multitenancy.TenantNotFoundException.TenantId
+  nameWithType: TenantNotFoundException.TenantId
+- uid: AspNetCore.Multitenancy.TenantStore
+  name: TenantStore
+  href: api/AspNetCore.Multitenancy.TenantStore.html
+  commentId: T:AspNetCore.Multitenancy.TenantStore
+  fullName: AspNetCore.Multitenancy.TenantStore
+  nameWithType: TenantStore
+- uid: AspNetCore.Multitenancy.TenantStore.Configuration
+  name: Configuration
+  href: api/AspNetCore.Multitenancy.TenantStore.html#AspNetCore_Multitenancy_TenantStore_Configuration
+  commentId: F:AspNetCore.Multitenancy.TenantStore.Configuration
+  fullName: AspNetCore.Multitenancy.TenantStore.Configuration
+  nameWithType: TenantStore.Configuration
+- uid: AspNetCore.Multitenancy.TenantStore.EntityFramework
+  name: EntityFramework
+  href: api/AspNetCore.Multitenancy.TenantStore.html#AspNetCore_Multitenancy_TenantStore_EntityFramework
+  commentId: F:AspNetCore.Multitenancy.TenantStore.EntityFramework
+  fullName: AspNetCore.Multitenancy.TenantStore.EntityFramework
+  nameWithType: TenantStore.EntityFramework
+- uid: AspNetCore.Multitenancy.TenantStore.InMemory
+  name: InMemory
+  href: api/AspNetCore.Multitenancy.TenantStore.html#AspNetCore_Multitenancy_TenantStore_InMemory
+  commentId: F:AspNetCore.Multitenancy.TenantStore.InMemory
+  fullName: AspNetCore.Multitenancy.TenantStore.InMemory
+  nameWithType: TenantStore.InMemory

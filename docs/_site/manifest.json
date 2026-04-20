@@ -1,0 +1,775 @@
+{
+  "source_base_path": "C:/Users/Administrator/Desktop/AspNetCore_Multitenancy/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods on <xref href=\"AspNetCore.Multitenancy.MultitenancyBuilder\" data-throw-if-not-resolved=\"false\"></xref> for Hangfire integration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.yml\" sourcestartlinenumber=\"1\">Base class for tenant-aware hosted services (<xref href=\"Microsoft.Extensions.Hosting.IHostedService\" data-throw-if-not-resolved=\"false\"></xref>).\nOverride <xref href=\"AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.ExecuteForTenantAsync(AspNetCore.Multitenancy.ITenantContext%2cSystem.Threading.CancellationToken)\" data-throw-if-not-resolved=\"false\"></xref> to implement per-tenant logic.\nThe base class iterates all active tenants and calls your method in a scoped tenant context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.yml\" sourcestartlinenumber=\"1\">Resolves Hangfire job instances from a per-tenant DI scope, ensuring that\nany scoped services (including <xref href=\"AspNetCore.Multitenancy.ITenantContext\" data-throw-if-not-resolved=\"false\"></xref>) are resolved\nfrom the correct tenant scope.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.yml\" sourcestartlinenumber=\"1\">Hangfire server filter that automatically propagates tenant context into background jobs.</p>\n<p sourcefile=\"api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.yml\" sourcestartlinenumber=\"3\">On enqueue: serializes the current <code>TenantId</code> into the Hangfire job parameters.\nOn execute: reads <code>TenantId</code> from job params, creates a tenant DI scope,\nsets <xref href=\"AspNetCore.Multitenancy.ITenantContext\" data-throw-if-not-resolved=\"false\"></xref>, then executes the job in that scope.</p>\n<p sourcefile=\"api/AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.yml\" sourcestartlinenumber=\"7\">Register once in Program.cs — jobs see a fully populated ITenantContext identical\nto an HTTP request context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.yml\" sourcestartlinenumber=\"1\">Schedules Hangfire recurring jobs for every active tenant automatically.\nUse this instead of <xref href=\"Hangfire.RecurringJob\" data-throw-if-not-resolved=\"false\"></xref> directly to ensure jobs\nrun once per tenant with a properly populated <xref href=\"AspNetCore.Multitenancy.ITenantContext\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.BackgroundJobs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.BackgroundJobs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods on <xref href=\"AspNetCore.Multitenancy.MultitenancyBuilder\" data-throw-if-not-resolved=\"false\"></xref> for configuring EF Core tenant isolation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.yml\" sourcestartlinenumber=\"1\">Marks an entity as tenant-scoped. The EF Core model builder and\n<xref href=\"AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext\" data-throw-if-not-resolved=\"false\"></xref> use this interface to apply global query\nfilters and to stamp <xref href=\"AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId\" data-throw-if-not-resolved=\"false\"></xref> on insert automatically.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.yml\" sourcestartlinenumber=\"1\">Base <xref href=\"Microsoft.EntityFrameworkCore.DbContext\" data-throw-if-not-resolved=\"false\"></xref> for multi-tenant applications.\nAutomatically:</p>\n<ul><li>Applies global query filters for all <xref href=\"AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity\" data-throw-if-not-resolved=\"false\"></xref> entity types</li><li>Stamps <code>TenantId</code> on every insert via <code>SaveChanges</code></li><li>Sets the default schema from <xref href=\"AspNetCore.Multitenancy.ITenantContext\" data-throw-if-not-resolved=\"false\"></xref> for schema-per-tenant strategy</li></ul>\n<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.yml\" sourcestartlinenumber=\"6\">Inherit from this class in your application DbContext.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions.yml\" sourcestartlinenumber=\"1\">EF Core extension methods for applying tenant query filters to entities\nthat implement <xref href=\"AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.yml\" sourcestartlinenumber=\"1\">Isolation strategy: each tenant has a completely separate SQL Server/PostgreSQL database.\nMaximum isolation. Recommended for enterprise and regulated tenants.</p>\n<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy.yml\" sourcestartlinenumber=\"4\">Usage in Program.cs:</p>\n<pre><code class=\"lang-csharp\">builder.Services.AddDbContext&lt;AppDbContext&gt;((sp, opts) =&gt;\n    DbPerTenantStrategy.Configure(opts, sp));</code></pre>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.yml\" sourcestartlinenumber=\"1\">Isolation strategy: all tenants share tables. Every table has a <code>TenantId</code> column.\nEF Core global query filters automatically scope all queries.\nCheapest to operate. Recommended for low-risk SaaS.</p>\n<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy.yml\" sourcestartlinenumber=\"5\">This strategy is applied automatically by <xref href=\"AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext\" data-throw-if-not-resolved=\"false\"></xref>.\nEntities must implement <xref href=\"AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.yml\" sourcestartlinenumber=\"1\">Isolation strategy: all tenants share one database but each gets a dedicated schema\n(e.g., <code>acme.Products</code>, <code>globex.Products</code>).\nGood balance of isolation vs cost.</p>\n<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy.yml\" sourcestartlinenumber=\"5\">The schema is taken from <xref href=\"AspNetCore.Multitenancy.TenantInfo.Schema\" data-throw-if-not-resolved=\"false\"></xref>. If not set, falls back to\n<xref href=\"AspNetCore.Multitenancy.TenantInfo.Id\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.EntityFrameworkCore.Strategies",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory<TContext>",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.yml\" sourcestartlinenumber=\"1\">Creates <code class=\"typeparamref\">TContext</code> instances configured for a specific tenant.\nUsed by the DB-per-tenant strategy to swap connection strings at runtime.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator<TContext>",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.yml\" sourcestartlinenumber=\"1\">Runs EF Core migrations for each tenant automatically.\nUse during application startup or tenant provisioning to ensure all\ntenant databases/schemas are up-to-date.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.EntityFrameworkCore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.EntityFrameworkCore",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for registering feature flag services and middleware.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.yml\" sourcestartlinenumber=\"1\">Checks whether a named feature is enabled for the current tenant.\nFeatures are gated by the tenant's subscription plan.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.yml\" sourcestartlinenumber=\"1\">Configuration object that maps plan names to feature sets.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.yml\" sourcestartlinenumber=\"1\">Marks a controller or action as requiring a specific tenant feature.\nIf the feature is disabled for the current tenant's plan, the middleware\nreturns HTTP 404 (not 403) so that other tenants cannot enumerate which\nfeatures exist.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.yml\" sourcestartlinenumber=\"1\">Middleware that checks <xref href=\"AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute\" data-throw-if-not-resolved=\"false\"></xref> on the matched endpoint\nand returns HTTP 404 if the feature is disabled for the current tenant's plan.</p>\n<p sourcefile=\"api/AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware.yml\" sourcestartlinenumber=\"4\">Returns 404 (not 403) deliberately — so tenants cannot enumerate which features exist\non other plans.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.yml\" sourcestartlinenumber=\"1\">Maps subscription plan names to sets of enabled features.\nConfigure the plan → feature mapping at startup.</p>\n<p sourcefile=\"api/AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.yml\" sourcestartlinenumber=\"4\">Example:</p>\n<pre><code class=\"lang-csharp\">services.Configure&lt;PlanFeatureOptions&gt;(opts =&gt;\n{\n    opts.AddPlan(\"free\",       new[] { \"BasicDashboard\" });\n    opts.AddPlan(\"pro\",        new[] { \"BasicDashboard\", \"AdvancedReporting\", \"ApiAccess\" });\n    opts.AddPlan(\"enterprise\", new[] { \"BasicDashboard\", \"AdvancedReporting\", \"ApiAccess\", \"WhiteLabel\", \"SSOIntegration\" });\n});</code></pre>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FeatureFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FeatureFlags",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.yml\" sourcestartlinenumber=\"1\">Abstraction for tenant-isolated file storage.\nAll paths are automatically prefixed with the current tenant ID —\ntenant A can never access tenant B's files even in a shared bucket.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.yml\" sourcestartlinenumber=\"1\">Tenant-isolated Azure Blob Storage provider.\nEach tenant's files are stored under a <code>tenant-{tenantId}/</code> blob path prefix\nwithin a shared container.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.yml\" sourcestartlinenumber=\"1\">Tenant-isolated local disk storage provider.\nStores files under <code>{BasePath}/tenant-{tenantId}/{path}</code>.\nUse for development, single-server deployments, or CI environments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.yml\" sourcestartlinenumber=\"1\">Tenant-isolated AWS S3 storage provider.\nAll objects are stored with a <code>tenant-{tenantId}/</code> key prefix,\nso tenant A can never access tenant B's objects even in a shared bucket.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FileStorage.Providers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FileStorage.Providers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FileStorage.Providers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FileStorage.StorageExtensions",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FileStorage.StorageExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods on <xref href=\"AspNetCore.Multitenancy.MultitenancyBuilder\" data-throw-if-not-resolved=\"false\"></xref> for registering tenant storage providers.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FileStorage.StorageProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FileStorage.StorageProvider.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FileStorage.StorageProvider",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FileStorage.StorageProvider.yml\" sourcestartlinenumber=\"1\">Specifies which storage backend to use.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.yml\" sourcestartlinenumber=\"1\">Prepends the current tenant ID to all storage paths, ensuring complete\nisolation between tenants even in a shared storage backend.</p>\n<p sourcefile=\"api/AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.yml\" sourcestartlinenumber=\"4\">Example: tenant &quot;acme&quot; + path &quot;invoices/jan.pdf&quot; → &quot;tenant-acme/invoices/jan.pdf&quot;</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.FileStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.FileStorage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.FileStorage",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.ITenantContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.ITenantContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.ITenantContext",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.ITenantContext.yml\" sourcestartlinenumber=\"1\">Provides access to the current tenant context for the active request or execution scope.\nInject this interface anywhere you need to know which tenant is in context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.ITenantResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.ITenantResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.ITenantResolver",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.ITenantResolver.yml\" sourcestartlinenumber=\"1\">Resolves the current tenant from an incoming HTTP request.\nImplement this interface to create a custom resolution strategy.\nMultiple resolvers can be registered; they are tried in order until one succeeds.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.ITenantStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.ITenantStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.ITenantStore",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.ITenantStore.yml\" sourcestartlinenumber=\"1\">Provides persistent storage and retrieval of <xref href=\"AspNetCore.Multitenancy.TenantInfo\" data-throw-if-not-resolved=\"false\"></xref> records.\nImplement this to back tenants with a database, configuration file, or any other source.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.InMemoryTenantStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.InMemoryTenantStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.InMemoryTenantStore",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.InMemoryTenantStore.yml\" sourcestartlinenumber=\"1\">Simple in-memory implementation of <xref href=\"AspNetCore.Multitenancy.ITenantStore\" data-throw-if-not-resolved=\"false\"></xref>.\nUse for unit tests, demos, and local development.\nNot suitable for production multi-instance deployments.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.IsolationStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.IsolationStrategy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.IsolationStrategy",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.IsolationStrategy.yml\" sourcestartlinenumber=\"1\">Specifies the database isolation strategy for tenant data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.MultitenancyBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.MultitenancyBuilder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.MultitenancyBuilder",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.MultitenancyBuilder.yml\" sourcestartlinenumber=\"1\">Fluent builder returned by <xref href=\"AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection%2cSystem.Action%7bAspNetCore.Multitenancy.MultitenancyOptions%7d)\" data-throw-if-not-resolved=\"false\"></xref>.\nUse the <code>With*</code> extension methods from each package to register features.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.MultitenancyOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.MultitenancyOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.MultitenancyOptions",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.MultitenancyOptions.yml\" sourcestartlinenumber=\"1\">Top-level configuration options for the multi-tenancy library.\nConfigure via the <code>AddMultitenancy(options =&gt; ...)</code> builder.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.yml\" sourcestartlinenumber=\"1\">Resolves the current tenant from a JWT claim.\nDefault claim type: <code>tid</code> (tenant ID).\nRequires the request to be authenticated.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.yml\" sourcestartlinenumber=\"1\">Resolves the current tenant from a configurable HTTP request header.\nDefault header: <code>X-Tenant-Id</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.Resolvers.HostTenantResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.Resolvers.HostTenantResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.Resolvers.HostTenantResolver",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.Resolvers.HostTenantResolver.yml\" sourcestartlinenumber=\"1\">Resolves the current tenant from the request's host/subdomain.\nExample: <code>acme.app.com</code> resolves tenant ID <code>acme</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.Resolvers.PathTenantResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.Resolvers.PathTenantResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.Resolvers.PathTenantResolver",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.Resolvers.PathTenantResolver.yml\" sourcestartlinenumber=\"1\">Resolves the current tenant from the URL path prefix.\nExample: <code>/acme/products</code> resolves tenant ID <code>acme</code> and rewrites path to <code>/products</code>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.Resolvers.ResolverExtensions",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.Resolvers.ResolverExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods on <xref href=\"AspNetCore.Multitenancy.MultitenancyBuilder\" data-throw-if-not-resolved=\"false\"></xref> for registering resolver strategies.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.Resolvers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.Resolvers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.Resolvers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.ServiceCollectionExtensions",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.ServiceCollectionExtensions.yml\" sourcestartlinenumber=\"1\">Extension methods for registering multi-tenancy services with the DI container\nand adding the tenant middleware to the pipeline.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.TenantInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.TenantInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.TenantInfo",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.TenantInfo.yml\" sourcestartlinenumber=\"1\">Represents a tenant in the system. All properties needed for routing,\ndatabase isolation, and feature access live here.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.TenantMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.TenantMiddleware.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.TenantMiddleware",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.TenantMiddleware.yml\" sourcestartlinenumber=\"1\">ASP.NET Core middleware that runs all registered <xref href=\"AspNetCore.Multitenancy.ITenantResolver\" data-throw-if-not-resolved=\"false\"></xref>s\nin order and populates <xref href=\"AspNetCore.Multitenancy.ITenantContext\" data-throw-if-not-resolved=\"false\"></xref> for the request.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.TenantNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.TenantNotFoundException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.TenantNotFoundException",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.TenantNotFoundException.yml\" sourcestartlinenumber=\"1\">Thrown when a tenant cannot be resolved from the current HTTP request,\nand the application requires a valid tenant context.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.TenantStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.TenantStore.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy.TenantStore",
+      "Summary": "<p sourcefile=\"api/AspNetCore.Multitenancy.TenantStore.yml\" sourcestartlinenumber=\"1\">Specifies where tenants are persisted.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCore.Multitenancy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCore.Multitenancy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "AspNetCore.Multitenancy",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

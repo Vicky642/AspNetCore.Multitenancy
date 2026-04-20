@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Interface ITenantStorageProvider </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Interface ITenantStorageProvider ">
+    
+    <meta name="description" content="Abstraction for tenant-isolated file storage. All paths are automatically prefixed with the current tenant ID — tenant A can never access tenant B&#39;s files even in a shared bucket.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider">
+
+
+
+  <h1 id="AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider" data-uid="AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider" class="text-break">Interface ITenantStorageProvider</h1>
+  <div class="markdown level0 summary"><p>Abstraction for tenant-isolated file storage.
+All paths are automatically prefixed with the current tenant ID —
+tenant A can never access tenant B's files even in a shared bucket.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="AspNetCore.html">AspNetCore</a>.<a class="xref" href="AspNetCore.Multitenancy.html">Multitenancy</a>.<a class="xref" href="AspNetCore.Multitenancy.FileStorage.html">FileStorage</a></h6>
+  <h6><strong>Assembly</strong>: AspNetCore.Multitenancy.Storage.dll</h6>
+  <h5 id="AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ITenantStorageProvider</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Vicky642/AspNetCore.Multitenancy/new/main/apiSpec/new?filename=AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DeleteAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Vicky642/AspNetCore.Multitenancy/blob/main/src/FileStorage/ITenantStorageProvider.cs/#L30">View Source</a>
+  </span>
+  <a id="AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DeleteAsync_" data-uid="AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync*"></a>
+  <h4 id="AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DeleteAsync_System_String_System_Threading_CancellationToken_" data-uid="AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)">DeleteAsync(string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes a file by its logical path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteAsync(string path, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Vicky642/AspNetCore.Multitenancy/new/main/apiSpec/new?filename=AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DownloadAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Vicky642/AspNetCore.Multitenancy/blob/main/src/FileStorage/ITenantStorageProvider.cs/#L25">View Source</a>
+  </span>
+  <a id="AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DownloadAsync_" data-uid="AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync*"></a>
+  <h4 id="AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_DownloadAsync_System_String_System_Threading_CancellationToken_" data-uid="AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)">DownloadAsync(string, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Downloads a file by its logical path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Stream&gt; DownloadAsync(string path, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Logical path (e.g., &quot;invoices/jan.pdf&quot;).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Vicky642/AspNetCore.Multitenancy/new/main/apiSpec/new?filename=AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_ListAsync_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Vicky642/AspNetCore.Multitenancy/blob/main/src/FileStorage/ITenantStorageProvider.cs/#L37">View Source</a>
+  </span>
+  <a id="AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_ListAsync_" data-uid="AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync*"></a>
+  <h4 id="AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_ListAsync_System_String_System_Threading_CancellationToken_" data-uid="AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)">ListAsync(string?, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists all files under the given prefix (within the current tenant's namespace).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;string&gt;&gt; ListAsync(string? prefix = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">prefix</span></td>
+        <td><p>Optional path prefix to filter results.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/Vicky642/AspNetCore.Multitenancy/new/main/apiSpec/new?filename=AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_UploadAsync_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String%2CSystem.IO.Stream%2CSystem.String%2CSystem.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Vicky642/AspNetCore.Multitenancy/blob/main/src/FileStorage/ITenantStorageProvider.cs/#L18">View Source</a>
+  </span>
+  <a id="AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_UploadAsync_" data-uid="AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync*"></a>
+  <h4 id="AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider_UploadAsync_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_" data-uid="AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)">UploadAsync(string, Stream, string?, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Uploads a file. The path is automatically prefixed with the tenant ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; UploadAsync(string path, Stream content, string? contentType = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Logical path (e.g., &quot;invoices/jan.pdf&quot;).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>File content stream.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">contentType</span></td>
+        <td><p>Optional MIME type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><p>The full storage path including tenant prefix.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Vicky642/AspNetCore.Multitenancy/new/main/apiSpec/new?filename=AspNetCore_Multitenancy_FileStorage_ITenantStorageProvider.md&amp;value=---%0Auid%3A%20AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Vicky642/AspNetCore.Multitenancy/blob/main/src/FileStorage/ITenantStorageProvider.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

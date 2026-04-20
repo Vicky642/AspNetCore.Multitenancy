@@ -1,0 +1,748 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  id: TenantRecurringJobManager
+  parent: AspNetCore.Multitenancy.BackgroundJobs
+  children:
+  - AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.#ctor(AspNetCore.Multitenancy.ITenantStore,Hangfire.IRecurringJobManager)
+  - AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync(System.String,System.Threading.CancellationToken)
+  - AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync``1(System.String,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Threading.Tasks.Task}},System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: TenantRecurringJobManager
+  nameWithType: TenantRecurringJobManager
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  type: Class
+  source:
+    remote:
+      path: src/BackgroundJobs/TenantRecurringJobManager.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: TenantRecurringJobManager
+    path: ../src/BackgroundJobs/TenantRecurringJobManager.cs
+    startLine: 9
+  assemblies:
+  - AspNetCore.Multitenancy.Hangfire
+  namespace: AspNetCore.Multitenancy.BackgroundJobs
+  summary: >-
+    Schedules Hangfire recurring jobs for every active tenant automatically.
+
+    Use this instead of <xref href="Hangfire.RecurringJob" data-throw-if-not-resolved="false"></xref> directly to ensure jobs
+
+    run once per tenant with a properly populated <xref href="AspNetCore.Multitenancy.ITenantContext" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public class TenantRecurringJobManager
+    content.vb: Public Class TenantRecurringJobManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.#ctor(AspNetCore.Multitenancy.ITenantStore,Hangfire.IRecurringJobManager)
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.#ctor(AspNetCore.Multitenancy.ITenantStore,Hangfire.IRecurringJobManager)
+  id: '#ctor(AspNetCore.Multitenancy.ITenantStore,Hangfire.IRecurringJobManager)'
+  parent: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  langs:
+  - csharp
+  - vb
+  name: TenantRecurringJobManager(ITenantStore, IRecurringJobManager)
+  nameWithType: TenantRecurringJobManager.TenantRecurringJobManager(ITenantStore, IRecurringJobManager)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.TenantRecurringJobManager(AspNetCore.Multitenancy.ITenantStore, Hangfire.IRecurringJobManager)
+  type: Constructor
+  source:
+    remote:
+      path: src/BackgroundJobs/TenantRecurringJobManager.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: .ctor
+    path: ../src/BackgroundJobs/TenantRecurringJobManager.cs
+    startLine: 14
+  assemblies:
+  - AspNetCore.Multitenancy.Hangfire
+  namespace: AspNetCore.Multitenancy.BackgroundJobs
+  syntax:
+    content: public TenantRecurringJobManager(ITenantStore tenantStore, IRecurringJobManager hangfireJobManager)
+    parameters:
+    - id: tenantStore
+      type: AspNetCore.Multitenancy.ITenantStore
+    - id: hangfireJobManager
+      type: Hangfire.IRecurringJobManager
+    content.vb: Public Sub New(tenantStore As ITenantStore, hangfireJobManager As IRecurringJobManager)
+  overload: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.#ctor*
+  nameWithType.vb: TenantRecurringJobManager.New(ITenantStore, IRecurringJobManager)
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.New(AspNetCore.Multitenancy.ITenantStore, Hangfire.IRecurringJobManager)
+  name.vb: New(ITenantStore, IRecurringJobManager)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync``1(System.String,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Threading.Tasks.Task}},System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync``1(System.String,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Threading.Tasks.Task}},System.Threading.CancellationToken)
+  id: ScheduleForAllAsync``1(System.String,System.String,System.Linq.Expressions.Expression{System.Func{``0,System.Threading.Tasks.Task}},System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  langs:
+  - csharp
+  - vb
+  name: ScheduleForAllAsync<TJob>(string, string, Expression<Func<TJob, Task>>, CancellationToken)
+  nameWithType: TenantRecurringJobManager.ScheduleForAllAsync<TJob>(string, string, Expression<Func<TJob, Task>>, CancellationToken)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync<TJob>(string, string, System.Linq.Expressions.Expression<System.Func<TJob, System.Threading.Tasks.Task>>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/BackgroundJobs/TenantRecurringJobManager.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ScheduleForAllAsync
+    path: ../src/BackgroundJobs/TenantRecurringJobManager.cs
+    startLine: 32
+  assemblies:
+  - AspNetCore.Multitenancy.Hangfire
+  namespace: AspNetCore.Multitenancy.BackgroundJobs
+  summary: >-
+    Schedules <code class="typeparamref">TJob</code> as a recurring Hangfire job for every active tenant.
+
+    Each tenant gets its own job entry: <code>{jobId}-{tenantId}</code>.
+  example: []
+  syntax:
+    content: public Task ScheduleForAllAsync<TJob>(string jobId, string cron, Expression<Func<TJob, Task>> methodSelector, CancellationToken cancellationToken = default)
+    parameters:
+    - id: jobId
+      type: System.String
+      description: Base job identifier (e.g., "daily-report").
+    - id: cron
+      type: System.String
+      description: Cron expression (e.g., <xref href="Hangfire.Cron.Daily" data-throw-if-not-resolved="false"></xref>).
+    - id: methodSelector
+      type: System.Linq.Expressions.Expression{System.Func{{TJob},System.Threading.Tasks.Task}}
+      description: >-
+        Expression pointing to the job method.
+
+        Example: <code>job =&gt; job.ExecuteAsync()</code>
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: Cancellation token.
+    typeParameters:
+    - id: TJob
+      description: The Hangfire job type. Must have an <code>Execute()</code> or <code>ExecuteAsync()</code> method.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function ScheduleForAllAsync(Of TJob)(jobId As String, cron As String, methodSelector As Expression(Of Func(Of TJob, Task)), cancellationToken As CancellationToken = Nothing) As Task
+  overload: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync*
+  nameWithType.vb: TenantRecurringJobManager.ScheduleForAllAsync(Of TJob)(String, String, Expression(Of Func(Of TJob, Task)), CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync(Of TJob)(String, String, System.Linq.Expressions.Expression(Of System.Func(Of TJob, System.Threading.Tasks.Task)), System.Threading.CancellationToken)
+  name.vb: ScheduleForAllAsync(Of TJob)(String, String, Expression(Of Func(Of TJob, Task)), CancellationToken)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync(System.String,System.Threading.CancellationToken)
+  id: RemoveForAllAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  langs:
+  - csharp
+  - vb
+  name: RemoveForAllAsync(string, CancellationToken)
+  nameWithType: TenantRecurringJobManager.RemoveForAllAsync(string, CancellationToken)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/BackgroundJobs/TenantRecurringJobManager.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: RemoveForAllAsync
+    path: ../src/BackgroundJobs/TenantRecurringJobManager.cs
+    startLine: 50
+  assemblies:
+  - AspNetCore.Multitenancy.Hangfire
+  namespace: AspNetCore.Multitenancy.BackgroundJobs
+  summary: Removes all recurring job entries for the given job ID across all tenants.
+  example: []
+  syntax:
+    content: public Task RemoveForAllAsync(string jobId, CancellationToken cancellationToken = default)
+    parameters:
+    - id: jobId
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function RemoveForAllAsync(jobId As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync*
+  nameWithType.vb: TenantRecurringJobManager.RemoveForAllAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync(String, System.Threading.CancellationToken)
+  name.vb: RemoveForAllAsync(String, CancellationToken)
+references:
+- uid: Hangfire.RecurringJob
+  commentId: T:Hangfire.RecurringJob
+  isExternal: true
+  name: RecurringJob
+  nameWithType: RecurringJob
+  fullName: Hangfire.RecurringJob
+- uid: AspNetCore.Multitenancy.ITenantContext
+  commentId: T:AspNetCore.Multitenancy.ITenantContext
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.ITenantContext.html
+  name: ITenantContext
+  nameWithType: ITenantContext
+  fullName: AspNetCore.Multitenancy.ITenantContext
+- uid: AspNetCore.Multitenancy.BackgroundJobs
+  commentId: N:AspNetCore.Multitenancy.BackgroundJobs
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.BackgroundJobs
+  nameWithType: AspNetCore.Multitenancy.BackgroundJobs
+  fullName: AspNetCore.Multitenancy.BackgroundJobs
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.BackgroundJobs
+    name: BackgroundJobs
+    href: AspNetCore.Multitenancy.BackgroundJobs.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.BackgroundJobs
+    name: BackgroundJobs
+    href: AspNetCore.Multitenancy.BackgroundJobs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.#ctor*
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.#ctor
+  href: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html#AspNetCore_Multitenancy_BackgroundJobs_TenantRecurringJobManager__ctor_AspNetCore_Multitenancy_ITenantStore_Hangfire_IRecurringJobManager_
+  name: TenantRecurringJobManager
+  nameWithType: TenantRecurringJobManager.TenantRecurringJobManager
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.TenantRecurringJobManager
+  nameWithType.vb: TenantRecurringJobManager.New
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.New
+  name.vb: New
+- uid: AspNetCore.Multitenancy.ITenantStore
+  commentId: T:AspNetCore.Multitenancy.ITenantStore
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.ITenantStore.html
+  name: ITenantStore
+  nameWithType: ITenantStore
+  fullName: AspNetCore.Multitenancy.ITenantStore
+- uid: Hangfire.IRecurringJobManager
+  commentId: T:Hangfire.IRecurringJobManager
+  parent: Hangfire
+  isExternal: true
+  name: IRecurringJobManager
+  nameWithType: IRecurringJobManager
+  fullName: Hangfire.IRecurringJobManager
+- uid: Hangfire
+  commentId: N:Hangfire
+  isExternal: true
+  name: Hangfire
+  nameWithType: Hangfire
+  fullName: Hangfire
+- uid: Hangfire.Cron.Daily
+  commentId: M:Hangfire.Cron.Daily
+  isExternal: true
+  name: Daily()
+  nameWithType: Cron.Daily()
+  fullName: Hangfire.Cron.Daily()
+  spec.csharp:
+  - uid: Hangfire.Cron.Daily
+    name: Daily
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Hangfire.Cron.Daily
+    name: Daily
+    isExternal: true
+  - name: (
+  - name: )
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync*
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync
+  href: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html#AspNetCore_Multitenancy_BackgroundJobs_TenantRecurringJobManager_ScheduleForAllAsync__1_System_String_System_String_System_Linq_Expressions_Expression_System_Func___0_System_Threading_Tasks_Task___System_Threading_CancellationToken_
+  name: ScheduleForAllAsync
+  nameWithType: TenantRecurringJobManager.ScheduleForAllAsync
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.ScheduleForAllAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Linq.Expressions.Expression{System.Func{{TJob},System.Threading.Tasks.Task}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Threading.Tasks.Task}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<TJob, Task>>
+  nameWithType: Expression<Func<TJob, Task>>
+  fullName: System.Linq.Expressions.Expression<System.Func<TJob, System.Threading.Tasks.Task>>
+  nameWithType.vb: Expression(Of Func(Of TJob, Task))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of TJob, System.Threading.Tasks.Task))
+  name.vb: Expression(Of Func(Of TJob, Task))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TJob
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TJob
+  - name: ','
+  - name: " "
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  - name: )
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync*
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync
+  href: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html#AspNetCore_Multitenancy_BackgroundJobs_TenantRecurringJobManager_RemoveForAllAsync_System_String_System_Threading_CancellationToken_
+  name: RemoveForAllAsync
+  nameWithType: TenantRecurringJobManager.RemoveForAllAsync
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.RemoveForAllAsync

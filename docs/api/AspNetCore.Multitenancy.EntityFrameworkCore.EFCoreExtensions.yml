@@ -1,0 +1,527 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+  id: EFCoreExtensions
+  parent: AspNetCore.Multitenancy.EntityFrameworkCore
+  children:
+  - AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation``1(AspNetCore.Multitenancy.MultitenancyBuilder,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})
+  langs:
+  - csharp
+  - vb
+  name: EFCoreExtensions
+  nameWithType: EFCoreExtensions
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+  type: Class
+  source:
+    remote:
+      path: src/EntityFrameworkCore/EFCoreExtensions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: EFCoreExtensions
+    path: ../src/EntityFrameworkCore/EFCoreExtensions.cs
+    startLine: 7
+  assemblies:
+  - AspNetCore.Multitenancy.EFCore
+  namespace: AspNetCore.Multitenancy.EntityFrameworkCore
+  summary: Extension methods on <xref href="AspNetCore.Multitenancy.MultitenancyBuilder" data-throw-if-not-resolved="false"></xref> for configuring EF Core tenant isolation.
+  example: []
+  syntax:
+    content: public static class EFCoreExtensions
+    content.vb: Public Module EFCoreExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation``1(AspNetCore.Multitenancy.MultitenancyBuilder,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})
+  commentId: M:AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation``1(AspNetCore.Multitenancy.MultitenancyBuilder,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})
+  id: WithEFCoreIsolation``1(AspNetCore.Multitenancy.MultitenancyBuilder,System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String})
+  isExtensionMethod: true
+  parent: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithEFCoreIsolation<TContext>(MultitenancyBuilder, Action<DbContextOptionsBuilder, string>?)
+  nameWithType: EFCoreExtensions.WithEFCoreIsolation<TContext>(MultitenancyBuilder, Action<DbContextOptionsBuilder, string>?)
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation<TContext>(AspNetCore.Multitenancy.MultitenancyBuilder, System.Action<Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, string>?)
+  type: Method
+  source:
+    remote:
+      path: src/EntityFrameworkCore/EFCoreExtensions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: WithEFCoreIsolation
+    path: ../src/EntityFrameworkCore/EFCoreExtensions.cs
+    startLine: 20
+  assemblies:
+  - AspNetCore.Multitenancy.EFCore
+  namespace: AspNetCore.Multitenancy.EntityFrameworkCore
+  summary: >-
+    Registers the EF Core isolation services for the specified DbContext.
+
+    This sets up the <xref href="AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory%601" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator%601" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public static MultitenancyBuilder WithEFCoreIsolation<TContext>(this MultitenancyBuilder builder, Action<DbContextOptionsBuilder, string>? configureDb = null) where TContext : DbContext'
+    parameters:
+    - id: builder
+      type: AspNetCore.Multitenancy.MultitenancyBuilder
+      description: The multitenancy builder.
+    - id: configureDb
+      type: System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String}
+      description: >-
+        A delegate that applies the database provider to the context options.
+
+        Example: <code>(opts, cs) =&gt; opts.UseSqlServer(cs)</code>
+    typeParameters:
+    - id: TContext
+      description: Your application DbContext.
+    return:
+      type: AspNetCore.Multitenancy.MultitenancyBuilder
+    content.vb: Public Shared Function WithEFCoreIsolation(Of TContext As DbContext)(builder As MultitenancyBuilder, configureDb As Action(Of DbContextOptionsBuilder, String) = Nothing) As MultitenancyBuilder
+  overload: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation*
+  nameWithType.vb: EFCoreExtensions.WithEFCoreIsolation(Of TContext)(MultitenancyBuilder, Action(Of DbContextOptionsBuilder, String))
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation(Of TContext)(AspNetCore.Multitenancy.MultitenancyBuilder, System.Action(Of Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, String))
+  name.vb: WithEFCoreIsolation(Of TContext)(MultitenancyBuilder, Action(Of DbContextOptionsBuilder, String))
+references:
+- uid: AspNetCore.Multitenancy.MultitenancyBuilder
+  commentId: T:AspNetCore.Multitenancy.MultitenancyBuilder
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.MultitenancyBuilder.html
+  name: MultitenancyBuilder
+  nameWithType: MultitenancyBuilder
+  fullName: AspNetCore.Multitenancy.MultitenancyBuilder
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore
+  commentId: N:AspNetCore.Multitenancy.EntityFrameworkCore
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.EntityFrameworkCore
+  nameWithType: AspNetCore.Multitenancy.EntityFrameworkCore
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore
+    name: EntityFrameworkCore
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore
+    name: EntityFrameworkCore
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html
+  name: TenantDbContextFactory<TContext>
+  nameWithType: TenantDbContextFactory<TContext>
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory<TContext>
+  nameWithType.vb: TenantDbContextFactory(Of TContext)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory(Of TContext)
+  name.vb: TenantDbContextFactory(Of TContext)
+  spec.csharp:
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+    name: TenantDbContextFactory
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+    name: TenantDbContextFactory
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html
+  name: TenantSchemaMigrator<TContext>
+  nameWithType: TenantSchemaMigrator<TContext>
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator<TContext>
+  nameWithType.vb: TenantSchemaMigrator(Of TContext)
+  fullName.vb: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator(Of TContext)
+  name.vb: TenantSchemaMigrator(Of TContext)
+  spec.csharp:
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+    name: TenantSchemaMigrator
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html
+  - name: <
+  - name: TContext
+  - name: '>'
+  spec.vb:
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+    name: TenantSchemaMigrator
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContext
+  - name: )
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation*
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.html#AspNetCore_Multitenancy_EntityFrameworkCore_EFCoreExtensions_WithEFCoreIsolation__1_AspNetCore_Multitenancy_MultitenancyBuilder_System_Action_Microsoft_EntityFrameworkCore_DbContextOptionsBuilder_System_String__
+  name: WithEFCoreIsolation
+  nameWithType: EFCoreExtensions.WithEFCoreIsolation
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions.WithEFCoreIsolation
+- uid: System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String}
+  commentId: T:System.Action{Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,System.String}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<DbContextOptionsBuilder, string>
+  nameWithType: Action<DbContextOptionsBuilder, string>
+  fullName: System.Action<Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, string>
+  nameWithType.vb: Action(Of DbContextOptionsBuilder, String)
+  fullName.vb: System.Action(Of Microsoft.EntityFrameworkCore.DbContextOptionsBuilder, String)
+  name.vb: Action(Of DbContextOptionsBuilder, String)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: Microsoft.EntityFrameworkCore.DbContextOptionsBuilder
+    name: DbContextOptionsBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontextoptionsbuilder
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.EntityFrameworkCore.DbContextOptionsBuilder
+    name: DbContextOptionsBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontextoptionsbuilder
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )

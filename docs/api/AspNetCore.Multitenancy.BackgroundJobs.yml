@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.BackgroundJobs
+  commentId: N:AspNetCore.Multitenancy.BackgroundJobs
+  id: AspNetCore.Multitenancy.BackgroundJobs
+  children:
+  - AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions
+  - AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService
+  - AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  - AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter
+  - AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  langs:
+  - csharp
+  - vb
+  name: AspNetCore.Multitenancy.BackgroundJobs
+  nameWithType: AspNetCore.Multitenancy.BackgroundJobs
+  fullName: AspNetCore.Multitenancy.BackgroundJobs
+  type: Namespace
+  assemblies:
+  - AspNetCore.Multitenancy.Hangfire
+references:
+- uid: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions
+  parent: AspNetCore.Multitenancy.BackgroundJobs
+  href: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions.html
+  name: HangfireExtensions
+  nameWithType: HangfireExtensions
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService
+  href: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService.html
+  name: TenantBackgroundService
+  nameWithType: TenantBackgroundService
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  href: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html
+  name: TenantJobActivator
+  nameWithType: TenantJobActivator
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter
+  href: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter.html
+  name: TenantJobFilter
+  nameWithType: TenantJobFilter
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+  href: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager.html
+  name: TenantRecurringJobManager
+  nameWithType: TenantRecurringJobManager
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+- uid: AspNetCore.Multitenancy.BackgroundJobs
+  commentId: N:AspNetCore.Multitenancy.BackgroundJobs
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.BackgroundJobs
+  nameWithType: AspNetCore.Multitenancy.BackgroundJobs
+  fullName: AspNetCore.Multitenancy.BackgroundJobs
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.BackgroundJobs
+    name: BackgroundJobs
+    href: AspNetCore.Multitenancy.BackgroundJobs.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.BackgroundJobs
+    name: BackgroundJobs
+    href: AspNetCore.Multitenancy.BackgroundJobs.html

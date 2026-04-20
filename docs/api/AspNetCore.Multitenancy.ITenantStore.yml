@@ -1,0 +1,488 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.ITenantStore
+  commentId: T:AspNetCore.Multitenancy.ITenantStore
+  id: ITenantStore
+  parent: AspNetCore.Multitenancy
+  children:
+  - AspNetCore.Multitenancy.ITenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  - AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)
+  - AspNetCore.Multitenancy.ITenantStore.GetTenantAsync(System.String,System.Threading.CancellationToken)
+  - AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync(System.String,System.Threading.CancellationToken)
+  - AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ITenantStore
+  nameWithType: ITenantStore
+  fullName: AspNetCore.Multitenancy.ITenantStore
+  type: Interface
+  source:
+    remote:
+      path: src/Core/ITenantStore.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ITenantStore
+    path: ../src/Core/ITenantStore.cs
+    startLine: 6
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: >-
+    Provides persistent storage and retrieval of <xref href="AspNetCore.Multitenancy.TenantInfo" data-throw-if-not-resolved="false"></xref> records.
+
+    Implement this to back tenants with a database, configuration file, or any other source.
+  example: []
+  syntax:
+    content: public interface ITenantStore
+    content.vb: Public Interface ITenantStore
+  derivedClasses:
+  - AspNetCore.Multitenancy.InMemoryTenantStore
+- uid: AspNetCore.Multitenancy.ITenantStore.GetTenantAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.ITenantStore.GetTenantAsync(System.String,System.Threading.CancellationToken)
+  id: GetTenantAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.ITenantStore
+  langs:
+  - csharp
+  - vb
+  name: GetTenantAsync(string, CancellationToken)
+  nameWithType: ITenantStore.GetTenantAsync(string, CancellationToken)
+  fullName: AspNetCore.Multitenancy.ITenantStore.GetTenantAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Core/ITenantStore.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: GetTenantAsync
+    path: ../src/Core/ITenantStore.cs
+    startLine: 12
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: >-
+    Retrieves a tenant by its unique identifier.
+
+    Returns <code>null</code> if not found.
+  example: []
+  syntax:
+    content: Task<TenantInfo?> GetTenantAsync(string tenantId, CancellationToken cancellationToken = default)
+    parameters:
+    - id: tenantId
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{AspNetCore.Multitenancy.TenantInfo}
+    content.vb: Function GetTenantAsync(tenantId As String, cancellationToken As CancellationToken = Nothing) As Task(Of TenantInfo)
+  overload: AspNetCore.Multitenancy.ITenantStore.GetTenantAsync*
+  nameWithType.vb: ITenantStore.GetTenantAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.ITenantStore.GetTenantAsync(String, System.Threading.CancellationToken)
+  name.vb: GetTenantAsync(String, CancellationToken)
+- uid: AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)
+  id: GetAllTenantsAsync(System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.ITenantStore
+  langs:
+  - csharp
+  - vb
+  name: GetAllTenantsAsync(CancellationToken)
+  nameWithType: ITenantStore.GetAllTenantsAsync(CancellationToken)
+  fullName: AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Core/ITenantStore.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: GetAllTenantsAsync
+    path: ../src/Core/ITenantStore.cs
+    startLine: 17
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: Returns all tenants known to the store.
+  example: []
+  syntax:
+    content: Task<IReadOnlyList<TenantInfo>> GetAllTenantsAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{AspNetCore.Multitenancy.TenantInfo}}
+    content.vb: Function GetAllTenantsAsync(cancellationToken As CancellationToken = Nothing) As Task(Of IReadOnlyList(Of TenantInfo))
+  overload: AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync*
+- uid: AspNetCore.Multitenancy.ITenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.ITenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  id: AddTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.ITenantStore
+  langs:
+  - csharp
+  - vb
+  name: AddTenantAsync(TenantInfo, CancellationToken)
+  nameWithType: ITenantStore.AddTenantAsync(TenantInfo, CancellationToken)
+  fullName: AspNetCore.Multitenancy.ITenantStore.AddTenantAsync(AspNetCore.Multitenancy.TenantInfo, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Core/ITenantStore.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: AddTenantAsync
+    path: ../src/Core/ITenantStore.cs
+    startLine: 22
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: Adds a new tenant to the store.
+  example: []
+  syntax:
+    content: Task AddTenantAsync(TenantInfo tenant, CancellationToken cancellationToken = default)
+    parameters:
+    - id: tenant
+      type: AspNetCore.Multitenancy.TenantInfo
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddTenantAsync(tenant As TenantInfo, cancellationToken As CancellationToken = Nothing) As Task
+  overload: AspNetCore.Multitenancy.ITenantStore.AddTenantAsync*
+- uid: AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  id: UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.ITenantStore
+  langs:
+  - csharp
+  - vb
+  name: UpdateTenantAsync(TenantInfo, CancellationToken)
+  nameWithType: ITenantStore.UpdateTenantAsync(TenantInfo, CancellationToken)
+  fullName: AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync(AspNetCore.Multitenancy.TenantInfo, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Core/ITenantStore.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: UpdateTenantAsync
+    path: ../src/Core/ITenantStore.cs
+    startLine: 27
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: Updates an existing tenant in the store.
+  example: []
+  syntax:
+    content: Task UpdateTenantAsync(TenantInfo tenant, CancellationToken cancellationToken = default)
+    parameters:
+    - id: tenant
+      type: AspNetCore.Multitenancy.TenantInfo
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateTenantAsync(tenant As TenantInfo, cancellationToken As CancellationToken = Nothing) As Task
+  overload: AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync*
+- uid: AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync(System.String,System.Threading.CancellationToken)
+  id: RemoveTenantAsync(System.String,System.Threading.CancellationToken)
+  parent: AspNetCore.Multitenancy.ITenantStore
+  langs:
+  - csharp
+  - vb
+  name: RemoveTenantAsync(string, CancellationToken)
+  nameWithType: ITenantStore.RemoveTenantAsync(string, CancellationToken)
+  fullName: AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Core/ITenantStore.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: RemoveTenantAsync
+    path: ../src/Core/ITenantStore.cs
+    startLine: 32
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: Removes a tenant from the store.
+  example: []
+  syntax:
+    content: Task RemoveTenantAsync(string tenantId, CancellationToken cancellationToken = default)
+    parameters:
+    - id: tenantId
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function RemoveTenantAsync(tenantId As String, cancellationToken As CancellationToken = Nothing) As Task
+  overload: AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync*
+  nameWithType.vb: ITenantStore.RemoveTenantAsync(String, CancellationToken)
+  fullName.vb: AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync(String, System.Threading.CancellationToken)
+  name.vb: RemoveTenantAsync(String, CancellationToken)
+references:
+- uid: AspNetCore.Multitenancy.TenantInfo
+  commentId: T:AspNetCore.Multitenancy.TenantInfo
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.TenantInfo.html
+  name: TenantInfo
+  nameWithType: TenantInfo
+  fullName: AspNetCore.Multitenancy.TenantInfo
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+- uid: AspNetCore.Multitenancy.ITenantStore.GetTenantAsync*
+  commentId: Overload:AspNetCore.Multitenancy.ITenantStore.GetTenantAsync
+  href: AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_GetTenantAsync_System_String_System_Threading_CancellationToken_
+  name: GetTenantAsync
+  nameWithType: ITenantStore.GetTenantAsync
+  fullName: AspNetCore.Multitenancy.ITenantStore.GetTenantAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{AspNetCore.Multitenancy.TenantInfo}
+  commentId: T:System.Threading.Tasks.Task{AspNetCore.Multitenancy.TenantInfo}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TenantInfo>
+  nameWithType: Task<TenantInfo>
+  fullName: System.Threading.Tasks.Task<AspNetCore.Multitenancy.TenantInfo>
+  nameWithType.vb: Task(Of TenantInfo)
+  fullName.vb: System.Threading.Tasks.Task(Of AspNetCore.Multitenancy.TenantInfo)
+  name.vb: Task(Of TenantInfo)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AspNetCore.Multitenancy.TenantInfo
+    name: TenantInfo
+    href: AspNetCore.Multitenancy.TenantInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AspNetCore.Multitenancy.TenantInfo
+    name: TenantInfo
+    href: AspNetCore.Multitenancy.TenantInfo.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync*
+  commentId: Overload:AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync
+  href: AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_GetAllTenantsAsync_System_Threading_CancellationToken_
+  name: GetAllTenantsAsync
+  nameWithType: ITenantStore.GetAllTenantsAsync
+  fullName: AspNetCore.Multitenancy.ITenantStore.GetAllTenantsAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{AspNetCore.Multitenancy.TenantInfo}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyList{AspNetCore.Multitenancy.TenantInfo}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyList<TenantInfo>>
+  nameWithType: Task<IReadOnlyList<TenantInfo>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<AspNetCore.Multitenancy.TenantInfo>>
+  nameWithType.vb: Task(Of IReadOnlyList(Of TenantInfo))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyList(Of AspNetCore.Multitenancy.TenantInfo))
+  name.vb: Task(Of IReadOnlyList(Of TenantInfo))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: AspNetCore.Multitenancy.TenantInfo
+    name: TenantInfo
+    href: AspNetCore.Multitenancy.TenantInfo.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AspNetCore.Multitenancy.TenantInfo
+    name: TenantInfo
+    href: AspNetCore.Multitenancy.TenantInfo.html
+  - name: )
+  - name: )
+- uid: AspNetCore.Multitenancy.ITenantStore.AddTenantAsync*
+  commentId: Overload:AspNetCore.Multitenancy.ITenantStore.AddTenantAsync
+  href: AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_AddTenantAsync_AspNetCore_Multitenancy_TenantInfo_System_Threading_CancellationToken_
+  name: AddTenantAsync
+  nameWithType: ITenantStore.AddTenantAsync
+  fullName: AspNetCore.Multitenancy.ITenantStore.AddTenantAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync*
+  commentId: Overload:AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync
+  href: AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_UpdateTenantAsync_AspNetCore_Multitenancy_TenantInfo_System_Threading_CancellationToken_
+  name: UpdateTenantAsync
+  nameWithType: ITenantStore.UpdateTenantAsync
+  fullName: AspNetCore.Multitenancy.ITenantStore.UpdateTenantAsync
+- uid: AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync*
+  commentId: Overload:AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync
+  href: AspNetCore.Multitenancy.ITenantStore.html#AspNetCore_Multitenancy_ITenantStore_RemoveTenantAsync_System_String_System_Threading_CancellationToken_
+  name: RemoveTenantAsync
+  nameWithType: ITenantStore.RemoveTenantAsync
+  fullName: AspNetCore.Multitenancy.ITenantStore.RemoveTenantAsync

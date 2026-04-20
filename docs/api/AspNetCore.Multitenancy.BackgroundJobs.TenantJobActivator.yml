@@ -1,0 +1,637 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  commentId: T:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  id: TenantJobActivator
+  parent: AspNetCore.Multitenancy.BackgroundJobs
+  children:
+  - AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.#ctor(System.IServiceProvider)
+  - AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob(System.Type)
+  - AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope(Hangfire.Server.PerformContext)
+  langs:
+  - csharp
+  - vb
+  name: TenantJobActivator
+  nameWithType: TenantJobActivator
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  type: Class
+  source:
+    remote:
+      path: src/BackgroundJobs/TenantJobActivator.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: TenantJobActivator
+    path: ../src/BackgroundJobs/TenantJobActivator.cs
+    startLine: 10
+  assemblies:
+  - AspNetCore.Multitenancy.Hangfire
+  namespace: AspNetCore.Multitenancy.BackgroundJobs
+  summary: >-
+    Resolves Hangfire job instances from a per-tenant DI scope, ensuring that
+
+    any scoped services (including <xref href="AspNetCore.Multitenancy.ITenantContext" data-throw-if-not-resolved="false"></xref>) are resolved
+
+    from the correct tenant scope.
+  example: []
+  syntax:
+    content: 'public class TenantJobActivator : JobActivator'
+    content.vb: Public Class TenantJobActivator Inherits JobActivator
+  inheritance:
+  - System.Object
+  - Hangfire.JobActivator
+  inheritedMembers:
+  - Hangfire.JobActivator.BeginScope
+  - Hangfire.JobActivator.BeginScope(Hangfire.JobActivatorContext)
+  - Hangfire.JobActivator.Current
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.#ctor(System.IServiceProvider)
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.#ctor(System.IServiceProvider)
+  id: '#ctor(System.IServiceProvider)'
+  parent: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  langs:
+  - csharp
+  - vb
+  name: TenantJobActivator(IServiceProvider)
+  nameWithType: TenantJobActivator.TenantJobActivator(IServiceProvider)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.TenantJobActivator(System.IServiceProvider)
+  type: Constructor
+  source:
+    remote:
+      path: src/BackgroundJobs/TenantJobActivator.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: .ctor
+    path: ../src/BackgroundJobs/TenantJobActivator.cs
+    startLine: 14
+  assemblies:
+  - AspNetCore.Multitenancy.Hangfire
+  namespace: AspNetCore.Multitenancy.BackgroundJobs
+  syntax:
+    content: public TenantJobActivator(IServiceProvider rootProvider)
+    parameters:
+    - id: rootProvider
+      type: System.IServiceProvider
+    content.vb: Public Sub New(rootProvider As IServiceProvider)
+  overload: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.#ctor*
+  nameWithType.vb: TenantJobActivator.New(IServiceProvider)
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.New(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob(System.Type)
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob(System.Type)
+  id: ActivateJob(System.Type)
+  parent: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  langs:
+  - csharp
+  - vb
+  name: ActivateJob(Type)
+  nameWithType: TenantJobActivator.ActivateJob(Type)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob(System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/BackgroundJobs/TenantJobActivator.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ActivateJob
+    path: ../src/BackgroundJobs/TenantJobActivator.cs
+    startLine: 20
+  assemblies:
+  - AspNetCore.Multitenancy.Hangfire
+  namespace: AspNetCore.Multitenancy.BackgroundJobs
+  example: []
+  syntax:
+    content: public override object ActivateJob(Type jobType)
+    parameters:
+    - id: jobType
+      type: System.Type
+    return:
+      type: System.Object
+    content.vb: Public Overrides Function ActivateJob(jobType As Type) As Object
+  overridden: Hangfire.JobActivator.ActivateJob(System.Type)
+  overload: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob*
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope(Hangfire.Server.PerformContext)
+  commentId: M:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope(Hangfire.Server.PerformContext)
+  id: BeginScope(Hangfire.Server.PerformContext)
+  parent: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+  langs:
+  - csharp
+  - vb
+  name: BeginScope(PerformContext)
+  nameWithType: TenantJobActivator.BeginScope(PerformContext)
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope(Hangfire.Server.PerformContext)
+  type: Method
+  source:
+    remote:
+      path: src/BackgroundJobs/TenantJobActivator.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: BeginScope
+    path: ../src/BackgroundJobs/TenantJobActivator.cs
+    startLine: 24
+  assemblies:
+  - AspNetCore.Multitenancy.Hangfire
+  namespace: AspNetCore.Multitenancy.BackgroundJobs
+  example: []
+  syntax:
+    content: public override JobActivatorScope BeginScope(PerformContext context)
+    parameters:
+    - id: context
+      type: Hangfire.Server.PerformContext
+    return:
+      type: Hangfire.JobActivatorScope
+    content.vb: Public Overrides Function BeginScope(context As PerformContext) As JobActivatorScope
+  overridden: Hangfire.JobActivator.BeginScope(Hangfire.Server.PerformContext)
+  overload: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope*
+references:
+- uid: AspNetCore.Multitenancy.ITenantContext
+  commentId: T:AspNetCore.Multitenancy.ITenantContext
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.ITenantContext.html
+  name: ITenantContext
+  nameWithType: ITenantContext
+  fullName: AspNetCore.Multitenancy.ITenantContext
+- uid: AspNetCore.Multitenancy.BackgroundJobs
+  commentId: N:AspNetCore.Multitenancy.BackgroundJobs
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.BackgroundJobs
+  nameWithType: AspNetCore.Multitenancy.BackgroundJobs
+  fullName: AspNetCore.Multitenancy.BackgroundJobs
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.BackgroundJobs
+    name: BackgroundJobs
+    href: AspNetCore.Multitenancy.BackgroundJobs.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.BackgroundJobs
+    name: BackgroundJobs
+    href: AspNetCore.Multitenancy.BackgroundJobs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Hangfire.JobActivator
+  commentId: T:Hangfire.JobActivator
+  parent: Hangfire
+  isExternal: true
+  name: JobActivator
+  nameWithType: JobActivator
+  fullName: Hangfire.JobActivator
+- uid: Hangfire.JobActivator.BeginScope
+  commentId: M:Hangfire.JobActivator.BeginScope
+  parent: Hangfire.JobActivator
+  isExternal: true
+  name: BeginScope()
+  nameWithType: JobActivator.BeginScope()
+  fullName: Hangfire.JobActivator.BeginScope()
+  spec.csharp:
+  - uid: Hangfire.JobActivator.BeginScope
+    name: BeginScope
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Hangfire.JobActivator.BeginScope
+    name: BeginScope
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Hangfire.JobActivator.BeginScope(Hangfire.JobActivatorContext)
+  commentId: M:Hangfire.JobActivator.BeginScope(Hangfire.JobActivatorContext)
+  parent: Hangfire.JobActivator
+  isExternal: true
+  name: BeginScope(JobActivatorContext)
+  nameWithType: JobActivator.BeginScope(JobActivatorContext)
+  fullName: Hangfire.JobActivator.BeginScope(Hangfire.JobActivatorContext)
+  spec.csharp:
+  - uid: Hangfire.JobActivator.BeginScope(Hangfire.JobActivatorContext)
+    name: BeginScope
+    isExternal: true
+  - name: (
+  - uid: Hangfire.JobActivatorContext
+    name: JobActivatorContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Hangfire.JobActivator.BeginScope(Hangfire.JobActivatorContext)
+    name: BeginScope
+    isExternal: true
+  - name: (
+  - uid: Hangfire.JobActivatorContext
+    name: JobActivatorContext
+    isExternal: true
+  - name: )
+- uid: Hangfire.JobActivator.Current
+  commentId: P:Hangfire.JobActivator.Current
+  parent: Hangfire.JobActivator
+  isExternal: true
+  name: Current
+  nameWithType: JobActivator.Current
+  fullName: Hangfire.JobActivator.Current
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Hangfire
+  commentId: N:Hangfire
+  isExternal: true
+  name: Hangfire
+  nameWithType: Hangfire
+  fullName: Hangfire
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.#ctor*
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.#ctor
+  href: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobActivator__ctor_System_IServiceProvider_
+  name: TenantJobActivator
+  nameWithType: TenantJobActivator.TenantJobActivator
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.TenantJobActivator
+  nameWithType.vb: TenantJobActivator.New
+  fullName.vb: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.New
+  name.vb: New
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Hangfire.JobActivator.ActivateJob(System.Type)
+  commentId: M:Hangfire.JobActivator.ActivateJob(System.Type)
+  parent: Hangfire.JobActivator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: ActivateJob(Type)
+  nameWithType: JobActivator.ActivateJob(Type)
+  fullName: Hangfire.JobActivator.ActivateJob(System.Type)
+  spec.csharp:
+  - uid: Hangfire.JobActivator.ActivateJob(System.Type)
+    name: ActivateJob
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Hangfire.JobActivator.ActivateJob(System.Type)
+    name: ActivateJob
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob*
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob
+  href: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobActivator_ActivateJob_System_Type_
+  name: ActivateJob
+  nameWithType: TenantJobActivator.ActivateJob
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.ActivateJob
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Hangfire.JobActivator.BeginScope(Hangfire.Server.PerformContext)
+  commentId: M:Hangfire.JobActivator.BeginScope(Hangfire.Server.PerformContext)
+  parent: Hangfire.JobActivator
+  isExternal: true
+  name: BeginScope(PerformContext)
+  nameWithType: JobActivator.BeginScope(PerformContext)
+  fullName: Hangfire.JobActivator.BeginScope(Hangfire.Server.PerformContext)
+  spec.csharp:
+  - uid: Hangfire.JobActivator.BeginScope(Hangfire.Server.PerformContext)
+    name: BeginScope
+    isExternal: true
+  - name: (
+  - uid: Hangfire.Server.PerformContext
+    name: PerformContext
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Hangfire.JobActivator.BeginScope(Hangfire.Server.PerformContext)
+    name: BeginScope
+    isExternal: true
+  - name: (
+  - uid: Hangfire.Server.PerformContext
+    name: PerformContext
+    isExternal: true
+  - name: )
+- uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope*
+  commentId: Overload:AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope
+  href: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.html#AspNetCore_Multitenancy_BackgroundJobs_TenantJobActivator_BeginScope_Hangfire_Server_PerformContext_
+  name: BeginScope
+  nameWithType: TenantJobActivator.BeginScope
+  fullName: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator.BeginScope
+- uid: Hangfire.Server.PerformContext
+  commentId: T:Hangfire.Server.PerformContext
+  parent: Hangfire.Server
+  isExternal: true
+  name: PerformContext
+  nameWithType: PerformContext
+  fullName: Hangfire.Server.PerformContext
+- uid: Hangfire.JobActivatorScope
+  commentId: T:Hangfire.JobActivatorScope
+  parent: Hangfire
+  isExternal: true
+  name: JobActivatorScope
+  nameWithType: JobActivatorScope
+  fullName: Hangfire.JobActivatorScope
+- uid: Hangfire.Server
+  commentId: N:Hangfire.Server
+  isExternal: true
+  name: Hangfire.Server
+  nameWithType: Hangfire.Server
+  fullName: Hangfire.Server
+  spec.csharp:
+  - uid: Hangfire
+    name: Hangfire
+    isExternal: true
+  - name: .
+  - uid: Hangfire.Server
+    name: Server
+    isExternal: true
+  spec.vb:
+  - uid: Hangfire
+    name: Hangfire
+    isExternal: true
+  - name: .
+  - uid: Hangfire.Server
+    name: Server
+    isExternal: true

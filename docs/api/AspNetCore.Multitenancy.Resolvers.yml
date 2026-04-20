@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.Resolvers
+  commentId: N:AspNetCore.Multitenancy.Resolvers
+  id: AspNetCore.Multitenancy.Resolvers
+  children:
+  - AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+  - AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver
+  - AspNetCore.Multitenancy.Resolvers.HostTenantResolver
+  - AspNetCore.Multitenancy.Resolvers.PathTenantResolver
+  - AspNetCore.Multitenancy.Resolvers.ResolverExtensions
+  langs:
+  - csharp
+  - vb
+  name: AspNetCore.Multitenancy.Resolvers
+  nameWithType: AspNetCore.Multitenancy.Resolvers
+  fullName: AspNetCore.Multitenancy.Resolvers
+  type: Namespace
+  assemblies:
+  - AspNetCore.Multitenancy.Resolvers
+references:
+- uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+  commentId: T:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+  href: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.html
+  name: ClaimsTenantResolver
+  nameWithType: ClaimsTenantResolver
+  fullName: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+- uid: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver
+  commentId: T:AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver
+  href: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver.html
+  name: HeaderTenantResolver
+  nameWithType: HeaderTenantResolver
+  fullName: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver
+- uid: AspNetCore.Multitenancy.Resolvers.HostTenantResolver
+  commentId: T:AspNetCore.Multitenancy.Resolvers.HostTenantResolver
+  href: AspNetCore.Multitenancy.Resolvers.HostTenantResolver.html
+  name: HostTenantResolver
+  nameWithType: HostTenantResolver
+  fullName: AspNetCore.Multitenancy.Resolvers.HostTenantResolver
+- uid: AspNetCore.Multitenancy.Resolvers.PathTenantResolver
+  commentId: T:AspNetCore.Multitenancy.Resolvers.PathTenantResolver
+  href: AspNetCore.Multitenancy.Resolvers.PathTenantResolver.html
+  name: PathTenantResolver
+  nameWithType: PathTenantResolver
+  fullName: AspNetCore.Multitenancy.Resolvers.PathTenantResolver
+- uid: AspNetCore.Multitenancy.Resolvers.ResolverExtensions
+  commentId: T:AspNetCore.Multitenancy.Resolvers.ResolverExtensions
+  parent: AspNetCore.Multitenancy.Resolvers
+  href: AspNetCore.Multitenancy.Resolvers.ResolverExtensions.html
+  name: ResolverExtensions
+  nameWithType: ResolverExtensions
+  fullName: AspNetCore.Multitenancy.Resolvers.ResolverExtensions
+- uid: AspNetCore.Multitenancy.Resolvers
+  commentId: N:AspNetCore.Multitenancy.Resolvers
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.Resolvers
+  nameWithType: AspNetCore.Multitenancy.Resolvers
+  fullName: AspNetCore.Multitenancy.Resolvers
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.Resolvers
+    name: Resolvers
+    href: AspNetCore.Multitenancy.Resolvers.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.Resolvers
+    name: Resolvers
+    href: AspNetCore.Multitenancy.Resolvers.html

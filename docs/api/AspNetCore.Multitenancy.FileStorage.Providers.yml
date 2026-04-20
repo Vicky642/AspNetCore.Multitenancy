@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.FileStorage.Providers
+  commentId: N:AspNetCore.Multitenancy.FileStorage.Providers
+  id: AspNetCore.Multitenancy.FileStorage.Providers
+  children:
+  - AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  - AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider
+  - AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider
+  langs:
+  - csharp
+  - vb
+  name: AspNetCore.Multitenancy.FileStorage.Providers
+  nameWithType: AspNetCore.Multitenancy.FileStorage.Providers
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers
+  type: Namespace
+  assemblies:
+  - AspNetCore.Multitenancy.Storage
+references:
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  commentId: T:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+  href: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.html
+  name: AzureBlobTenantStorageProvider
+  nameWithType: AzureBlobTenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider
+  commentId: T:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider
+  href: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.html
+  name: LocalTenantStorageProvider
+  nameWithType: LocalTenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider
+- uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider
+  commentId: T:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider
+  href: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.html
+  name: S3TenantStorageProvider
+  nameWithType: S3TenantStorageProvider
+  fullName: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider

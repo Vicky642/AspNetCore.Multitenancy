@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+  id: ITenantEntity
+  parent: AspNetCore.Multitenancy.EntityFrameworkCore
+  children:
+  - AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  langs:
+  - csharp
+  - vb
+  name: ITenantEntity
+  nameWithType: ITenantEntity
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+  type: Interface
+  source:
+    remote:
+      path: src/EntityFrameworkCore/ITenantEntity.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ITenantEntity
+    path: ../src/EntityFrameworkCore/ITenantEntity.cs
+    startLine: 7
+  assemblies:
+  - AspNetCore.Multitenancy.EFCore
+  namespace: AspNetCore.Multitenancy.EntityFrameworkCore
+  summary: >-
+    Marks an entity as tenant-scoped. The EF Core model builder and
+
+    <xref href="AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext" data-throw-if-not-resolved="false"></xref> use this interface to apply global query
+
+    filters and to stamp <xref href="AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId" data-throw-if-not-resolved="false"></xref> on insert automatically.
+  example: []
+  syntax:
+    content: public interface ITenantEntity
+    content.vb: Public Interface ITenantEntity
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  commentId: P:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  id: TenantId
+  parent: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+  langs:
+  - csharp
+  - vb
+  name: TenantId
+  nameWithType: ITenantEntity.TenantId
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  type: Property
+  source:
+    remote:
+      path: src/EntityFrameworkCore/ITenantEntity.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: TenantId
+    path: ../src/EntityFrameworkCore/ITenantEntity.cs
+    startLine: 13
+  assemblies:
+  - AspNetCore.Multitenancy.EFCore
+  namespace: AspNetCore.Multitenancy.EntityFrameworkCore
+  summary: >-
+    The tenant that owns this entity record.
+
+    Set automatically on SaveChanges — do not set manually.
+  example: []
+  syntax:
+    content: string TenantId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property TenantId As String
+  overload: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId*
+references:
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext
+  commentId: T:AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext.html
+  name: MultitenantDbContext
+  nameWithType: MultitenantDbContext
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  commentId: P:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.html#AspNetCore_Multitenancy_EntityFrameworkCore_ITenantEntity_TenantId
+  name: TenantId
+  nameWithType: ITenantEntity.TenantId
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore
+  commentId: N:AspNetCore.Multitenancy.EntityFrameworkCore
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.EntityFrameworkCore
+  nameWithType: AspNetCore.Multitenancy.EntityFrameworkCore
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore
+    name: EntityFrameworkCore
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore
+    name: EntityFrameworkCore
+    href: AspNetCore.Multitenancy.EntityFrameworkCore.html
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId*
+  commentId: Overload:AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+  href: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.html#AspNetCore_Multitenancy_EntityFrameworkCore_ITenantEntity_TenantId
+  name: TenantId
+  nameWithType: ITenantEntity.TenantId
+  fullName: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity.TenantId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

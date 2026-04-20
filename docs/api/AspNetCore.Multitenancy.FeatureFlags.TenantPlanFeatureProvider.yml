@@ -1,0 +1,669 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  id: TenantPlanFeatureProvider
+  parent: AspNetCore.Multitenancy.FeatureFlags
+  children:
+  - AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.#ctor(AspNetCore.Multitenancy.ITenantContext,AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions)
+  - AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures
+  - AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled(System.String)
+  langs:
+  - csharp
+  - vb
+  name: TenantPlanFeatureProvider
+  nameWithType: TenantPlanFeatureProvider
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  type: Class
+  source:
+    remote:
+      path: src/FeatureFlags/TenantPlanFeatureProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: TenantPlanFeatureProvider
+    path: ../src/FeatureFlags/TenantPlanFeatureProvider.cs
+    startLine: 16
+  assemblies:
+  - AspNetCore.Multitenancy.Features
+  namespace: AspNetCore.Multitenancy.FeatureFlags
+  summary: >-
+    Maps subscription plan names to sets of enabled features.
+
+    Configure the plan → feature mapping at startup.
+
+
+    Example:
+
+
+    <pre><code class="lang-csharp">services.Configure&lt;PlanFeatureOptions&gt;(opts =&gt;
+
+    {
+        opts.AddPlan("free",       new[] { "BasicDashboard" });
+        opts.AddPlan("pro",        new[] { "BasicDashboard", "AdvancedReporting", "ApiAccess" });
+        opts.AddPlan("enterprise", new[] { "BasicDashboard", "AdvancedReporting", "ApiAccess", "WhiteLabel", "SSOIntegration" });
+    });</code></pre>
+  example: []
+  syntax:
+    content: 'public class TenantPlanFeatureProvider : ITenantFeatureService'
+    content.vb: Public Class TenantPlanFeatureProvider Implements ITenantFeatureService
+  inheritance:
+  - System.Object
+  implements:
+  - AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.#ctor(AspNetCore.Multitenancy.ITenantContext,AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions)
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.#ctor(AspNetCore.Multitenancy.ITenantContext,AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions)
+  id: '#ctor(AspNetCore.Multitenancy.ITenantContext,AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions)'
+  parent: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  langs:
+  - csharp
+  - vb
+  name: TenantPlanFeatureProvider(ITenantContext, PlanFeatureOptions)
+  nameWithType: TenantPlanFeatureProvider.TenantPlanFeatureProvider(ITenantContext, PlanFeatureOptions)
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.TenantPlanFeatureProvider(AspNetCore.Multitenancy.ITenantContext, AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions)
+  type: Constructor
+  source:
+    remote:
+      path: src/FeatureFlags/TenantPlanFeatureProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: .ctor
+    path: ../src/FeatureFlags/TenantPlanFeatureProvider.cs
+    startLine: 21
+  assemblies:
+  - AspNetCore.Multitenancy.Features
+  namespace: AspNetCore.Multitenancy.FeatureFlags
+  syntax:
+    content: public TenantPlanFeatureProvider(ITenantContext tenantContext, PlanFeatureOptions options)
+    parameters:
+    - id: tenantContext
+      type: AspNetCore.Multitenancy.ITenantContext
+    - id: options
+      type: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+    content.vb: Public Sub New(tenantContext As ITenantContext, options As PlanFeatureOptions)
+  overload: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.#ctor*
+  nameWithType.vb: TenantPlanFeatureProvider.New(ITenantContext, PlanFeatureOptions)
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.New(AspNetCore.Multitenancy.ITenantContext, AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions)
+  name.vb: New(ITenantContext, PlanFeatureOptions)
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled(System.String)
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled(System.String)
+  id: IsEnabled(System.String)
+  parent: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  langs:
+  - csharp
+  - vb
+  name: IsEnabled(string)
+  nameWithType: TenantPlanFeatureProvider.IsEnabled(string)
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled(string)
+  type: Method
+  source:
+    remote:
+      path: src/FeatureFlags/TenantPlanFeatureProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: IsEnabled
+    path: ../src/FeatureFlags/TenantPlanFeatureProvider.cs
+    startLine: 28
+  assemblies:
+  - AspNetCore.Multitenancy.Features
+  namespace: AspNetCore.Multitenancy.FeatureFlags
+  summary: Returns <code>true</code> if the named feature is enabled for the current tenant's plan.
+  example: []
+  syntax:
+    content: public bool IsEnabled(string featureName)
+    parameters:
+    - id: featureName
+      type: System.String
+      description: The feature name to check (e.g., "AdvancedReporting").
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsEnabled(featureName As String) As Boolean
+  overload: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled*
+  implements:
+  - AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(System.String)
+  nameWithType.vb: TenantPlanFeatureProvider.IsEnabled(String)
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled(String)
+  name.vb: IsEnabled(String)
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures
+  id: GetEnabledFeatures
+  parent: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+  langs:
+  - csharp
+  - vb
+  name: GetEnabledFeatures()
+  nameWithType: TenantPlanFeatureProvider.GetEnabledFeatures()
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures()
+  type: Method
+  source:
+    remote:
+      path: src/FeatureFlags/TenantPlanFeatureProvider.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: GetEnabledFeatures
+    path: ../src/FeatureFlags/TenantPlanFeatureProvider.cs
+    startLine: 35
+  assemblies:
+  - AspNetCore.Multitenancy.Features
+  namespace: AspNetCore.Multitenancy.FeatureFlags
+  summary: Returns all features enabled for the current tenant's plan.
+  example: []
+  syntax:
+    content: public IReadOnlySet<string> GetEnabledFeatures()
+    return:
+      type: System.Collections.Generic.IReadOnlySet{System.String}
+    content.vb: Public Function GetEnabledFeatures() As IReadOnlySet(Of String)
+  overload: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures*
+  implements:
+  - AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+references:
+- uid: AspNetCore.Multitenancy.FeatureFlags
+  commentId: N:AspNetCore.Multitenancy.FeatureFlags
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.FeatureFlags
+  nameWithType: AspNetCore.Multitenancy.FeatureFlags
+  fullName: AspNetCore.Multitenancy.FeatureFlags
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FeatureFlags
+    name: FeatureFlags
+    href: AspNetCore.Multitenancy.FeatureFlags.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.FeatureFlags
+    name: FeatureFlags
+    href: AspNetCore.Multitenancy.FeatureFlags.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  parent: AspNetCore.Multitenancy.FeatureFlags
+  href: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html
+  name: ITenantFeatureService
+  nameWithType: ITenantFeatureService
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.#ctor*
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.#ctor
+  href: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html#AspNetCore_Multitenancy_FeatureFlags_TenantPlanFeatureProvider__ctor_AspNetCore_Multitenancy_ITenantContext_AspNetCore_Multitenancy_FeatureFlags_PlanFeatureOptions_
+  name: TenantPlanFeatureProvider
+  nameWithType: TenantPlanFeatureProvider.TenantPlanFeatureProvider
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.TenantPlanFeatureProvider
+  nameWithType.vb: TenantPlanFeatureProvider.New
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.New
+  name.vb: New
+- uid: AspNetCore.Multitenancy.ITenantContext
+  commentId: T:AspNetCore.Multitenancy.ITenantContext
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.ITenantContext.html
+  name: ITenantContext
+  nameWithType: ITenantContext
+  fullName: AspNetCore.Multitenancy.ITenantContext
+- uid: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+  commentId: T:AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+  parent: AspNetCore.Multitenancy.FeatureFlags
+  href: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.html
+  name: PlanFeatureOptions
+  nameWithType: PlanFeatureOptions
+  fullName: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled*
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled
+  href: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html#AspNetCore_Multitenancy_FeatureFlags_TenantPlanFeatureProvider_IsEnabled_System_String_
+  name: IsEnabled
+  nameWithType: TenantPlanFeatureProvider.IsEnabled
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(System.String)
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(System.String)
+  parent: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  isExternal: true
+  href: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_IsEnabled_System_String_
+  name: IsEnabled(string)
+  nameWithType: ITenantFeatureService.IsEnabled(string)
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(string)
+  nameWithType.vb: ITenantFeatureService.IsEnabled(String)
+  fullName.vb: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(String)
+  name.vb: IsEnabled(String)
+  spec.csharp:
+  - uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(System.String)
+    name: IsEnabled
+    href: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_IsEnabled_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(System.String)
+    name: IsEnabled
+    href: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_IsEnabled_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures*
+  commentId: Overload:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures
+  href: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.html#AspNetCore_Multitenancy_FeatureFlags_TenantPlanFeatureProvider_GetEnabledFeatures
+  name: GetEnabledFeatures
+  nameWithType: TenantPlanFeatureProvider.GetEnabledFeatures
+  fullName: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures
+- uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+  commentId: M:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+  parent: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+  href: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_GetEnabledFeatures
+  name: GetEnabledFeatures()
+  nameWithType: ITenantFeatureService.GetEnabledFeatures()
+  fullName: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures()
+  spec.csharp:
+  - uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+    name: GetEnabledFeatures
+    href: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_GetEnabledFeatures
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures
+    name: GetEnabledFeatures
+    href: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.html#AspNetCore_Multitenancy_FeatureFlags_ITenantFeatureService_GetEnabledFeatures
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IReadOnlySet{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlySet{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlySet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  name: IReadOnlySet<string>
+  nameWithType: IReadOnlySet<string>
+  fullName: System.Collections.Generic.IReadOnlySet<string>
+  nameWithType.vb: IReadOnlySet(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlySet(Of String)
+  name.vb: IReadOnlySet(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlySet`1
+  commentId: T:System.Collections.Generic.IReadOnlySet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  name: IReadOnlySet<T>
+  nameWithType: IReadOnlySet<T>
+  fullName: System.Collections.Generic.IReadOnlySet<T>
+  nameWithType.vb: IReadOnlySet(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlySet(Of T)
+  name.vb: IReadOnlySet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlySet`1
+    name: IReadOnlySet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlyset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

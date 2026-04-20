@@ -1,0 +1,569 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.ServiceCollectionExtensions
+  commentId: T:AspNetCore.Multitenancy.ServiceCollectionExtensions
+  id: ServiceCollectionExtensions
+  parent: AspNetCore.Multitenancy
+  children:
+  - AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{AspNetCore.Multitenancy.MultitenancyOptions})
+  - AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  langs:
+  - csharp
+  - vb
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: AspNetCore.Multitenancy.ServiceCollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Core/ServiceCollectionExtensions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ServiceCollectionExtensions
+    path: ../src/Core/ServiceCollectionExtensions.cs
+    startLine: 6
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: >-
+    Extension methods for registering multi-tenancy services with the DI container
+
+    and adding the tenant middleware to the pipeline.
+  example: []
+  syntax:
+    content: public static class ServiceCollectionExtensions
+    content.vb: Public Module ServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{AspNetCore.Multitenancy.MultitenancyOptions})
+  commentId: M:AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{AspNetCore.Multitenancy.MultitenancyOptions})
+  id: AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{AspNetCore.Multitenancy.MultitenancyOptions})
+  isExtensionMethod: true
+  parent: AspNetCore.Multitenancy.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMultitenancy(IServiceCollection, Action<MultitenancyOptions>?)
+  nameWithType: ServiceCollectionExtensions.AddMultitenancy(IServiceCollection, Action<MultitenancyOptions>?)
+  fullName: AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<AspNetCore.Multitenancy.MultitenancyOptions>?)
+  type: Method
+  source:
+    remote:
+      path: src/Core/ServiceCollectionExtensions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: AddMultitenancy
+    path: ../src/Core/ServiceCollectionExtensions.cs
+    startLine: 24
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: >-
+    Registers the core multi-tenancy services and returns a <xref href="AspNetCore.Multitenancy.MultitenancyBuilder" data-throw-if-not-resolved="false"></xref>
+
+    for further configuration via <code>With*</code> extension methods.
+  example:
+  - >-
+    <pre><code class="lang-csharp">builder.Services
+        .AddMultitenancy(options =&gt;
+        {
+            options.TenantStore = TenantStore.InMemory;
+            options.IsolationStrategy = IsolationStrategy.RowLevel;
+        })
+        .WithHeaderResolver("X-Tenant-Id")
+        .WithEFCoreIsolation&lt;AppDbContext&gt;();</code></pre>
+  syntax:
+    content: public static MultitenancyBuilder AddMultitenancy(this IServiceCollection services, Action<MultitenancyOptions>? configure = null)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configure
+      type: System.Action{AspNetCore.Multitenancy.MultitenancyOptions}
+    return:
+      type: AspNetCore.Multitenancy.MultitenancyBuilder
+    content.vb: Public Shared Function AddMultitenancy(services As IServiceCollection, configure As Action(Of MultitenancyOptions) = Nothing) As MultitenancyBuilder
+  overload: AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy*
+  nameWithType.vb: ServiceCollectionExtensions.AddMultitenancy(IServiceCollection, Action(Of MultitenancyOptions))
+  fullName.vb: AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of AspNetCore.Multitenancy.MultitenancyOptions))
+  name.vb: AddMultitenancy(IServiceCollection, Action(Of MultitenancyOptions))
+- uid: AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  commentId: M:AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  id: UseMultitenancy(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  isExtensionMethod: true
+  parent: AspNetCore.Multitenancy.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseMultitenancy(IApplicationBuilder)
+  nameWithType: ServiceCollectionExtensions.UseMultitenancy(IApplicationBuilder)
+  fullName: AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Core/ServiceCollectionExtensions.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: UseMultitenancy
+    path: ../src/Core/ServiceCollectionExtensions.cs
+    startLine: 47
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: >-
+    Adds the <xref href="AspNetCore.Multitenancy.TenantMiddleware" data-throw-if-not-resolved="false"></xref> to the ASP.NET Core pipeline.
+
+    Call this in <code>app.Use*()</code> — before any routing or authorization middleware.
+  example: []
+  syntax:
+    content: public static IApplicationBuilder UseMultitenancy(this IApplicationBuilder app)
+    parameters:
+    - id: app
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+    return:
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+    content.vb: Public Shared Function UseMultitenancy(app As IApplicationBuilder) As IApplicationBuilder
+  overload: AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy*
+references:
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AspNetCore.Multitenancy.MultitenancyBuilder
+  commentId: T:AspNetCore.Multitenancy.MultitenancyBuilder
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.MultitenancyBuilder.html
+  name: MultitenancyBuilder
+  nameWithType: MultitenancyBuilder
+  fullName: AspNetCore.Multitenancy.MultitenancyBuilder
+- uid: AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy*
+  commentId: Overload:AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy
+  href: AspNetCore.Multitenancy.ServiceCollectionExtensions.html#AspNetCore_Multitenancy_ServiceCollectionExtensions_AddMultitenancy_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_AspNetCore_Multitenancy_MultitenancyOptions__
+  name: AddMultitenancy
+  nameWithType: ServiceCollectionExtensions.AddMultitenancy
+  fullName: AspNetCore.Multitenancy.ServiceCollectionExtensions.AddMultitenancy
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: System.Action{AspNetCore.Multitenancy.MultitenancyOptions}
+  commentId: T:System.Action{AspNetCore.Multitenancy.MultitenancyOptions}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<MultitenancyOptions>
+  nameWithType: Action<MultitenancyOptions>
+  fullName: System.Action<AspNetCore.Multitenancy.MultitenancyOptions>
+  nameWithType.vb: Action(Of MultitenancyOptions)
+  fullName.vb: System.Action(Of AspNetCore.Multitenancy.MultitenancyOptions)
+  name.vb: Action(Of MultitenancyOptions)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: AspNetCore.Multitenancy.MultitenancyOptions
+    name: MultitenancyOptions
+    href: AspNetCore.Multitenancy.MultitenancyOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AspNetCore.Multitenancy.MultitenancyOptions
+    name: MultitenancyOptions
+    href: AspNetCore.Multitenancy.MultitenancyOptions.html
+  - name: )
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AspNetCore.Multitenancy.TenantMiddleware
+  commentId: T:AspNetCore.Multitenancy.TenantMiddleware
+  href: AspNetCore.Multitenancy.TenantMiddleware.html
+  name: TenantMiddleware
+  nameWithType: TenantMiddleware
+  fullName: AspNetCore.Multitenancy.TenantMiddleware
+- uid: AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy*
+  commentId: Overload:AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy
+  href: AspNetCore.Multitenancy.ServiceCollectionExtensions.html#AspNetCore_Multitenancy_ServiceCollectionExtensions_UseMultitenancy_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  name: UseMultitenancy
+  nameWithType: ServiceCollectionExtensions.UseMultitenancy
+  fullName: AspNetCore.Multitenancy.ServiceCollectionExtensions.UseMultitenancy
+- uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
+  commentId: T:Microsoft.AspNetCore.Builder.IApplicationBuilder
+  parent: Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder
+  name: IApplicationBuilder
+  nameWithType: IApplicationBuilder
+  fullName: Microsoft.AspNetCore.Builder.IApplicationBuilder
+- uid: Microsoft.AspNetCore.Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder

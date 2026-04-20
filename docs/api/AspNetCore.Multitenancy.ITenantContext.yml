@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.ITenantContext
+  commentId: T:AspNetCore.Multitenancy.ITenantContext
+  id: ITenantContext
+  parent: AspNetCore.Multitenancy
+  children:
+  - AspNetCore.Multitenancy.ITenantContext.CreateTenantScope(System.String)
+  - AspNetCore.Multitenancy.ITenantContext.CurrentTenant
+  - AspNetCore.Multitenancy.ITenantContext.HasTenant
+  langs:
+  - csharp
+  - vb
+  name: ITenantContext
+  nameWithType: ITenantContext
+  fullName: AspNetCore.Multitenancy.ITenantContext
+  type: Interface
+  source:
+    remote:
+      path: src/Core/ITenantContext.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ITenantContext
+    path: ../src/Core/ITenantContext.cs
+    startLine: 6
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: >-
+    Provides access to the current tenant context for the active request or execution scope.
+
+    Inject this interface anywhere you need to know which tenant is in context.
+  example: []
+  syntax:
+    content: public interface ITenantContext
+    content.vb: Public Interface ITenantContext
+- uid: AspNetCore.Multitenancy.ITenantContext.CurrentTenant
+  commentId: P:AspNetCore.Multitenancy.ITenantContext.CurrentTenant
+  id: CurrentTenant
+  parent: AspNetCore.Multitenancy.ITenantContext
+  langs:
+  - csharp
+  - vb
+  name: CurrentTenant
+  nameWithType: ITenantContext.CurrentTenant
+  fullName: AspNetCore.Multitenancy.ITenantContext.CurrentTenant
+  type: Property
+  source:
+    remote:
+      path: src/Core/ITenantContext.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: CurrentTenant
+    path: ../src/Core/ITenantContext.cs
+    startLine: 12
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: Gets the current tenant's information.
+  example: []
+  syntax:
+    content: TenantInfo CurrentTenant { get; }
+    parameters: []
+    return:
+      type: AspNetCore.Multitenancy.TenantInfo
+    content.vb: ReadOnly Property CurrentTenant As TenantInfo
+  overload: AspNetCore.Multitenancy.ITenantContext.CurrentTenant*
+  exceptions:
+  - type: AspNetCore.Multitenancy.TenantNotFoundException
+    commentId: T:AspNetCore.Multitenancy.TenantNotFoundException
+    description: Thrown if accessed when <xref href="AspNetCore.Multitenancy.ITenantContext.HasTenant" data-throw-if-not-resolved="false"></xref> is <code>false</code>.
+- uid: AspNetCore.Multitenancy.ITenantContext.HasTenant
+  commentId: P:AspNetCore.Multitenancy.ITenantContext.HasTenant
+  id: HasTenant
+  parent: AspNetCore.Multitenancy.ITenantContext
+  langs:
+  - csharp
+  - vb
+  name: HasTenant
+  nameWithType: ITenantContext.HasTenant
+  fullName: AspNetCore.Multitenancy.ITenantContext.HasTenant
+  type: Property
+  source:
+    remote:
+      path: src/Core/ITenantContext.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: HasTenant
+    path: ../src/Core/ITenantContext.cs
+    startLine: 17
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: Gets a value indicating whether a tenant has been resolved for the current context.
+  example: []
+  syntax:
+    content: bool HasTenant { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasTenant As Boolean
+  overload: AspNetCore.Multitenancy.ITenantContext.HasTenant*
+- uid: AspNetCore.Multitenancy.ITenantContext.CreateTenantScope(System.String)
+  commentId: M:AspNetCore.Multitenancy.ITenantContext.CreateTenantScope(System.String)
+  id: CreateTenantScope(System.String)
+  parent: AspNetCore.Multitenancy.ITenantContext
+  langs:
+  - csharp
+  - vb
+  name: CreateTenantScope(string)
+  nameWithType: ITenantContext.CreateTenantScope(string)
+  fullName: AspNetCore.Multitenancy.ITenantContext.CreateTenantScope(string)
+  type: Method
+  source:
+    remote:
+      path: src/Core/ITenantContext.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: CreateTenantScope
+    path: ../src/Core/ITenantContext.cs
+    startLine: 24
+  assemblies:
+  - AspNetCore.Multitenancy.Core
+  namespace: AspNetCore.Multitenancy
+  summary: >-
+    Creates an isolated DI scope for the specified tenant, setting ITenantContext
+
+    to that tenant within the scope. Useful for background jobs.
+  example: []
+  syntax:
+    content: IServiceScope CreateTenantScope(string tenantId)
+    parameters:
+    - id: tenantId
+      type: System.String
+      description: The tenant identifier to scope to.
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceScope
+    content.vb: Function CreateTenantScope(tenantId As String) As IServiceScope
+  overload: AspNetCore.Multitenancy.ITenantContext.CreateTenantScope*
+  nameWithType.vb: ITenantContext.CreateTenantScope(String)
+  fullName.vb: AspNetCore.Multitenancy.ITenantContext.CreateTenantScope(String)
+  name.vb: CreateTenantScope(String)
+references:
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+- uid: AspNetCore.Multitenancy.ITenantContext.HasTenant
+  commentId: P:AspNetCore.Multitenancy.ITenantContext.HasTenant
+  href: AspNetCore.Multitenancy.ITenantContext.html#AspNetCore_Multitenancy_ITenantContext_HasTenant
+  name: HasTenant
+  nameWithType: ITenantContext.HasTenant
+  fullName: AspNetCore.Multitenancy.ITenantContext.HasTenant
+- uid: AspNetCore.Multitenancy.TenantNotFoundException
+  commentId: T:AspNetCore.Multitenancy.TenantNotFoundException
+  href: AspNetCore.Multitenancy.TenantNotFoundException.html
+  name: TenantNotFoundException
+  nameWithType: TenantNotFoundException
+  fullName: AspNetCore.Multitenancy.TenantNotFoundException
+- uid: AspNetCore.Multitenancy.ITenantContext.CurrentTenant*
+  commentId: Overload:AspNetCore.Multitenancy.ITenantContext.CurrentTenant
+  href: AspNetCore.Multitenancy.ITenantContext.html#AspNetCore_Multitenancy_ITenantContext_CurrentTenant
+  name: CurrentTenant
+  nameWithType: ITenantContext.CurrentTenant
+  fullName: AspNetCore.Multitenancy.ITenantContext.CurrentTenant
+- uid: AspNetCore.Multitenancy.TenantInfo
+  commentId: T:AspNetCore.Multitenancy.TenantInfo
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.TenantInfo.html
+  name: TenantInfo
+  nameWithType: TenantInfo
+  fullName: AspNetCore.Multitenancy.TenantInfo
+- uid: AspNetCore.Multitenancy.ITenantContext.HasTenant*
+  commentId: Overload:AspNetCore.Multitenancy.ITenantContext.HasTenant
+  href: AspNetCore.Multitenancy.ITenantContext.html#AspNetCore_Multitenancy_ITenantContext_HasTenant
+  name: HasTenant
+  nameWithType: ITenantContext.HasTenant
+  fullName: AspNetCore.Multitenancy.ITenantContext.HasTenant
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AspNetCore.Multitenancy.ITenantContext.CreateTenantScope*
+  commentId: Overload:AspNetCore.Multitenancy.ITenantContext.CreateTenantScope
+  href: AspNetCore.Multitenancy.ITenantContext.html#AspNetCore_Multitenancy_ITenantContext_CreateTenantScope_System_String_
+  name: CreateTenantScope
+  nameWithType: ITenantContext.CreateTenantScope
+  fullName: AspNetCore.Multitenancy.ITenantContext.CreateTenantScope
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Extensions.DependencyInjection.IServiceScope
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceScope
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicescope
+  name: IServiceScope
+  nameWithType: IServiceScope
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceScope
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection

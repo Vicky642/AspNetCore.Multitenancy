@@ -1,0 +1,634 @@
+### YamlMime:ManagedReference
+items:
+- uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+  commentId: T:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+  id: ClaimsTenantResolver
+  parent: AspNetCore.Multitenancy.Resolvers
+  children:
+  - AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)
+  - AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  langs:
+  - csharp
+  - vb
+  name: ClaimsTenantResolver
+  nameWithType: ClaimsTenantResolver
+  fullName: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+  type: Class
+  source:
+    remote:
+      path: src/Resolvers/ClaimsTenantResolver.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ClaimsTenantResolver
+    path: ../src/Resolvers/ClaimsTenantResolver.cs
+    startLine: 9
+  assemblies:
+  - AspNetCore.Multitenancy.Resolvers
+  namespace: AspNetCore.Multitenancy.Resolvers
+  summary: >-
+    Resolves the current tenant from a JWT claim.
+
+    Default claim type: <code>tid</code> (tenant ID).
+
+    Requires the request to be authenticated.
+  example: []
+  syntax:
+    content: 'public class ClaimsTenantResolver : ITenantResolver'
+    content.vb: Public Class ClaimsTenantResolver Implements ITenantResolver
+  inheritance:
+  - System.Object
+  implements:
+  - AspNetCore.Multitenancy.ITenantResolver
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)
+  commentId: M:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)
+  id: '#ctor(AspNetCore.Multitenancy.ITenantStore,System.String)'
+  parent: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+  langs:
+  - csharp
+  - vb
+  name: ClaimsTenantResolver(ITenantStore, string)
+  nameWithType: ClaimsTenantResolver.ClaimsTenantResolver(ITenantStore, string)
+  fullName: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ClaimsTenantResolver(AspNetCore.Multitenancy.ITenantStore, string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Resolvers/ClaimsTenantResolver.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: .ctor
+    path: ../src/Resolvers/ClaimsTenantResolver.cs
+    startLine: 16
+  assemblies:
+  - AspNetCore.Multitenancy.Resolvers
+  namespace: AspNetCore.Multitenancy.Resolvers
+  example: []
+  syntax:
+    content: public ClaimsTenantResolver(ITenantStore store, string claimType = "tid")
+    parameters:
+    - id: store
+      type: AspNetCore.Multitenancy.ITenantStore
+      description: The tenant store to look up the resolved ID.
+    - id: claimType
+      type: System.String
+      description: The claim type that carries the tenant ID. Defaults to <code>tid</code>.
+    content.vb: Public Sub New(store As ITenantStore, claimType As String = "tid")
+  overload: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.#ctor*
+  nameWithType.vb: ClaimsTenantResolver.New(ITenantStore, String)
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.New(AspNetCore.Multitenancy.ITenantStore, String)
+  name.vb: New(ITenantStore, String)
+- uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  id: ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  parent: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+  langs:
+  - csharp
+  - vb
+  name: ResolveAsync(HttpContext)
+  nameWithType: ClaimsTenantResolver.ResolveAsync(HttpContext)
+  fullName: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    remote:
+      path: src/Resolvers/ClaimsTenantResolver.cs
+      branch: main
+      repo: https://github.com/Vicky642/AspNetCore.Multitenancy.git
+    id: ResolveAsync
+    path: ../src/Resolvers/ClaimsTenantResolver.cs
+    startLine: 23
+  assemblies:
+  - AspNetCore.Multitenancy.Resolvers
+  namespace: AspNetCore.Multitenancy.Resolvers
+  summary: >-
+    Attempts to resolve a <xref href="AspNetCore.Multitenancy.TenantInfo" data-throw-if-not-resolved="false"></xref> from the given HTTP context.
+
+    Returns <code>null</code> if this resolver cannot determine the tenant.
+  example: []
+  syntax:
+    content: public Task<TenantInfo?> ResolveAsync(HttpContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Http.HttpContext
+      description: The current HTTP context.
+    return:
+      type: System.Threading.Tasks.Task{AspNetCore.Multitenancy.TenantInfo}
+      description: The resolved tenant, or <code>null</code> if not resolvable by this strategy.
+    content.vb: Public Function ResolveAsync(context As HttpContext) As Task(Of TenantInfo)
+  overload: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync*
+  implements:
+  - AspNetCore.Multitenancy.ITenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+references:
+- uid: AspNetCore.Multitenancy.Resolvers
+  commentId: N:AspNetCore.Multitenancy.Resolvers
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy.Resolvers
+  nameWithType: AspNetCore.Multitenancy.Resolvers
+  fullName: AspNetCore.Multitenancy.Resolvers
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.Resolvers
+    name: Resolvers
+    href: AspNetCore.Multitenancy.Resolvers.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  - name: .
+  - uid: AspNetCore.Multitenancy.Resolvers
+    name: Resolvers
+    href: AspNetCore.Multitenancy.Resolvers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AspNetCore.Multitenancy.ITenantResolver
+  commentId: T:AspNetCore.Multitenancy.ITenantResolver
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.ITenantResolver.html
+  name: ITenantResolver
+  nameWithType: ITenantResolver
+  fullName: AspNetCore.Multitenancy.ITenantResolver
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AspNetCore.Multitenancy
+  commentId: N:AspNetCore.Multitenancy
+  href: AspNetCore.html
+  name: AspNetCore.Multitenancy
+  nameWithType: AspNetCore.Multitenancy
+  fullName: AspNetCore.Multitenancy
+  spec.csharp:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+  spec.vb:
+  - uid: AspNetCore
+    name: AspNetCore
+    href: AspNetCore.html
+  - name: .
+  - uid: AspNetCore.Multitenancy
+    name: Multitenancy
+    href: AspNetCore.Multitenancy.html
+- uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.#ctor*
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.#ctor
+  href: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.html#AspNetCore_Multitenancy_Resolvers_ClaimsTenantResolver__ctor_AspNetCore_Multitenancy_ITenantStore_System_String_
+  name: ClaimsTenantResolver
+  nameWithType: ClaimsTenantResolver.ClaimsTenantResolver
+  fullName: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ClaimsTenantResolver
+  nameWithType.vb: ClaimsTenantResolver.New
+  fullName.vb: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.New
+  name.vb: New
+- uid: AspNetCore.Multitenancy.ITenantStore
+  commentId: T:AspNetCore.Multitenancy.ITenantStore
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.ITenantStore.html
+  name: ITenantStore
+  nameWithType: ITenantStore
+  fullName: AspNetCore.Multitenancy.ITenantStore
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AspNetCore.Multitenancy.TenantInfo
+  commentId: T:AspNetCore.Multitenancy.TenantInfo
+  parent: AspNetCore.Multitenancy
+  href: AspNetCore.Multitenancy.TenantInfo.html
+  name: TenantInfo
+  nameWithType: TenantInfo
+  fullName: AspNetCore.Multitenancy.TenantInfo
+- uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync*
+  commentId: Overload:AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync
+  href: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.html#AspNetCore_Multitenancy_Resolvers_ClaimsTenantResolver_ResolveAsync_Microsoft_AspNetCore_Http_HttpContext_
+  name: ResolveAsync
+  nameWithType: ClaimsTenantResolver.ResolveAsync
+  fullName: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver.ResolveAsync
+- uid: AspNetCore.Multitenancy.ITenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:AspNetCore.Multitenancy.ITenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  parent: AspNetCore.Multitenancy.ITenantResolver
+  isExternal: true
+  href: AspNetCore.Multitenancy.ITenantResolver.html#AspNetCore_Multitenancy_ITenantResolver_ResolveAsync_Microsoft_AspNetCore_Http_HttpContext_
+  name: ResolveAsync(HttpContext)
+  nameWithType: ITenantResolver.ResolveAsync(HttpContext)
+  fullName: AspNetCore.Multitenancy.ITenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+  spec.csharp:
+  - uid: AspNetCore.Multitenancy.ITenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+    name: ResolveAsync
+    href: AspNetCore.Multitenancy.ITenantResolver.html#AspNetCore_Multitenancy_ITenantResolver_ResolveAsync_Microsoft_AspNetCore_Http_HttpContext_
+  - name: (
+  - uid: Microsoft.AspNetCore.Http.HttpContext
+    name: HttpContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  - name: )
+  spec.vb:
+  - uid: AspNetCore.Multitenancy.ITenantResolver.ResolveAsync(Microsoft.AspNetCore.Http.HttpContext)
+    name: ResolveAsync
+    href: AspNetCore.Multitenancy.ITenantResolver.html#AspNetCore_Multitenancy_ITenantResolver_ResolveAsync_Microsoft_AspNetCore_Http_HttpContext_
+  - name: (
+  - uid: Microsoft.AspNetCore.Http.HttpContext
+    name: HttpContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  - name: )
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: System.Threading.Tasks.Task{AspNetCore.Multitenancy.TenantInfo}
+  commentId: T:System.Threading.Tasks.Task{AspNetCore.Multitenancy.TenantInfo}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TenantInfo>
+  nameWithType: Task<TenantInfo>
+  fullName: System.Threading.Tasks.Task<AspNetCore.Multitenancy.TenantInfo>
+  nameWithType.vb: Task(Of TenantInfo)
+  fullName.vb: System.Threading.Tasks.Task(Of AspNetCore.Multitenancy.TenantInfo)
+  name.vb: Task(Of TenantInfo)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: AspNetCore.Multitenancy.TenantInfo
+    name: TenantInfo
+    href: AspNetCore.Multitenancy.TenantInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AspNetCore.Multitenancy.TenantInfo
+    name: TenantInfo
+    href: AspNetCore.Multitenancy.TenantInfo.html
+  - name: )
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

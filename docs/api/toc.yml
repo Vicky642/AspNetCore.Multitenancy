@@ -1,0 +1,167 @@
+### YamlMime:TableOfContent
+items:
+- uid: AspNetCore.Multitenancy
+  name: AspNetCore.Multitenancy
+  type: Namespace
+  items:
+  - uid: AspNetCore.Multitenancy.ITenantContext
+    name: ITenantContext
+    type: Interface
+  - uid: AspNetCore.Multitenancy.ITenantResolver
+    name: ITenantResolver
+    type: Interface
+  - uid: AspNetCore.Multitenancy.ITenantStore
+    name: ITenantStore
+    type: Interface
+  - uid: AspNetCore.Multitenancy.InMemoryTenantStore
+    name: InMemoryTenantStore
+    type: Class
+  - uid: AspNetCore.Multitenancy.IsolationStrategy
+    name: IsolationStrategy
+    type: Enum
+  - uid: AspNetCore.Multitenancy.MultitenancyBuilder
+    name: MultitenancyBuilder
+    type: Class
+  - uid: AspNetCore.Multitenancy.MultitenancyOptions
+    name: MultitenancyOptions
+    type: Class
+  - uid: AspNetCore.Multitenancy.ServiceCollectionExtensions
+    name: ServiceCollectionExtensions
+    type: Class
+  - uid: AspNetCore.Multitenancy.TenantInfo
+    name: TenantInfo
+    type: Class
+  - uid: AspNetCore.Multitenancy.TenantMiddleware
+    name: TenantMiddleware
+    type: Class
+  - uid: AspNetCore.Multitenancy.TenantNotFoundException
+    name: TenantNotFoundException
+    type: Class
+  - uid: AspNetCore.Multitenancy.TenantStore
+    name: TenantStore
+    type: Enum
+- uid: AspNetCore.Multitenancy.BackgroundJobs
+  name: AspNetCore.Multitenancy.BackgroundJobs
+  type: Namespace
+  items:
+  - uid: AspNetCore.Multitenancy.BackgroundJobs.HangfireExtensions
+    name: HangfireExtensions
+    type: Class
+  - uid: AspNetCore.Multitenancy.BackgroundJobs.TenantBackgroundService
+    name: TenantBackgroundService
+    type: Class
+  - uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobActivator
+    name: TenantJobActivator
+    type: Class
+  - uid: AspNetCore.Multitenancy.BackgroundJobs.TenantJobFilter
+    name: TenantJobFilter
+    type: Class
+  - uid: AspNetCore.Multitenancy.BackgroundJobs.TenantRecurringJobManager
+    name: TenantRecurringJobManager
+    type: Class
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore
+  name: AspNetCore.Multitenancy.EntityFrameworkCore
+  type: Namespace
+  items:
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.EFCoreExtensions
+    name: EFCoreExtensions
+    type: Class
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.ITenantEntity
+    name: ITenantEntity
+    type: Interface
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.MultitenantDbContext
+    name: MultitenantDbContext
+    type: Class
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.QueryFilterExtensions
+    name: QueryFilterExtensions
+    type: Class
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantDbContextFactory`1
+    name: TenantDbContextFactory<TContext>
+    type: Class
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.TenantSchemaMigrator`1
+    name: TenantSchemaMigrator<TContext>
+    type: Class
+- uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  name: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies
+  type: Namespace
+  items:
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.DbPerTenantStrategy
+    name: DbPerTenantStrategy
+    type: Class
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.RowLevelStrategy
+    name: RowLevelStrategy
+    type: Class
+  - uid: AspNetCore.Multitenancy.EntityFrameworkCore.Strategies.SchemaPerTenantStrategy
+    name: SchemaPerTenantStrategy
+    type: Class
+- uid: AspNetCore.Multitenancy.FeatureFlags
+  name: AspNetCore.Multitenancy.FeatureFlags
+  type: Namespace
+  items:
+  - uid: AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions
+    name: FeatureFlagExtensions
+    type: Class
+  - uid: AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService
+    name: ITenantFeatureService
+    type: Interface
+  - uid: AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions
+    name: PlanFeatureOptions
+    type: Class
+  - uid: AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute
+    name: RequireFeatureAttribute
+    type: Class
+  - uid: AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware
+    name: TenantFeatureMiddleware
+    type: Class
+  - uid: AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider
+    name: TenantPlanFeatureProvider
+    type: Class
+- uid: AspNetCore.Multitenancy.FileStorage
+  name: AspNetCore.Multitenancy.FileStorage
+  type: Namespace
+  items:
+  - uid: AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider
+    name: ITenantStorageProvider
+    type: Interface
+  - uid: AspNetCore.Multitenancy.FileStorage.StorageExtensions
+    name: StorageExtensions
+    type: Class
+  - uid: AspNetCore.Multitenancy.FileStorage.StorageProvider
+    name: StorageProvider
+    type: Enum
+  - uid: AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder
+    name: TenantStoragePathBuilder
+    type: Class
+- uid: AspNetCore.Multitenancy.FileStorage.Providers
+  name: AspNetCore.Multitenancy.FileStorage.Providers
+  type: Namespace
+  items:
+  - uid: AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider
+    name: AzureBlobTenantStorageProvider
+    type: Class
+  - uid: AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider
+    name: LocalTenantStorageProvider
+    type: Class
+  - uid: AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider
+    name: S3TenantStorageProvider
+    type: Class
+- uid: AspNetCore.Multitenancy.Resolvers
+  name: AspNetCore.Multitenancy.Resolvers
+  type: Namespace
+  items:
+  - uid: AspNetCore.Multitenancy.Resolvers.ClaimsTenantResolver
+    name: ClaimsTenantResolver
+    type: Class
+  - uid: AspNetCore.Multitenancy.Resolvers.HeaderTenantResolver
+    name: HeaderTenantResolver
+    type: Class
+  - uid: AspNetCore.Multitenancy.Resolvers.HostTenantResolver
+    name: HostTenantResolver
+    type: Class
+  - uid: AspNetCore.Multitenancy.Resolvers.PathTenantResolver
+    name: PathTenantResolver
+    type: Class
+  - uid: AspNetCore.Multitenancy.Resolvers.ResolverExtensions
+    name: ResolverExtensions
+    type: Class
+memberLayout: SamePage
