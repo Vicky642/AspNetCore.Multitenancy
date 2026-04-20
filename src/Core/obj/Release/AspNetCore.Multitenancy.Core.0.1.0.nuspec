@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/Vicky642/AspNetCore.Multitenancy</projectUrl>
     <description>Core abstractions for multi-tenancy in ASP.NET Core 8+. Provides ITenantContext, ITenantResolver, TenantInfo, TenantMiddleware, and the AddMultitenancy() fluent builder.</description>
     <tags>aspnetcore multitenancy saas tenancy</tags>
-    <repository type="git" url="https://github.com/Vicky642/AspNetCore.Multitenancy" commit="40afeb0da3711db3b0a1e2f6da117a49dcbc0dc8" />
+    <repository type="git" url="https://github.com/Vicky642/AspNetCore.Multitenancy" commit="9b2f95296ef96efda199ebb9625d14b6ff27dfce" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.2.0" exclude="Build,Analyzers" />
@@ -33,5 +33,6 @@
     <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\bin\Release\net8.0\AspNetCore.Multitenancy.Core.xml" target="lib\net8.0\AspNetCore.Multitenancy.Core.xml" />
     <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\bin\Release\net9.0\AspNetCore.Multitenancy.Core.dll" target="lib\net9.0\AspNetCore.Multitenancy.Core.dll" />
     <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\bin\Release\net9.0\AspNetCore.Multitenancy.Core.xml" target="lib\net9.0\AspNetCore.Multitenancy.Core.xml" />
+    <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\README.md" target="\README.md" />
   </files>
 </package>
