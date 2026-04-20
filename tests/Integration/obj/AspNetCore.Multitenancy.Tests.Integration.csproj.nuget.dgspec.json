@@ -451,7 +451,7 @@
       }
     },
     "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\tests\\Integration\\AspNetCore.Multitenancy.Tests.Integration.csproj": {
-      "version": "1.0.0",
+      "version": "0.1.0-preview1",
       "restore": {
         "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\tests\\Integration\\AspNetCore.Multitenancy.Tests.Integration.csproj",
         "projectName": "AspNetCore.Multitenancy.Tests.Integration",

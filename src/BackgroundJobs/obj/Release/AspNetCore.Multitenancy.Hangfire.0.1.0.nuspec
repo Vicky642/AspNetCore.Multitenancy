@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AspNetCore.Multitenancy.Hangfire</id>
+    <version>0.1.0</version>
+    <authors>AspNetCore.Multitenancy Contributors</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/Vicky642/AspNetCore.Multitenancy</projectUrl>
+    <description>Tenant-aware Hangfire integration for AspNetCore.Multitenancy. Automatically propagates tenant context into background jobs.</description>
+    <tags>aspnetcore multitenancy hangfire saas background-jobs</tags>
+    <repository type="git" url="https://github.com/Vicky642/AspNetCore.Multitenancy" commit="40afeb0da3711db3b0a1e2f6da117a49dcbc0dc8" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="AspNetCore.Multitenancy.Core" version="0.1.0" exclude="Build,Analyzers" />
+        <dependency id="Hangfire.AspNetCore" version="1.8.14" exclude="Build,Analyzers" />
+        <dependency id="Hangfire.Core" version="1.8.14" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0">
+        <dependency id="AspNetCore.Multitenancy.Core" version="0.1.0" exclude="Build,Analyzers" />
+        <dependency id="Hangfire.AspNetCore" version="1.8.14" exclude="Build,Analyzers" />
+        <dependency id="Hangfire.Core" version="1.8.14" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+      <group targetFramework="net9.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\BackgroundJobs\bin\Release\net8.0\AspNetCore.Multitenancy.Hangfire.dll" target="lib\net8.0\AspNetCore.Multitenancy.Hangfire.dll" />
+    <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\BackgroundJobs\bin\Release\net8.0\AspNetCore.Multitenancy.Hangfire.xml" target="lib\net8.0\AspNetCore.Multitenancy.Hangfire.xml" />
+    <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\BackgroundJobs\bin\Release\net9.0\AspNetCore.Multitenancy.Hangfire.dll" target="lib\net9.0\AspNetCore.Multitenancy.Hangfire.dll" />
+    <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\BackgroundJobs\bin\Release\net9.0\AspNetCore.Multitenancy.Hangfire.xml" target="lib\net9.0\AspNetCore.Multitenancy.Hangfire.xml" />
+  </files>
+</package>

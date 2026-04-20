@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\samples\\SaaSDemo\\SaaSDemo.csproj": {
-      "version": "1.0.0",
+      "version": "0.1.0-preview1",
       "restore": {
         "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\samples\\SaaSDemo\\SaaSDemo.csproj",
         "projectName": "SaaSDemo",
@@ -999,7 +999,7 @@
       }
     },
     "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\tests\\E2E\\AspNetCore.Multitenancy.Tests.E2E.csproj": {
-      "version": "1.0.0",
+      "version": "0.1.0-preview1",
       "restore": {
         "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\tests\\E2E\\AspNetCore.Multitenancy.Tests.E2E.csproj",
         "projectName": "AspNetCore.Multitenancy.Tests.E2E",

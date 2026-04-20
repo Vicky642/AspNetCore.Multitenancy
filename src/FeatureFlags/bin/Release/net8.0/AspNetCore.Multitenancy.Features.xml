@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNetCore.Multitenancy.Features</name>
+    </assembly>
+    <members>
+        <member name="T:AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions">
+            <summary>
+            Extension methods for registering feature flag services and middleware.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.WithFeatureFlags(AspNetCore.Multitenancy.MultitenancyBuilder,System.Action{AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions})">
+            <summary>
+            Registers the per-tenant feature flag services.
+            </summary>
+            <param name="builder">The multitenancy builder.</param>
+            <param name="configurePlans">
+            A delegate to map subscription plans to feature sets.
+            <code>
+            .WithFeatureFlags(plans =>
+            {
+                plans.AddPlan("free",       new[] { "BasicDashboard" });
+                plans.AddPlan("pro",        new[] { "BasicDashboard", "AdvancedReporting" });
+                plans.AddPlan("enterprise", new[] { "BasicDashboard", "AdvancedReporting", "WhiteLabel" });
+            })
+            </code>
+            </param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FeatureFlags.FeatureFlagExtensions.UseTenantFeatures(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Adds the <see cref="T:AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware"/> to the ASP.NET Core pipeline.
+            Place this after <c>UseRouting()</c> and <c>UseMultitenancy()</c>.
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService">
+            <summary>
+            Checks whether a named feature is enabled for the current tenant.
+            Features are gated by the tenant's subscription plan.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.IsEnabled(System.String)">
+            <summary>
+            Returns <c>true</c> if the named feature is enabled for the current tenant's plan.
+            </summary>
+            <param name="featureName">The feature name to check (e.g., "AdvancedReporting").</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FeatureFlags.ITenantFeatureService.GetEnabledFeatures">
+            <summary>
+            Returns all features enabled for the current tenant's plan.
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute">
+            <summary>
+            Marks a controller or action as requiring a specific tenant feature.
+            If the feature is disabled for the current tenant's plan, the middleware
+            returns HTTP 404 (not 403) so that other tenants cannot enumerate which
+            features exist.
+            </summary>
+        </member>
+        <member name="P:AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.FeatureName">
+            <summary>
+            Gets the feature name required to access the decorated endpoint.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute.#ctor(System.String)">
+            <param name="featureName">The feature name (e.g., "AdvancedReporting").</param>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.FeatureFlags.TenantFeatureMiddleware">
+             <summary>
+             Middleware that checks <see cref="T:AspNetCore.Multitenancy.FeatureFlags.RequireFeatureAttribute"/> on the matched endpoint
+             and returns HTTP 404 if the feature is disabled for the current tenant's plan.
+            
+             Returns 404 (not 403) deliberately — so tenants cannot enumerate which features exist
+             on other plans.
+             </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider">
+             <summary>
+             Maps subscription plan names to sets of enabled features.
+             Configure the plan → feature mapping at startup.
+            
+             Example:
+             <code>
+             services.Configure&lt;PlanFeatureOptions&gt;(opts =>
+             {
+                 opts.AddPlan("free",       new[] { "BasicDashboard" });
+                 opts.AddPlan("pro",        new[] { "BasicDashboard", "AdvancedReporting", "ApiAccess" });
+                 opts.AddPlan("enterprise", new[] { "BasicDashboard", "AdvancedReporting", "ApiAccess", "WhiteLabel", "SSOIntegration" });
+             });
+             </code>
+             </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.IsEnabled(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FeatureFlags.TenantPlanFeatureProvider.GetEnabledFeatures">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions">
+            <summary>
+            Configuration object that maps plan names to feature sets.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FeatureFlags.PlanFeatureOptions.AddPlan(System.String,System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Registers the features available for a subscription plan.
+            </summary>
+        </member>
+    </members>
+</doc>

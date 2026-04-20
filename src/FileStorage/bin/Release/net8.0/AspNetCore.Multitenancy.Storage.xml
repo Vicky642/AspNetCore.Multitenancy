@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNetCore.Multitenancy.Storage</name>
+    </assembly>
+    <members>
+        <member name="T:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider">
+            <summary>
+            Abstraction for tenant-isolated file storage.
+            All paths are automatically prefixed with the current tenant ID —
+            tenant A can never access tenant B's files even in a shared bucket.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Uploads a file. The path is automatically prefixed with the tenant ID.
+            </summary>
+            <param name="path">Logical path (e.g., "invoices/jan.pdf").</param>
+            <param name="content">File content stream.</param>
+            <param name="contentType">Optional MIME type.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+            <returns>The full storage path including tenant prefix.</returns>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Downloads a file by its logical path.
+            </summary>
+            <param name="path">Logical path (e.g., "invoices/jan.pdf").</param>
+            <param name="cancellationToken">Cancellation token.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Deletes a file by its logical path.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Lists all files under the given prefix (within the current tenant's namespace).
+            </summary>
+            <param name="prefix">Optional path prefix to filter results.</param>
+            <param name="cancellationToken">Cancellation token.</param>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider">
+            <summary>
+            Tenant-isolated Azure Blob Storage provider.
+            Each tenant's files are stored under a <c>tenant-{tenantId}/</c> blob path prefix
+            within a shared container.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.#ctor(Azure.Storage.Blobs.BlobContainerClient,AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder)">
+            <param name="containerClient">The Azure Blob container client.</param>
+            <param name="pathBuilder">The tenant-aware path builder.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.AzureBlobTenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider">
+            <summary>
+            Tenant-isolated local disk storage provider.
+            Stores files under <c>{BasePath}/tenant-{tenantId}/{path}</c>.
+            Use for development, single-server deployments, or CI environments.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.#ctor(AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder,System.String)">
+            <param name="pathBuilder">The tenant-aware path builder.</param>
+            <param name="basePath">Root directory on disk. Defaults to <c>./tenant-storage</c>.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.LocalTenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider">
+            <summary>
+            Tenant-isolated AWS S3 storage provider.
+            All objects are stored with a <c>tenant-{tenantId}/</c> key prefix,
+            so tenant A can never access tenant B's objects even in a shared bucket.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.#ctor(Amazon.S3.IAmazonS3,AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder,System.String)">
+            <param name="s3Client">The configured AWS S3 client.</param>
+            <param name="pathBuilder">The tenant-aware path builder.</param>
+            <param name="bucketName">The S3 bucket name to use.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.UploadAsync(System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DownloadAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.DeleteAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.Providers.S3TenantStorageProvider.ListAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:AspNetCore.Multitenancy.FileStorage.StorageProvider">
+            <summary>
+            Specifies which storage backend to use.
+            </summary>
+        </member>
+        <member name="F:AspNetCore.Multitenancy.FileStorage.StorageProvider.Local">
+            <summary>Local disk. For development and single-server deployments.</summary>
+        </member>
+        <member name="F:AspNetCore.Multitenancy.FileStorage.StorageProvider.S3">
+            <summary>AWS S3.</summary>
+        </member>
+        <member name="F:AspNetCore.Multitenancy.FileStorage.StorageProvider.AzureBlob">
+            <summary>Azure Blob Storage.</summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.FileStorage.StorageExtensions">
+            <summary>
+            Extension methods on <see cref="T:AspNetCore.Multitenancy.MultitenancyBuilder"/> for registering tenant storage providers.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithLocalStorage(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)">
+            <summary>
+            Registers a local disk <see cref="T:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider"/> for development.
+            </summary>
+            <param name="builder">The multitenancy builder.</param>
+            <param name="basePath">Root directory for local storage. Defaults to <c>./tenant-storage</c>.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithS3Storage(AspNetCore.Multitenancy.MultitenancyBuilder,System.String)">
+            <summary>
+            Registers the AWS S3 <see cref="T:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider"/>.
+            Requires <c>AWSSDK.S3</c> to be configured in your service container.
+            </summary>
+            <param name="builder">The multitenancy builder.</param>
+            <param name="bucketName">The S3 bucket name.</param>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithAzureBlobStorage(AspNetCore.Multitenancy.MultitenancyBuilder)">
+            <summary>
+            Registers the Azure Blob <see cref="T:AspNetCore.Multitenancy.FileStorage.ITenantStorageProvider"/>.
+            Requires a <c>BlobContainerClient</c> to be registered separately.
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.StorageExtensions.WithTenantStorage(AspNetCore.Multitenancy.MultitenancyBuilder,AspNetCore.Multitenancy.FileStorage.StorageProvider)">
+            <summary>
+            Registers a storage provider by enum value.
+            For S3/Azure, use the typed overloads for full configuration control.
+            </summary>
+        </member>
+        <member name="T:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder">
+             <summary>
+             Prepends the current tenant ID to all storage paths, ensuring complete
+             isolation between tenants even in a shared storage backend.
+            
+             Example: tenant "acme" + path "invoices/jan.pdf" → "tenant-acme/invoices/jan.pdf"
+             </summary>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.Build(System.String)">
+            <summary>
+            Builds the fully-qualified storage path for the current tenant.
+            </summary>
+            <param name="path">The logical path (e.g., "invoices/jan.pdf").</param>
+            <returns>The tenant-prefixed path (e.g., "tenant-acme/invoices/jan.pdf").</returns>
+        </member>
+        <member name="M:AspNetCore.Multitenancy.FileStorage.TenantStoragePathBuilder.StripPrefix(System.String)">
+            <summary>
+            Strips the tenant prefix from a full storage path, returning the logical path.
+            </summary>
+        </member>
+    </members>
+</doc>

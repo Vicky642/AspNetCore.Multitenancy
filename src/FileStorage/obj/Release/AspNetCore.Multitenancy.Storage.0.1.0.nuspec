@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AspNetCore.Multitenancy.Storage</id>
+    <version>0.1.0</version>
+    <authors>AspNetCore.Multitenancy Contributors</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/Vicky642/AspNetCore.Multitenancy</projectUrl>
+    <description>Tenant-isolated file storage for AspNetCore.Multitenancy. Automatically prefixes all paths with tenant ID. Supports local disk, AWS S3, and Azure Blob Storage.</description>
+    <tags>aspnetcore multitenancy storage s3 azure saas</tags>
+    <repository type="git" url="https://github.com/Vicky642/AspNetCore.Multitenancy" commit="40afeb0da3711db3b0a1e2f6da117a49dcbc0dc8" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="AspNetCore.Multitenancy.Core" version="0.1.0" exclude="Build,Analyzers" />
+        <dependency id="AWSSDK.S3" version="3.7.400.7" exclude="Build,Analyzers" />
+        <dependency id="Azure.Storage.Blobs" version="12.22.2" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0">
+        <dependency id="AspNetCore.Multitenancy.Core" version="0.1.0" exclude="Build,Analyzers" />
+        <dependency id="AWSSDK.S3" version="3.7.400.7" exclude="Build,Analyzers" />
+        <dependency id="Azure.Storage.Blobs" version="12.22.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+      <group targetFramework="net9.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FileStorage\bin\Release\net8.0\AspNetCore.Multitenancy.Storage.dll" target="lib\net8.0\AspNetCore.Multitenancy.Storage.dll" />
+    <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FileStorage\bin\Release\net8.0\AspNetCore.Multitenancy.Storage.xml" target="lib\net8.0\AspNetCore.Multitenancy.Storage.xml" />
+    <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FileStorage\bin\Release\net9.0\AspNetCore.Multitenancy.Storage.dll" target="lib\net9.0\AspNetCore.Multitenancy.Storage.dll" />
+    <file src="C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FileStorage\bin\Release\net9.0\AspNetCore.Multitenancy.Storage.xml" target="lib\net9.0\AspNetCore.Multitenancy.Storage.xml" />
+  </files>
+</package>

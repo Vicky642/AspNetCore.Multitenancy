@@ -719,7 +719,7 @@
       }
     },
     "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\tests\\Unit\\AspNetCore.Multitenancy.Tests.Unit.csproj": {
-      "version": "1.0.0",
+      "version": "0.1.0-preview1",
       "restore": {
         "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\tests\\Unit\\AspNetCore.Multitenancy.Tests.Unit.csproj",
         "projectName": "AspNetCore.Multitenancy.Tests.Unit",

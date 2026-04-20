@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\bin\Release\net9.0\AspNetCore.Multitenancy.Core.deps.json
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\bin\Release\net9.0\AspNetCore.Multitenancy.Core.dll
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\bin\Release\net9.0\AspNetCore.Multitenancy.Core.pdb
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\bin\Release\net9.0\AspNetCore.Multitenancy.Core.xml
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Release\net9.0\AspNetCore.Multitenancy.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Release\net9.0\AspNetCore.Multitenancy.Core.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Release\net9.0\AspNetCore.Multitenancy.Core.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Release\net9.0\AspNetCore.Multitenancy.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Release\net9.0\AspNetCore.Multitenancy.Core.sourcelink.json
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Release\net9.0\AspNetCore.Multitenancy.Core.dll
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Release\net9.0\refint\AspNetCore.Multitenancy.Core.dll
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Release\net9.0\AspNetCore.Multitenancy.Core.xml
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Release\net9.0\AspNetCore.Multitenancy.Core.pdb
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Release\net9.0\ref\AspNetCore.Multitenancy.Core.dll

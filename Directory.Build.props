@@ -1,4 +1,15 @@
 <Project>
+  <PropertyGroup>
+    <Version>0.1.0-preview1</Version>
+    <Authors>Vicky642</Authors>
+    <Company>AspNetCore.Multitenancy Contributors</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Vicky642/AspNetCore.Multitenancy</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Vicky642/AspNetCore.Multitenancy</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>aspnetcore;multitenancy;saas;efcore;hangfire</PackageTags>
+  </PropertyGroup>
+
   <ItemGroup>
     <Using Include="Microsoft.AspNetCore.Http" />
     <Using Include="Microsoft.AspNetCore.Builder" />

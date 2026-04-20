@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\samples\\SaaSDemo\\SaaSDemo.csproj": {
-      "version": "1.0.0",
+      "version": "0.1.0-preview1",
       "restore": {
         "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\AspNetCore_Multitenancy\\samples\\SaaSDemo\\SaaSDemo.csproj",
         "projectName": "SaaSDemo",
