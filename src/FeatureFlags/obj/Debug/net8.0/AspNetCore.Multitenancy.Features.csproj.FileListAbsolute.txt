@@ -16,3 +16,4 @@ C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FeatureFlags\obj\Debu
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FeatureFlags\obj\Debug\net8.0\AspNetCore.Multitenancy.Features.xml
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FeatureFlags\obj\Debug\net8.0\AspNetCore.Multitenancy.Features.pdb
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FeatureFlags\obj\Debug\net8.0\ref\AspNetCore.Multitenancy.Features.dll
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FeatureFlags\obj\Debug\net8.0\AspNetCore.Multitenancy.Features.sourcelink.json

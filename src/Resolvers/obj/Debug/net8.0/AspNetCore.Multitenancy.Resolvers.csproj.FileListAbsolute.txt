@@ -16,3 +16,4 @@ C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Resolvers\obj\Debug\n
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Resolvers\obj\Debug\net8.0\AspNetCore.Multitenancy.Resolvers.xml
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Resolvers\obj\Debug\net8.0\AspNetCore.Multitenancy.Resolvers.pdb
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Resolvers\obj\Debug\net8.0\ref\AspNetCore.Multitenancy.Resolvers.dll
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Resolvers\obj\Debug\net8.0\AspNetCore.Multitenancy.Resolvers.sourcelink.json

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AspNetCore.Multitenancy.Tests.Unit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b705cab488a778decd7887afcf6866572209258")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetCore.Multitenancy.Tests.Unit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetCore.Multitenancy.Tests.Unit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

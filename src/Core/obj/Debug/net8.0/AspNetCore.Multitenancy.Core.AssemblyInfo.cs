@@ -16,7 +16,7 @@ using System.Reflection;
     "ITenantResolver, TenantInfo, TenantMiddleware, and the AddMultitenancy() fluent " +
     "builder."))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0+7b705cab488a778decd7887afcf6866572209258")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetCore.Multitenancy.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetCore.Multitenancy.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.1.0.0")]

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute(("Tenant-isolated file storage for AspNetCore.Multitenancy. Automatically prefixes " +
     "all paths with tenant ID. Supports local disk, AWS S3, and Azure Blob Storage."))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0+7b705cab488a778decd7887afcf6866572209258")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetCore.Multitenancy.Storage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetCore.Multitenancy.Storage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.1.0.0")]

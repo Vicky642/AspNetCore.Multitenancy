@@ -5,6 +5,7 @@
 [![CI](https://github.com/Vicky642/AspNetCore.Multitenancy/actions/workflows/ci.yml/badge.svg)](https://github.com/Vicky642/AspNetCore.Multitenancy/actions/workflows/ci.yml)
 [![NuGet Package](https://img.shields.io/nuget/v/AspNetCore.Multitenancy.Core.svg)](https://www.nuget.org/packages/AspNetCore.Multitenancy.Core)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Sponsor Vicky642](https://img.shields.io/badge/Sponsor-Vicky642-brightgreen?logo=github)](https://github.com/sponsors/Vicky642)
 
 **The Definitive Open Source Multi-Tenancy Toolkit for .NET**
 

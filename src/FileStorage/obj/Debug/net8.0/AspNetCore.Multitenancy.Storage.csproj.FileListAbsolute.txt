@@ -16,3 +16,4 @@ C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FileStorage\obj\Debug
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FileStorage\obj\Debug\net8.0\AspNetCore.Multitenancy.Storage.xml
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FileStorage\obj\Debug\net8.0\AspNetCore.Multitenancy.Storage.pdb
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FileStorage\obj\Debug\net8.0\ref\AspNetCore.Multitenancy.Storage.dll
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\FileStorage\obj\Debug\net8.0\AspNetCore.Multitenancy.Storage.sourcelink.json

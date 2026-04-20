@@ -465,3 +465,4 @@ C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\tests\Unit\obj\Debug\net8
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\tests\Unit\obj\Debug\net8.0\AspNetCore.Multitenancy.Tests.Unit.pdb
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\tests\Unit\obj\Debug\net8.0\AspNetCore.Multitenancy.Tests.Unit.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\tests\Unit\obj\Debug\net8.0\ref\AspNetCore.Multitenancy.Tests.Unit.dll
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\tests\Unit\obj\Debug\net8.0\AspNetCore.Multitenancy.Tests.Unit.sourcelink.json

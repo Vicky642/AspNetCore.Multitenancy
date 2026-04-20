@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute(("Plug-in tenant resolution strategies for AspNetCore.Multitenancy: Header, Host (s" +
     "ubdomain), JWT Claims, and Path-based resolvers."))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0+7b705cab488a778decd7887afcf6866572209258")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetCore.Multitenancy.Resolvers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetCore.Multitenancy.Resolvers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.1.0.0")]

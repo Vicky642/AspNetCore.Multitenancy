@@ -32,6 +32,9 @@ public class HostTenantResolver : ITenantResolver
 
         if (_baseDomain is not null && host.EndsWith(_baseDomain, StringComparison.OrdinalIgnoreCase))
         {
+            if (host.Length == _baseDomain.Length)
+                return null; // Exact match, no subdomain
+
             // Strip ".app.com" to get "acme"
             tenantId = host[..^(_baseDomain.Length + 1)]; // +1 for the dot
         }

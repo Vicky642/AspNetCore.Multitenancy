@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute(("Per-tenant feature flags for AspNetCore.Multitenancy. Plan-based feature gating w" +
     "ith [RequireFeature] attribute and 404 responses for disabled features."))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0+7b705cab488a778decd7887afcf6866572209258")]
 [assembly: System.Reflection.AssemblyProductAttribute("AspNetCore.Multitenancy.Features")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AspNetCore.Multitenancy.Features")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.1.0.0")]

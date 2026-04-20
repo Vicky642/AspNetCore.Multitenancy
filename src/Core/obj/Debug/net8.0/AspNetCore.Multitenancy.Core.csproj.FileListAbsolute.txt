@@ -11,3 +11,4 @@ C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Debug\net8.0
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Debug\net8.0\AspNetCore.Multitenancy.Core.xml
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Debug\net8.0\AspNetCore.Multitenancy.Core.pdb
 C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Debug\net8.0\ref\AspNetCore.Multitenancy.Core.dll
+C:\Users\Administrator\Desktop\AspNetCore_Multitenancy\src\Core\obj\Debug\net8.0\AspNetCore.Multitenancy.Core.sourcelink.json

@@ -1,0 +1,32 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["src/**/*.csproj"],
+          "exclude": ["**/bin/**", "**/obj/**"]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["api/**.yml", "api/index.md"]
+      },
+      {
+        "files": ["toc.yml", "index.md"]
+      }
+    ],
+    "resource": [
+      {
+        "files": ["images/**"]
+      }
+    ],
+    "template": [
+      "default"
+    ],
+    "dest": "_site"
+  }
+}
