@@ -102,4 +102,4 @@ Click the "Sponsor" button at the top of the repo.
 
 ## Supported By
 
-Me(vickymuchiri64@gmail.com)!
+Me!
